@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "analysis_role": "post_hoc_label_blind_sensitivity_analysis",
+  "interpretation": "The upstream offline training split contains only normal batches, so it cannot select an F1-optimal labeled threshold. This analysis uses a conventional fixed alpha and does not inspect test labels when choosing the threshold.",
+  "fun": {
+    "source_csv": "results\\d9_external_comparison\\trace_of_times\\formal_20260924\\evaluation_four_fun\\results_offline_all_shift_fun.csv",
+    "runs": 100,
+    "selection_rule": "largest available searched threshold <= alpha; no test-label optimization",
+    "requested_alpha": 0.05,
+    "selected_threshold": 0.030538555088334123,
+    "mean_per_run": {
+      "tpr": 0.98955,
+      "fpr": 0.389875,
+      "p": 0.7178098358545608,
+      "fone": 0.8319102788970916,
+      "acc": 0.7998375
+    },
+    "pooled": {
+      "tp": 39582,
+      "fp": 15595,
+      "tn": 24405,
+      "fn": 418,
+      "recall": 0.98955,
+      "fpr": 0.389875,
+      "precision": 0.7173641191075992,
+      "f1": 0.8317555711989243
+    }
+  },
+  "seq": {
+    "source_csv": "results\\d9_external_comparison\\trace_of_times\\formal_20260924\\evaluation_four_seq\\results_offline_all_shift_seq.csv",
+    "runs": 100,
+    "selection_rule": "largest available searched threshold <= alpha; no test-label optimization",
+    "requested_alpha": 0.05,
+    "selected_threshold": 0.030538555088334123,
+    "mean_per_run": {
+      "tpr": 0.999625,
+      "fpr": 0.7731,
+      "p": 0.5640541083084004,
+      "fone": 0.7211261535385167,
+      "acc": 0.6132625
+    },
+    "pooled": {
+      "tp": 39985,
+      "fp": 30924,
+      "tn": 9076,
+      "fn": 15,
+      "recall": 0.999625,
+      "fpr": 0.7731,
+      "precision": 0.5638917485791648,
+      "f1": 0.7210415746242415
+    }
+  }
+}

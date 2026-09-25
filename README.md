@@ -1,64 +1,47 @@
-# KICBA：以 eBPF 偵測核心層選擇性目錄項抑制
+# D9：filldir64 → getdents64 目錄項身分差異偵測
 
-本儲存庫是論文書面審查用的可重現研究附件，保存 KICBA 專題的必要程式、鎖定分析設定、正式輸入視圖、機器可讀結果與論文稿。快取、編譯產物、Word/PDF 暫存、虛擬機映像與重複封裝檔均未納入。
+本儲存庫是論文〈以 eBPF 與 IBLT 偵測 filldir64 至 getdents64 間的目錄項身分差異〉的精簡研究成品。內容只涵蓋 D9 方向：論文、核心實作、實驗控制模組、正式資料、驗證結果與重現腳本；不包含其他 D1–D8 方向、快速測試、早期 pilot、中間文件或外部專案的完整副本。
 
-## 研究摘要
+## 研究方法與主要結果
 
-研究分成兩個證據互不取代的方向：
+D9 在 `filldir64` 已接受的目錄項與 `getdents64` 回傳給使用者空間的完整分頁列舉之間，比對固定大小的 multiset fingerprint；發現差異時再以 IBLT 嘗試還原兩側的身分差集。
 
-1. **方向 A：回呼巢狀結構偵測。** 在受測 CARAXES-like 同名回呼短路路徑中，以 eBPF 觀察 `filldir64` 最外層呼叫的轉送與短路結構。D7-r1 使用 8 次獨立開機、384 批、7,680 次目錄列舉；結果為 TP=96、FN=0、FP=0、TN=288，隱藏狀態召回率與 F1 皆為 1.000，三種控制狀態的觀察誤報率皆為 0%。13 項事前鎖定的功效規則全部通過。
-2. **方向 B：污染受控線上基準更新。** D6-r2 使用 5 次獨立開機、2,300 批資料；雙分支 W50 得到 93.75% 隱藏狀態召回率、0% 未載入誤報率與 1% 負控制誤報率，但 15 項鎖定規則只通過 9 項。此方向屬部分改善與負面結果，不能宣稱已完成安全且有效的線上自適應。
-
-上述數字是本實驗條件下的觀察結果，不代表能偵測所有 rootkit，也不能單憑警報判定惡意性。完整限制與信賴區間見[方向 A 論文稿](docs/papers/TRACK_A_LOW_FALSE_POSITIVE_ROOTKIT_zh-TW.md)、[方向 B 論文稿](docs/papers/TRACK_B_SAFE_ONLINE_ADAPTATION_zh-TW.md)及[資料與證據地圖](DATASET_AND_CODE_MANIFEST.md)。
+九次獨立開機的正式矩陣共有 1,296 個 batch、25,920 次列舉。D9 對 576 個差異 batch 全數告警、對 720 個控制 batch 均未告警，recall、precision 與 F1 皆為 100%，FPR 為 0%；11,520 次正例 transaction 的 IBLT 差集亦全數正確還原。這些結果只表示觀測邊界兩側存在身分差異，不直接判定惡意意圖。
 
 ## 儲存庫內容
 
 | 路徑 | 內容 |
 |---|---|
-| `src/kicba/` | 特徵、偵測器、指標與共用分析程式 |
-| `collector/` | eBPF 探針、資料收集器與多開機排程 |
-| `attack_variants/` | CARAXES 衍生實驗模組及 pass/active/hiding 控制 |
-| `scripts/` | 完整性稽核、鎖定分析與結果產生程式 |
-| `results/` | 正式輸入視圖、分析鎖、稽核紀錄、預測與報告 |
-| `tests/` | 單元與重現性測試 |
-| `docs/` | 論文稿、實驗規格、勘誤與方法來源稽核 |
-| `vm/` | 隔離 Hyper-V/Linux 實驗環境腳本；不含映像檔 |
-| `FILE_SHA256.csv` | 發佈檔案的 SHA-256 清單 |
+| `paper/` | 本方向的繁體中文會議論文 `.docx` |
+| `src/kicba/reconciliation.py` | multiset fingerprint、IBLT 與 token 實作 |
+| `collector/` | eBPF 程式、列舉 probe、D9 收集器與成本量測程式 |
+| `attack_variants/` | 正式矩陣實際需要的自製 filldir/getdents 控制模組 |
+| `scripts/` | 正式分析、timing calibration、IBLT 容量與多開機控制腳本 |
+| `results/d9_formal/` | 九次開機的壓縮正式資料、分析鎖定檔、timing model 與結果 |
+| `results/d9_development/` | 論文引用的邊界、容量、穩健性、namespace 與成本證據；早期 quick/pilot 已排除 |
+| `results/d9_external_comparison/` | D9 原始比較資料，以及 Trace of the Times / Decloaker 的必要摘要與驗證紀錄 |
+| `docs/` | 研究協定、正式結果、外部比較鎖定與偏差紀錄 |
+| `tools/external_baselines/` | 本研究撰寫的最小驗證/轉接腳本；不含外部專案本體或二進位 |
 
-若只想檢閱論文證據，建議依序閱讀 `START_HERE.md`、`DATASET_AND_CODE_MANIFEST.md`、兩份論文稿與 `REPRODUCTION_VERIFICATION.md`。
+完整收錄/排除原則見 [`ARTIFACT_SCOPE.md`](ARTIFACT_SCOPE.md)，外部方法與固定版本見 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 
 ## 快速驗證
 
-需求：Python 3.10 以上；分析相依套件由 `pyproject.toml` 安裝。原生 eBPF 收集另需隔離的 x86-64 Linux VM、相符的 kernel headers 與 BCC，請勿在日常使用或生產主機載入實驗模組。
+分析程式只使用 Python 標準函式庫；正式收集需在隔離的原生 Linux VM 內使用 root、BCC/eBPF、編譯器與對應 kernel headers。請勿在日常使用的主機載入研究用 kernel module。
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+```bash
 python -m pip install -e .
-$env:PYTHONPATH = "$(Resolve-Path src);$(Resolve-Path scripts);$(Resolve-Path collector)"
-python -m unittest discover -s tests -p "test_*.py" -v
+python -m unittest discover -s tests -v
+
+python scripts/analyze_d9_formal.py \
+  --input results/d9_formal/raw \
+  --timing-model results/d9_formal/timing_model.json \
+  --lock results/d9_formal/analysis_lock.json \
+  --output reproduced/d9_formal_results.json
 ```
 
-D6-r2 與 D7-r1 的逐步稽核及鎖定分析命令見 [`REPRODUCE.md`](REPRODUCE.md)。所有重跑結果應寫入新的輸出目錄，避免覆寫本儲存庫保存的正式結果。
+分析應通過全部預先指定條件，並產生與 `results/d9_formal/analysis_r1/results.json` 相同的統計結果。正式收集的完整設計、VM 條件與指令參數以 [`docs/D9_RECONCILIATION_RESEARCH_PROTOCOL_zh-TW.md`](docs/D9_RECONCILIATION_RESEARCH_PROTOCOL_zh-TW.md) 為準。
 
-## 資料集與封裝範圍
+## 資料完整性
 
-- D1 公開資料來自 Landauer 等人的 Zenodo 資料集：[Kernel Function Time Measurement Data Set for Anomaly-based Rootkit Detection](https://doi.org/10.5281/zenodo.14679675)，本地原始壓縮檔的既有 MD5 紀錄為 `bf5e9024c2954d51dd061e3c942b42f7`。為避免重複散布，本儲存庫不收錄該大型壓縮檔。
-- 儲存庫收錄 D6-r2 的 `results/d6_r2_formal/formal_boot_view_r1` 與 D7-r1 的 `results/d7_formal/raw_r1_canonical` 精簡 canonical 正式輸入視圖，以及分析鎖、稽核、預測與報告；大型逐批 VM 原始封包、虛擬機映像與可由程式重建的中間產物不收錄。
-- 各資料階段 D1–D7 的用途、規模、schema、可支持與不可支持的主張，統一記錄於 [`DATASET_AND_CODE_MANIFEST.md`](DATASET_AND_CODE_MANIFEST.md)。
-
-## 上游專案與本研究修改
-
-本儲存庫不是從零撰寫的獨立 rootkit 專案。研究起點為 AIT Austrian Institute of Technology 的 [Trace of the Times 實作](https://github.com/ait-aecid/rootkit-detection-ebpf-time-trace)（研究固定版本 `269d9b0bc6aafb403cba209bb47b8bdb902ba10e`）及其 [CARAXES](https://github.com/ait-aecid/caraxes) 學術測試 rootkit。
-
-本研究新增或修改的主要部分包括：continue-enumeration 修正版、pass-through／active-logic 控制、回呼巢狀 eBPF 探針、多開機收集與稽核流程、D6-r2/D7-r1 鎖定分析，以及完整的實驗證據鏈。逐項來源與修改範圍見 [`docs/method_provenance_audit_2026-09-20.md`](docs/method_provenance_audit_2026-09-20.md)及 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。第三方檔案保留其原授權與著作權聲明；本儲存庫未另行宣告整體授權。
-
-## 引用
-
-論文書面引用本研究時，請使用最終論文定稿中的作者、校名、系所、題名與年份。本儲存庫使用的上游研究請引用：
-
-> M. Landauer et al., “Trace of the Times: Rootkit Detection through Temporal Anomalies in Kernel Activity,” *Digital Threats: Research and Practice*, 2025. https://doi.org/10.1145/3770085
-
-## 研究與安全聲明
-
-`attack_variants/` 只供隔離、可還原的學術實驗環境使用。請勿在未獲授權的系統或生產設備執行、載入或部署其中的核心模組。
+`FILE_SHA256.csv` 列出儲存庫內研究檔案的 SHA-256。正式執行另由 `results/d9_formal/analysis_lock.json`、各 `campaign.sha256` 及外部比較鎖定檔約束來源與資料版本。

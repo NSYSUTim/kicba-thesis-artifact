@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-24T08:07:54.683265+00:00",
+  "research_question": "Can fixed-size multiset fingerprints detect accepted-filldir64 to getdents64-output identity discrepancies, and can an IBLT recover small differences across mechanisms and controls?",
+  "protocol_revision": "D9-reconciliation-campaign-r1-2026-09-24",
+  "formal_design": {
+    "boots": 9,
+    "states": 9,
+    "conditions": 4,
+    "buffers": 4,
+    "repeats_per_cell": 1,
+    "transactions_per_batch": 20,
+    "batches": 1296,
+    "transactions": 25920,
+    "state_order": "nine-position cyclic rotation"
+  },
+  "calibration": {
+    "role": "excluded_from_confirmatory_performance",
+    "sha256": "1ca165c222805118e5cb00574cd7b915a22034c23c1204a6994e13644cd6f9d7",
+    "batches": 240,
+    "transactions": 4800
+  },
+  "runtime_source_hashes": {
+    "runner": "29ffbf5460772e0f86d41740ab45e426d87fab0ae18a5f125f1755d63dd99d3a",
+    "smoke_helper": "5bf40b6776b6c87ae136694a4feba029102996e86360920d4b785cc2cbf8860a",
+    "boundary_helper": "4a7039519e06903431c33267e7f9e8245dac77f177377086b03ec611d8627d08",
+    "bpf": "9e0c09c8d90810515b4144c8c405e5210eb6e275ca73db754e0b64bdbd24c500",
+    "hash_header": "9077237df5ca2bc745fd20ecb156f2282c09e18cb46bf9c8965942c9695fed06",
+    "probe": "5b94e255341476faedf1a08b25fe16fa8955cf9c0ad53275907ba8fe9cf29dbd",
+    "module_filldir_pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "module_filldir_active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "module_filldir_hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c",
+    "module_getdents_pass": "8d0775d9c99a8d673741927c8c497fe0db021adf95eec66b0ef5fcdd2ce9acf0",
+    "module_getdents_active": "76601992353f6d7614d0282723c86c2a6ed19cd57766b97c38bf263a1f21d83b",
+    "module_getdents_hiding": "7ff42ea0139c5b2545faa400a543ae114664dc06c0a121b3bf3ebb0771f4ca66",
+    "module_policy_filter": "87a229405b1e458bedbaab5c859bec78ce861b610ccf9cf29266e19053451466",
+    "module_getdents_substitution": "c4e234f480b78eb0316ff337b3f1166fabad616b36353063f0c0de91b6c1e61a"
+  },
+  "files": {
+    "campaign_runner": "29ffbf5460772e0f86d41740ab45e426d87fab0ae18a5f125f1755d63dd99d3a",
+    "smoke_helper": "5bf40b6776b6c87ae136694a4feba029102996e86360920d4b785cc2cbf8860a",
+    "boundary_helper": "4a7039519e06903431c33267e7f9e8245dac77f177377086b03ec611d8627d08",
+    "bpf": "9e0c09c8d90810515b4144c8c405e5210eb6e275ca73db754e0b64bdbd24c500",
+    "hash_header": "9077237df5ca2bc745fd20ecb156f2282c09e18cb46bf9c8965942c9695fed06",
+    "fit_timing": "17398bb7d97ee8a1369350bb5cd08a4c29eb2310da7e919dff8f9fdc3a40da82",
+    "analysis_core": "6a1ce891c4600d02491da8937860829a87a07f3d764f4e7a305a4674ca12fb8a",
+    "multiboot_runner": "b95ae3cba097993bc3a09771f411d196f80c870d2b9716456cf49e84a23a16c1",
+    "protocol": "24f6c32bb61de8d26d30b01ffd925dbdec13b1ff2b41d21e235d71d909a535f2",
+    "timing_model": "022b8034c2d8e68b099fe932a5adcda788a8222261fbb9e0b9f1917a7388e75b"
+  },
+  "no_post_lock_changes": "Any source, binary, model, design, criterion, or oracle change requires a new revision and invalidates use of this lock."
+}

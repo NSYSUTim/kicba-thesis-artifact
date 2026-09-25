@@ -1,0 +1,91 @@
+{
+  "status": "valid",
+  "errors": [],
+  "root": "results/d9_external_comparison/decloaker/formal_20260925",
+  "boots": 9,
+  "boot_ids": [
+    "39ec8775-e645-4da9-b60f-4660fb7c747f",
+    "9710d835-e4d7-42f8-b533-c66faf07f5a1",
+    "1b064246-9558-46d9-bb0f-c31f8b1e4511",
+    "9442fc4c-9983-4bfe-bdbb-305c8b10f13a",
+    "620c2c99-c482-4158-9c0f-d096aaaa517c",
+    "1c191b14-dd03-4903-a36a-9e85259e93fa",
+    "d673dded-0241-4e6e-80d6-eefb588e1599",
+    "48c303a0-a20f-47cd-9f20-95b515b8d91e",
+    "6048e21a-6cd7-492e-8ca4-4b6888574b24"
+  ],
+  "kernels": [
+    "6.8.0-138-generic"
+  ],
+  "rows": 720,
+  "state_counts": {
+    "unloaded": 180,
+    "filldir_pass": 180,
+    "filldir_active": 180,
+    "filldir_hiding": 180
+  },
+  "confusion": {
+    "tp": 0,
+    "fn": 180,
+    "fp": 0,
+    "tn": 540
+  },
+  "metrics": {
+    "recall": 0.0,
+    "precision": null,
+    "f1": 0.0,
+    "false_positive_rate": 0.0
+  },
+  "timing_by_state": {
+    "unloaded": {
+      "count": 180,
+      "mean_ms": 1421.7686330166666,
+      "median_ms": 1387.330562,
+      "min_ms": 1252.785601,
+      "max_ms": 1839.419386,
+      "sum_s": 255.918353943
+    },
+    "filldir_pass": {
+      "count": 180,
+      "mean_ms": 1403.1240335444445,
+      "median_ms": 1357.225961,
+      "min_ms": 380.830193,
+      "max_ms": 1859.750201,
+      "sum_s": 252.562326038
+    },
+    "filldir_active": {
+      "count": 180,
+      "mean_ms": 1404.5776965166667,
+      "median_ms": 1362.1933645,
+      "min_ms": 384.872521,
+      "max_ms": 1857.680952,
+      "sum_s": 252.823985373
+    },
+    "filldir_hiding": {
+      "count": 180,
+      "mean_ms": 1395.433646738889,
+      "median_ms": 1368.2698635,
+      "min_ms": 1244.674486,
+      "max_ms": 1889.260851,
+      "sum_s": 251.178056413
+    }
+  },
+  "file_sha256": {
+    "boot_01": "3ba1e808cf636460834629b8a4db112b12e71d459cb984f75d3cda932da6ae36",
+    "boot_02": "b0e31b27017440514c24bd572b74110234dcdfeb99a60fece938c75c5822cd57",
+    "boot_03": "20ce2f040bd5a5012448a4599edba775e16f9767ed33b51e3874f9c6e310cac1",
+    "boot_04": "9ee909a7656d9520aff8a19d3e1fbe931565b950787d1d126e4bcb8aab1f92c8",
+    "boot_05": "dcc9a4bb49127a99fef99831c5479f4374a47b725194b1984b86004c1038cb66",
+    "boot_06": "687010bc7f67ff1639adfd6134e739973285e0f0ecfc8d690e763622b27d7a3b",
+    "boot_07": "bd53001eda9bd75b5755492115b14da33317345577676dc529e009db778342ba",
+    "boot_08": "ce38d014a40801f694d7dc5a64d5e1f4a8741ef11f08d0b109f4e182fffb8052",
+    "boot_09": "7d01d78e372dab79e2d2604e7de84e4c27c3868f01ce5cbfdd632f2d8a957f36"
+  },
+  "expected_source_hashes": {
+    "runner": "06f0eee72ceae2d39cb715ab7a79111ca441a8ca0bfc91e6cb154d40bbfa371a",
+    "decloaker_binary": "a275fea94173b48bb15bab215965cbf2cce76e12137f27248bb60696864428ca",
+    "module_filldir_pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "module_filldir_active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "module_filldir_hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c"
+  }
+}

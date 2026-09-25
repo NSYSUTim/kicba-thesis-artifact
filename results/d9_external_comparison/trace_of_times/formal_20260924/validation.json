@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "default/normal": 150,
+    "default/rootkit": 100,
+    "file_count/normal": 150,
+    "file_count/rootkit": 100,
+    "filename_length/normal": 150,
+    "filename_length/rootkit": 100,
+    "ls_basic/normal": 150,
+    "ls_basic/rootkit": 100,
+    "system_load/normal": 150,
+    "system_load/rootkit": 100
+  },
+  "elapsed_seconds_sum": 10767.745471421033,
+  "events": 52710992,
+  "files": 1250,
+  "listings": 125000,
+  "log_sha256": "ef078e51a3b3228defceaaff35cc7691cb37f34319d4bf4e2a6281bf032988c3",
+  "records": 1250,
+  "status": "valid"
+}

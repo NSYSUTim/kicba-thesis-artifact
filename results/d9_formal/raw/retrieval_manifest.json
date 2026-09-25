@@ -1,0 +1,61 @@
+{
+  "role": "d9_nine_boot_retrieval_manifest",
+  "lock_sha256": "fe29b4ebc69a0c5261ac2d9d8c4faa21447b1a373126a7b3c44d9fe6c90d2bf9",
+  "seed": 92103,
+  "campaigns": [
+    {
+      "boot_index": 1,
+      "boot_id": "edb02e3d-5370-41d4-b49a-586414a4c782",
+      "campaign_sha256": "895a3fd7117d18e55dc83f7b21443d3ec9551feb7731a6b8e8b7eb90fe8b10a1",
+      "batches": 144
+    },
+    {
+      "boot_index": 2,
+      "boot_id": "046d5d50-a35d-441e-ba3d-eb053dd8261d",
+      "campaign_sha256": "bee53fef34f41637acbcd8eefa9eb7349879fd739a08632ae506a8ab35381097",
+      "batches": 144
+    },
+    {
+      "boot_index": 3,
+      "boot_id": "170487f1-81e8-41c6-8143-0e933898edb1",
+      "campaign_sha256": "5c258fddd64f058f18d2c64a274a06cd2876d07684cc5bd9f3634599ee989665",
+      "batches": 144
+    },
+    {
+      "boot_index": 4,
+      "boot_id": "ef6b203d-45c8-4353-9490-ef65cf7356ed",
+      "campaign_sha256": "832572a0ab57fe56106081acdaebf729a38c65770e8b268d0fe15db7a715e8c7",
+      "batches": 144
+    },
+    {
+      "boot_index": 5,
+      "boot_id": "cceeef04-2a6c-4fe4-8963-db5c265242f0",
+      "campaign_sha256": "f04e30e667a84e87ed2dc03d6d56652074b5baeeac832809161c486bdd93b7a0",
+      "batches": 144
+    },
+    {
+      "boot_index": 6,
+      "boot_id": "30b50b77-ad1b-4b45-857e-cc278658fca8",
+      "campaign_sha256": "097580e1a61367e83a0fca7f29eed9a6f6b5ee062e7041234dca544bfb29e558",
+      "batches": 144
+    },
+    {
+      "boot_index": 7,
+      "boot_id": "900df2fd-588e-47c6-ba6f-d58c5b5e250e",
+      "campaign_sha256": "c5267f9862bc9037f57c6e7e1c36d5f84f0e0a4b13e4fc6cfedcc6f7827da3d0",
+      "batches": 144
+    },
+    {
+      "boot_index": 8,
+      "boot_id": "33663246-df62-4a61-9073-7d398c5f8d27",
+      "campaign_sha256": "261b58e58f82f869781e217b4d54f627af3ee701a1cfeb18d2d8611d886e24af",
+      "batches": 144
+    },
+    {
+      "boot_index": 9,
+      "boot_id": "b10683dc-a0f0-4468-83ab-4976b9cd7d47",
+      "campaign_sha256": "cd1a71ac50df1df37654048164dddee1bd30e6b5f1162b2d7180c358f663a07b",
+      "batches": 144
+    }
+  ]
+}

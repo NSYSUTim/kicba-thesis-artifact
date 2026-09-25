@@ -1,0 +1,63 @@
+{
+  "status": "valid",
+  "errors": [],
+  "selection": {
+    "states": [
+      "unloaded",
+      "filldir_pass",
+      "filldir_active",
+      "filldir_hiding"
+    ],
+    "condition": "baseline",
+    "buffer_size": 65536,
+    "visible": 512,
+    "difference": 16
+  },
+  "boots": 9,
+  "boot_ids": [
+    "edb02e3d-5370-41d4-b49a-586414a4c782",
+    "046d5d50-a35d-441e-ba3d-eb053dd8261d",
+    "170487f1-81e8-41c6-8143-0e933898edb1",
+    "ef6b203d-45c8-4353-9490-ef65cf7356ed",
+    "cceeef04-2a6c-4fe4-8963-db5c265242f0",
+    "30b50b77-ad1b-4b45-857e-cc278658fca8",
+    "900df2fd-588e-47c6-ba6f-d58c5b5e250e",
+    "33663246-df62-4a61-9073-7d398c5f8d27",
+    "b10683dc-a0f0-4468-83ab-4976b9cd7d47"
+  ],
+  "rows": 720,
+  "state_counts": {
+    "unloaded": 180,
+    "filldir_pass": 180,
+    "filldir_active": 180,
+    "filldir_hiding": 180
+  },
+  "confusion": {
+    "tp": 180,
+    "fn": 0,
+    "fp": 0,
+    "tn": 540
+  },
+  "metrics": {
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "precision": 1.0,
+    "f1": 1.0
+  },
+  "source_hashes": {
+    "runner": "29ffbf5460772e0f86d41740ab45e426d87fab0ae18a5f125f1755d63dd99d3a",
+    "smoke_helper": "5bf40b6776b6c87ae136694a4feba029102996e86360920d4b785cc2cbf8860a",
+    "boundary_helper": "4a7039519e06903431c33267e7f9e8245dac77f177377086b03ec611d8627d08",
+    "bpf": "9e0c09c8d90810515b4144c8c405e5210eb6e275ca73db754e0b64bdbd24c500",
+    "hash_header": "9077237df5ca2bc745fd20ecb156f2282c09e18cb46bf9c8965942c9695fed06",
+    "probe": "5b94e255341476faedf1a08b25fe16fa8955cf9c0ad53275907ba8fe9cf29dbd",
+    "module_filldir_pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "module_filldir_active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "module_filldir_hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c",
+    "module_getdents_pass": "8d0775d9c99a8d673741927c8c497fe0db021adf95eec66b0ef5fcdd2ce9acf0",
+    "module_getdents_active": "76601992353f6d7614d0282723c86c2a6ed19cd57766b97c38bf263a1f21d83b",
+    "module_getdents_hiding": "7ff42ea0139c5b2545faa400a543ae114664dc06c0a121b3bf3ebb0771f4ca66",
+    "module_policy_filter": "87a229405b1e458bedbaab5c859bec78ce861b610ccf9cf29266e19053451466",
+    "module_getdents_substitution": "c4e234f480b78eb0316ff337b3f1166fabad616b36353063f0c0de91b6c1e61a"
+  }
+}

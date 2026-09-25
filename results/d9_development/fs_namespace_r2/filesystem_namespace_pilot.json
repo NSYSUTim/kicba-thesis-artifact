@@ -1,0 +1,2901 @@
+{
+  "schema_version": 1,
+  "protocol_revision": "D9-filesystem-namespace-pilot-r1-2026-09-24",
+  "evidence_role": "single_boot_development_filesystem_namespace_not_confirmatory",
+  "created_utc": "2026-09-24T07:22:48.349219+00:00",
+  "environment": {
+    "kernel": "6.8.0-138-generic",
+    "boot_id": "a1553fa6-ae66-4944-82b4-58ab69d08b72",
+    "namespace_support": {
+      "host": {
+        "supported": true,
+        "reason": "host namespace"
+      },
+      "mount": {
+        "supported": true,
+        "reason": ""
+      },
+      "user_mount": {
+        "supported": true,
+        "reason": ""
+      }
+    }
+  },
+  "source_hashes": {
+    "runner": "a9a4085b9b45fbc324820d7829ab5319e476b93e4ed80008939804bf21ad8021",
+    "bpf": "0c95ad6c112dad7f30b97154f6eed2bb51c3428c60c036b817088ac9b0cbbb47",
+    "probe": "5b94e255341476faedf1a08b25fe16fa8955cf9c0ad53275907ba8fe9cf29dbd"
+  },
+  "success": true,
+  "failures": [],
+  "rows": [
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "host",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 5042183,
+        "stdout_bytes": 14733
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "host",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1059,
+        5871840515909285177,
+        12757847947544227942
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          98772772202794909,
+          394272,
+          8
+        ],
+        [
+          728191526285068734,
+          394281,
+          8
+        ],
+        [
+          1861960860954881489,
+          394271,
+          8
+        ],
+        [
+          2454484773931582865,
+          394270,
+          8
+        ],
+        [
+          2924885376987566258,
+          394284,
+          8
+        ],
+        [
+          4475145879765693332,
+          394276,
+          8
+        ],
+        [
+          8921057681449254724,
+          394275,
+          8
+        ],
+        [
+          10043900882811812927,
+          394278,
+          8
+        ],
+        [
+          10679382235515794739,
+          394273,
+          8
+        ],
+        [
+          13310834774608054399,
+          394280,
+          8
+        ],
+        [
+          15682215194741317236,
+          394277,
+          8
+        ],
+        [
+          16122611598034028828,
+          394285,
+          8
+        ],
+        [
+          16450787077422875704,
+          394283,
+          8
+        ],
+        [
+          16589712603903677547,
+          394279,
+          8
+        ],
+        [
+          16707205118827763339,
+          394274,
+          8
+        ],
+        [
+          17138523200258798383,
+          394282,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 5628389,
+        "stdout_bytes": 14746
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "host",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        7739032320514308855,
+        16122209999697748428
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          345939152577442981,
+          394306,
+          8
+        ],
+        [
+          1552379082745368057,
+          394314,
+          8
+        ],
+        [
+          1769624335599026046,
+          394307,
+          8
+        ],
+        [
+          2195997234170203999,
+          394304,
+          8
+        ],
+        [
+          3022640109537129540,
+          394315,
+          8
+        ],
+        [
+          3205162261813469348,
+          394313,
+          8
+        ],
+        [
+          3668942160440351976,
+          394317,
+          8
+        ],
+        [
+          3733310457014069763,
+          394308,
+          8
+        ],
+        [
+          6094494173315982341,
+          394309,
+          8
+        ],
+        [
+          7549287188063306038,
+          394316,
+          8
+        ],
+        [
+          11321759306016666573,
+          394302,
+          8
+        ],
+        [
+          13145851000968518144,
+          394310,
+          8
+        ],
+        [
+          13318013365443955512,
+          394305,
+          8
+        ],
+        [
+          14128298326545529399,
+          394311,
+          8
+        ],
+        [
+          16347348493236234336,
+          394303,
+          8
+        ],
+        [
+          18304907929541732425,
+          394312,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          833245097197520117,
+          394317,
+          8
+        ],
+        [
+          1194754242879091403,
+          394312,
+          8
+        ],
+        [
+          1785291411570573726,
+          394315,
+          8
+        ],
+        [
+          2878287169645362933,
+          394313,
+          8
+        ],
+        [
+          2884047972126353671,
+          394304,
+          8
+        ],
+        [
+          4137237230714932286,
+          394314,
+          8
+        ],
+        [
+          4205975068797441976,
+          394310,
+          8
+        ],
+        [
+          4267500870481448522,
+          394306,
+          8
+        ],
+        [
+          5170849677498398999,
+          394302,
+          8
+        ],
+        [
+          5780370489349908000,
+          394307,
+          8
+        ],
+        [
+          6829715609699411754,
+          394303,
+          8
+        ],
+        [
+          11932674443674569482,
+          394309,
+          8
+        ],
+        [
+          12940568861743938347,
+          394316,
+          8
+        ],
+        [
+          15834723288468314187,
+          394308,
+          8
+        ],
+        [
+          16373745254761961242,
+          394305,
+          8
+        ],
+        [
+          17906440725000231026,
+          394311,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 4376803,
+        "stdout_bytes": 14730
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "mount",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 2984664,
+        "stdout_bytes": 14733
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "mount",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1059,
+        5871840515909285177,
+        12757847947544227942
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          98772772202794909,
+          394272,
+          8
+        ],
+        [
+          728191526285068734,
+          394281,
+          8
+        ],
+        [
+          1861960860954881489,
+          394271,
+          8
+        ],
+        [
+          2454484773931582865,
+          394270,
+          8
+        ],
+        [
+          2924885376987566258,
+          394284,
+          8
+        ],
+        [
+          4475145879765693332,
+          394276,
+          8
+        ],
+        [
+          8921057681449254724,
+          394275,
+          8
+        ],
+        [
+          10043900882811812927,
+          394278,
+          8
+        ],
+        [
+          10679382235515794739,
+          394273,
+          8
+        ],
+        [
+          13310834774608054399,
+          394280,
+          8
+        ],
+        [
+          15682215194741317236,
+          394277,
+          8
+        ],
+        [
+          16122611598034028828,
+          394285,
+          8
+        ],
+        [
+          16450787077422875704,
+          394283,
+          8
+        ],
+        [
+          16589712603903677547,
+          394279,
+          8
+        ],
+        [
+          16707205118827763339,
+          394274,
+          8
+        ],
+        [
+          17138523200258798383,
+          394282,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 4384746,
+        "stdout_bytes": 14746
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "mount",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        7739032320514308855,
+        16122209999697748428
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          345939152577442981,
+          394306,
+          8
+        ],
+        [
+          1552379082745368057,
+          394314,
+          8
+        ],
+        [
+          1769624335599026046,
+          394307,
+          8
+        ],
+        [
+          2195997234170203999,
+          394304,
+          8
+        ],
+        [
+          3022640109537129540,
+          394315,
+          8
+        ],
+        [
+          3205162261813469348,
+          394313,
+          8
+        ],
+        [
+          3668942160440351976,
+          394317,
+          8
+        ],
+        [
+          3733310457014069763,
+          394308,
+          8
+        ],
+        [
+          6094494173315982341,
+          394309,
+          8
+        ],
+        [
+          7549287188063306038,
+          394316,
+          8
+        ],
+        [
+          11321759306016666573,
+          394302,
+          8
+        ],
+        [
+          13145851000968518144,
+          394310,
+          8
+        ],
+        [
+          13318013365443955512,
+          394305,
+          8
+        ],
+        [
+          14128298326545529399,
+          394311,
+          8
+        ],
+        [
+          16347348493236234336,
+          394303,
+          8
+        ],
+        [
+          18304907929541732425,
+          394312,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          833245097197520117,
+          394317,
+          8
+        ],
+        [
+          1194754242879091403,
+          394312,
+          8
+        ],
+        [
+          1785291411570573726,
+          394315,
+          8
+        ],
+        [
+          2878287169645362933,
+          394313,
+          8
+        ],
+        [
+          2884047972126353671,
+          394304,
+          8
+        ],
+        [
+          4137237230714932286,
+          394314,
+          8
+        ],
+        [
+          4205975068797441976,
+          394310,
+          8
+        ],
+        [
+          4267500870481448522,
+          394306,
+          8
+        ],
+        [
+          5170849677498398999,
+          394302,
+          8
+        ],
+        [
+          5780370489349908000,
+          394307,
+          8
+        ],
+        [
+          6829715609699411754,
+          394303,
+          8
+        ],
+        [
+          11932674443674569482,
+          394309,
+          8
+        ],
+        [
+          12940568861743938347,
+          394316,
+          8
+        ],
+        [
+          15834723288468314187,
+          394308,
+          8
+        ],
+        [
+          16373745254761961242,
+          394305,
+          8
+        ],
+        [
+          17906440725000231026,
+          394311,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 4227826,
+        "stdout_bytes": 14730
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 4299772,
+        "stdout_bytes": 14733
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1059,
+        5871840515909285177,
+        12757847947544227942
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          98772772202794909,
+          394272,
+          8
+        ],
+        [
+          728191526285068734,
+          394281,
+          8
+        ],
+        [
+          1861960860954881489,
+          394271,
+          8
+        ],
+        [
+          2454484773931582865,
+          394270,
+          8
+        ],
+        [
+          2924885376987566258,
+          394284,
+          8
+        ],
+        [
+          4475145879765693332,
+          394276,
+          8
+        ],
+        [
+          8921057681449254724,
+          394275,
+          8
+        ],
+        [
+          10043900882811812927,
+          394278,
+          8
+        ],
+        [
+          10679382235515794739,
+          394273,
+          8
+        ],
+        [
+          13310834774608054399,
+          394280,
+          8
+        ],
+        [
+          15682215194741317236,
+          394277,
+          8
+        ],
+        [
+          16122611598034028828,
+          394285,
+          8
+        ],
+        [
+          16450787077422875704,
+          394283,
+          8
+        ],
+        [
+          16589712603903677547,
+          394279,
+          8
+        ],
+        [
+          16707205118827763339,
+          394274,
+          8
+        ],
+        [
+          17138523200258798383,
+          394282,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 3200356,
+        "stdout_bytes": 14746
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "ext4",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        12487559483933837662,
+        6678252035003450610
+      ],
+      "visible_fingerprint": [
+        1075,
+        7739032320514308855,
+        16122209999697748428
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          345939152577442981,
+          394306,
+          8
+        ],
+        [
+          1552379082745368057,
+          394314,
+          8
+        ],
+        [
+          1769624335599026046,
+          394307,
+          8
+        ],
+        [
+          2195997234170203999,
+          394304,
+          8
+        ],
+        [
+          3022640109537129540,
+          394315,
+          8
+        ],
+        [
+          3205162261813469348,
+          394313,
+          8
+        ],
+        [
+          3668942160440351976,
+          394317,
+          8
+        ],
+        [
+          3733310457014069763,
+          394308,
+          8
+        ],
+        [
+          6094494173315982341,
+          394309,
+          8
+        ],
+        [
+          7549287188063306038,
+          394316,
+          8
+        ],
+        [
+          11321759306016666573,
+          394302,
+          8
+        ],
+        [
+          13145851000968518144,
+          394310,
+          8
+        ],
+        [
+          13318013365443955512,
+          394305,
+          8
+        ],
+        [
+          14128298326545529399,
+          394311,
+          8
+        ],
+        [
+          16347348493236234336,
+          394303,
+          8
+        ],
+        [
+          18304907929541732425,
+          394312,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          833245097197520117,
+          394317,
+          8
+        ],
+        [
+          1194754242879091403,
+          394312,
+          8
+        ],
+        [
+          1785291411570573726,
+          394315,
+          8
+        ],
+        [
+          2878287169645362933,
+          394313,
+          8
+        ],
+        [
+          2884047972126353671,
+          394304,
+          8
+        ],
+        [
+          4137237230714932286,
+          394314,
+          8
+        ],
+        [
+          4205975068797441976,
+          394310,
+          8
+        ],
+        [
+          4267500870481448522,
+          394306,
+          8
+        ],
+        [
+          5170849677498398999,
+          394302,
+          8
+        ],
+        [
+          5780370489349908000,
+          394307,
+          8
+        ],
+        [
+          6829715609699411754,
+          394303,
+          8
+        ],
+        [
+          11932674443674569482,
+          394309,
+          8
+        ],
+        [
+          12940568861743938347,
+          394316,
+          8
+        ],
+        [
+          15834723288468314187,
+          394308,
+          8
+        ],
+        [
+          16373745254761961242,
+          394305,
+          8
+        ],
+        [
+          17906440725000231026,
+          394311,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 6474990,
+        "stdout_bytes": 14730
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "host",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 4267706,
+        "stdout_bytes": 14714
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "host",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1059,
+        6058584524197132812,
+        1840305123586477250
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          42537568914652388,
+          395352,
+          8
+        ],
+        [
+          1163863161397985457,
+          395354,
+          8
+        ],
+        [
+          2487340995016011578,
+          395347,
+          8
+        ],
+        [
+          4839659786933176478,
+          395357,
+          8
+        ],
+        [
+          6457455916607673735,
+          395350,
+          8
+        ],
+        [
+          9086364167548468076,
+          395349,
+          8
+        ],
+        [
+          10437571680731514279,
+          395358,
+          8
+        ],
+        [
+          10909829086513278158,
+          395360,
+          8
+        ],
+        [
+          13891048975712789813,
+          395345,
+          8
+        ],
+        [
+          14620597187672851482,
+          395351,
+          8
+        ],
+        [
+          14816878404912445971,
+          395356,
+          8
+        ],
+        [
+          17087156871020845811,
+          395348,
+          8
+        ],
+        [
+          17104125982222051267,
+          395346,
+          8
+        ],
+        [
+          17113446810869826753,
+          395359,
+          8
+        ],
+        [
+          17186308083062756617,
+          395353,
+          8
+        ],
+        [
+          18419909883389851856,
+          395355,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 5116279,
+        "stdout_bytes": 14718
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "host",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        5406295001165639276,
+        7075011337178137810
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          152736308381492530,
+          395387,
+          8
+        ],
+        [
+          253706801488858725,
+          395380,
+          8
+        ],
+        [
+          2058084632798485978,
+          395383,
+          8
+        ],
+        [
+          4254355165400856654,
+          395389,
+          8
+        ],
+        [
+          7521966887376831039,
+          395384,
+          8
+        ],
+        [
+          7583218407405128710,
+          395385,
+          8
+        ],
+        [
+          11690871512189171855,
+          395386,
+          8
+        ],
+        [
+          12345719054968727308,
+          395382,
+          8
+        ],
+        [
+          12544345448364142455,
+          395388,
+          8
+        ],
+        [
+          13000318359491833281,
+          395391,
+          8
+        ],
+        [
+          13563441157143045050,
+          395381,
+          8
+        ],
+        [
+          14102293167722665241,
+          395379,
+          8
+        ],
+        [
+          16792185896306528624,
+          395390,
+          8
+        ],
+        [
+          17004730856439886300,
+          395378,
+          8
+        ],
+        [
+          18162719050629242208,
+          395392,
+          8
+        ],
+        [
+          18164031396188365006,
+          395377,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          1382980756535169913,
+          395386,
+          8
+        ],
+        [
+          2944230565363648215,
+          395389,
+          8
+        ],
+        [
+          3102146314910227514,
+          395377,
+          8
+        ],
+        [
+          4061278318443413258,
+          395391,
+          8
+        ],
+        [
+          4283633893323429296,
+          395384,
+          8
+        ],
+        [
+          4762034467127920519,
+          395383,
+          8
+        ],
+        [
+          4775846630977409620,
+          395392,
+          8
+        ],
+        [
+          5765433907400138196,
+          395387,
+          8
+        ],
+        [
+          6679914178220091991,
+          395385,
+          8
+        ],
+        [
+          8180124855057462624,
+          395380,
+          8
+        ],
+        [
+          9109939061897579868,
+          395381,
+          8
+        ],
+        [
+          9130327883619744390,
+          395388,
+          8
+        ],
+        [
+          9886126472591968279,
+          395378,
+          8
+        ],
+        [
+          15401093793853628509,
+          395382,
+          8
+        ],
+        [
+          15739062979489451194,
+          395390,
+          8
+        ],
+        [
+          16801374453893165635,
+          395379,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 3167812,
+        "stdout_bytes": 14701
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "mount",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 5408833,
+        "stdout_bytes": 14714
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "mount",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1059,
+        6058584524197132812,
+        1840305123586477250
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          42537568914652388,
+          395352,
+          8
+        ],
+        [
+          1163863161397985457,
+          395354,
+          8
+        ],
+        [
+          2487340995016011578,
+          395347,
+          8
+        ],
+        [
+          4839659786933176478,
+          395357,
+          8
+        ],
+        [
+          6457455916607673735,
+          395350,
+          8
+        ],
+        [
+          9086364167548468076,
+          395349,
+          8
+        ],
+        [
+          10437571680731514279,
+          395358,
+          8
+        ],
+        [
+          10909829086513278158,
+          395360,
+          8
+        ],
+        [
+          13891048975712789813,
+          395345,
+          8
+        ],
+        [
+          14620597187672851482,
+          395351,
+          8
+        ],
+        [
+          14816878404912445971,
+          395356,
+          8
+        ],
+        [
+          17087156871020845811,
+          395348,
+          8
+        ],
+        [
+          17104125982222051267,
+          395346,
+          8
+        ],
+        [
+          17113446810869826753,
+          395359,
+          8
+        ],
+        [
+          17186308083062756617,
+          395353,
+          8
+        ],
+        [
+          18419909883389851856,
+          395355,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 3048757,
+        "stdout_bytes": 14718
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "mount",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        5406295001165639276,
+        7075011337178137810
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          152736308381492530,
+          395387,
+          8
+        ],
+        [
+          253706801488858725,
+          395380,
+          8
+        ],
+        [
+          2058084632798485978,
+          395383,
+          8
+        ],
+        [
+          4254355165400856654,
+          395389,
+          8
+        ],
+        [
+          7521966887376831039,
+          395384,
+          8
+        ],
+        [
+          7583218407405128710,
+          395385,
+          8
+        ],
+        [
+          11690871512189171855,
+          395386,
+          8
+        ],
+        [
+          12345719054968727308,
+          395382,
+          8
+        ],
+        [
+          12544345448364142455,
+          395388,
+          8
+        ],
+        [
+          13000318359491833281,
+          395391,
+          8
+        ],
+        [
+          13563441157143045050,
+          395381,
+          8
+        ],
+        [
+          14102293167722665241,
+          395379,
+          8
+        ],
+        [
+          16792185896306528624,
+          395390,
+          8
+        ],
+        [
+          17004730856439886300,
+          395378,
+          8
+        ],
+        [
+          18162719050629242208,
+          395392,
+          8
+        ],
+        [
+          18164031396188365006,
+          395377,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          1382980756535169913,
+          395386,
+          8
+        ],
+        [
+          2944230565363648215,
+          395389,
+          8
+        ],
+        [
+          3102146314910227514,
+          395377,
+          8
+        ],
+        [
+          4061278318443413258,
+          395391,
+          8
+        ],
+        [
+          4283633893323429296,
+          395384,
+          8
+        ],
+        [
+          4762034467127920519,
+          395383,
+          8
+        ],
+        [
+          4775846630977409620,
+          395392,
+          8
+        ],
+        [
+          5765433907400138196,
+          395387,
+          8
+        ],
+        [
+          6679914178220091991,
+          395385,
+          8
+        ],
+        [
+          8180124855057462624,
+          395380,
+          8
+        ],
+        [
+          9109939061897579868,
+          395381,
+          8
+        ],
+        [
+          9130327883619744390,
+          395388,
+          8
+        ],
+        [
+          9886126472591968279,
+          395378,
+          8
+        ],
+        [
+          15401093793853628509,
+          395382,
+          8
+        ],
+        [
+          15739062979489451194,
+          395390,
+          8
+        ],
+        [
+          16801374453893165635,
+          395379,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 3078203,
+        "stdout_bytes": 14701
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "unloaded",
+      "module_audit": {},
+      "expected_difference": false,
+      "difference_detected": false,
+      "decoded_exact": true,
+      "oracle_scope": "zero_difference",
+      "expected_upstream_count": 0,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 3097914,
+        "stdout_bytes": 14714
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "getdents_hiding",
+      "module_audit": {
+        "filter_matches": 16,
+        "records_removed": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 0,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1059,
+        6058584524197132812,
+        1840305123586477250
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          42537568914652388,
+          395352,
+          8
+        ],
+        [
+          1163863161397985457,
+          395354,
+          8
+        ],
+        [
+          2487340995016011578,
+          395347,
+          8
+        ],
+        [
+          4839659786933176478,
+          395357,
+          8
+        ],
+        [
+          6457455916607673735,
+          395350,
+          8
+        ],
+        [
+          9086364167548468076,
+          395349,
+          8
+        ],
+        [
+          10437571680731514279,
+          395358,
+          8
+        ],
+        [
+          10909829086513278158,
+          395360,
+          8
+        ],
+        [
+          13891048975712789813,
+          395345,
+          8
+        ],
+        [
+          14620597187672851482,
+          395351,
+          8
+        ],
+        [
+          14816878404912445971,
+          395356,
+          8
+        ],
+        [
+          17087156871020845811,
+          395348,
+          8
+        ],
+        [
+          17104125982222051267,
+          395346,
+          8
+        ],
+        [
+          17113446810869826753,
+          395359,
+          8
+        ],
+        [
+          17186308083062756617,
+          395353,
+          8
+        ],
+        [
+          18419909883389851856,
+          395355,
+          8
+        ]
+      ],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1059,
+        "syscalls": 180,
+        "returned_bytes": 42328,
+        "scan_ns": 3234802,
+        "stdout_bytes": 14718
+      }
+    },
+    {
+      "axis": "namespace",
+      "filesystem": "overlayfs",
+      "namespace": "user_mount",
+      "supported": true,
+      "state": "getdents_substitution",
+      "module_audit": {
+        "records_rewritten": 16,
+        "parse_errors": 0
+      },
+      "expected_difference": true,
+      "difference_detected": true,
+      "decoded_exact": true,
+      "oracle_scope": "observed_transaction_subset",
+      "expected_upstream_count": 16,
+      "expected_downstream_count": 16,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": false,
+      "kernel_fingerprint": [
+        1075,
+        15701982423337347987,
+        15557143140593937292
+      ],
+      "visible_fingerprint": [
+        1075,
+        5406295001165639276,
+        7075011337178137810
+      ],
+      "decode_success": true,
+      "upstream_only": [
+        [
+          152736308381492530,
+          395387,
+          8
+        ],
+        [
+          253706801488858725,
+          395380,
+          8
+        ],
+        [
+          2058084632798485978,
+          395383,
+          8
+        ],
+        [
+          4254355165400856654,
+          395389,
+          8
+        ],
+        [
+          7521966887376831039,
+          395384,
+          8
+        ],
+        [
+          7583218407405128710,
+          395385,
+          8
+        ],
+        [
+          11690871512189171855,
+          395386,
+          8
+        ],
+        [
+          12345719054968727308,
+          395382,
+          8
+        ],
+        [
+          12544345448364142455,
+          395388,
+          8
+        ],
+        [
+          13000318359491833281,
+          395391,
+          8
+        ],
+        [
+          13563441157143045050,
+          395381,
+          8
+        ],
+        [
+          14102293167722665241,
+          395379,
+          8
+        ],
+        [
+          16792185896306528624,
+          395390,
+          8
+        ],
+        [
+          17004730856439886300,
+          395378,
+          8
+        ],
+        [
+          18162719050629242208,
+          395392,
+          8
+        ],
+        [
+          18164031396188365006,
+          395377,
+          8
+        ]
+      ],
+      "downstream_only": [
+        [
+          1382980756535169913,
+          395386,
+          8
+        ],
+        [
+          2944230565363648215,
+          395389,
+          8
+        ],
+        [
+          3102146314910227514,
+          395377,
+          8
+        ],
+        [
+          4061278318443413258,
+          395391,
+          8
+        ],
+        [
+          4283633893323429296,
+          395384,
+          8
+        ],
+        [
+          4762034467127920519,
+          395383,
+          8
+        ],
+        [
+          4775846630977409620,
+          395392,
+          8
+        ],
+        [
+          5765433907400138196,
+          395387,
+          8
+        ],
+        [
+          6679914178220091991,
+          395385,
+          8
+        ],
+        [
+          8180124855057462624,
+          395380,
+          8
+        ],
+        [
+          9109939061897579868,
+          395381,
+          8
+        ],
+        [
+          9130327883619744390,
+          395388,
+          8
+        ],
+        [
+          9886126472591968279,
+          395378,
+          8
+        ],
+        [
+          15401093793853628509,
+          395382,
+          8
+        ],
+        [
+          15739062979489451194,
+          395390,
+          8
+        ],
+        [
+          16801374453893165635,
+          395379,
+          8
+        ]
+      ],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 1253,
+        "accepted_entries": 1075,
+        "rejected_entries": 178,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 1075,
+        "syscalls": 180,
+        "returned_bytes": 42968,
+        "scan_ns": 3825464,
+        "stdout_bytes": 14701
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/proc",
+      "namespace": "host",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        192,
+        3710065050442936030,
+        9185399156637599082
+      ],
+      "visible_fingerprint": [
+        192,
+        3710065050442936030,
+        9185399156637599082
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 213,
+        "accepted_entries": 192,
+        "rejected_entries": 21,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 192,
+        "syscalls": 23,
+        "returned_bytes": 5200,
+        "scan_ns": 641444,
+        "stdout_bytes": 13326
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/proc",
+      "namespace": "mount",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        192,
+        12288472695024228757,
+        16207797946803803486
+      ],
+      "visible_fingerprint": [
+        192,
+        12288472695024228757,
+        16207797946803803486
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 213,
+        "accepted_entries": 192,
+        "rejected_entries": 21,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 192,
+        "syscalls": 23,
+        "returned_bytes": 5200,
+        "scan_ns": 705148,
+        "stdout_bytes": 13265
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/sys",
+      "namespace": "host",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        13,
+        1470231612953602380,
+        16566015630102969376
+      ],
+      "visible_fingerprint": [
+        13,
+        1470231612953602380,
+        16566015630102969376
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 14,
+        "accepted_entries": 13,
+        "rejected_entries": 1,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 13,
+        "syscalls": 3,
+        "returned_bytes": 376,
+        "scan_ns": 54121,
+        "stdout_bytes": 2196
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/sys",
+      "namespace": "mount",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        13,
+        1470231612953602380,
+        16566015630102969376
+      ],
+      "visible_fingerprint": [
+        13,
+        1470231612953602380,
+        16566015630102969376
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 14,
+        "accepted_entries": 13,
+        "rejected_entries": 1,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 13,
+        "syscalls": 3,
+        "returned_bytes": 376,
+        "scan_ns": 82873,
+        "stdout_bytes": 2196
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/dev",
+      "namespace": "host",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        200,
+        8380612802983561838,
+        10385854514408837895
+      ],
+      "visible_fingerprint": [
+        200,
+        8380612802983561838,
+        10385854514408837895
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 223,
+        "accepted_entries": 200,
+        "rejected_entries": 23,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 200,
+        "syscalls": 25,
+        "returned_bytes": 5944,
+        "scan_ns": 850566,
+        "stdout_bytes": 12889
+      }
+    },
+    {
+      "axis": "pseudo_filesystem",
+      "directory": "/dev",
+      "namespace": "mount",
+      "supported": true,
+      "pass": true,
+      "measurement_valid": true,
+      "configuration_valid": true,
+      "configuration": {
+        "kernel_seed1": 81985529216486895,
+        "kernel_seed2": 17357386176853808775,
+        "kernel_cells": 256,
+        "collection_enabled": 1,
+        "expected_seed1": 81985529216486895,
+        "expected_seed2": 17357386176853808775,
+        "expected_cells": 256
+      },
+      "fingerprint_equal": true,
+      "kernel_fingerprint": [
+        200,
+        8380612802983561838,
+        10385854514408837895
+      ],
+      "visible_fingerprint": [
+        200,
+        8380612802983561838,
+        10385854514408837895
+      ],
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "kernel_stats": {
+        "outer_entries": 223,
+        "accepted_entries": 200,
+        "rejected_entries": 23,
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0
+      },
+      "userspace": {
+        "count": 200,
+        "syscalls": 25,
+        "returned_bytes": 5944,
+        "scan_ns": 587838,
+        "stdout_bytes": 12889
+      }
+    }
+  ]
+}

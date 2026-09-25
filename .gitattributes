@@ -1,2 +1,3 @@
-# Preserve byte-level research artifacts so FILE_SHA256.csv remains portable.
 * -text
+*.docx binary
+*.gz binary

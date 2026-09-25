@@ -1,0 +1,60 @@
+{
+  "event_count": 1000,
+  "groupings": {
+    "fun": {
+      "best_rows": 100,
+      "completed_runs": 100,
+      "directory": "results\\d9_external_comparison\\trace_of_times\\formal_20260924\\evaluation_four_fun",
+      "overall_mean": {
+        "accuracy": 0.893475,
+        "f1": 0.898264240878818,
+        "fpr": 0.15195,
+        "precision": 0.8620355468771522,
+        "recall": 0.9389
+      },
+      "scenarios": [
+        "default",
+        "file_count",
+        "filename_length",
+        "system_load"
+      ],
+      "sha256": {
+        "resource.log": "b605d34a4f0fc5f46cd916cadb40ce2fcbbf6f0265bbeecb9132c4e0e94ae6c9",
+        "results_offline_all_shift_fun.csv": "800041c56acff50dbeb95b61248e47da629cd58b84016ccc67fb1e96d261b2c3",
+        "results_offline_best_shift_fun.csv": "d66bc93c529ad4da87b539bc466d8134e251c06117daae9e14f1c442d766fdc9",
+        "results_offline_confusion_shift_fun.csv": "d476689cc2beebb2ca6330b2aaf74ef63f20a1309f6c214cfc8b6f0123d5bb30",
+        "stdout.log": "260a8b3ac8bd485b8e9bdfa8aa75bbe3b62f778158c3433b2a393e796117f84c",
+        "summary.json": "7d2ee44389e0a1a446e9d302155f8b6e4656b22516128d9005d7bc063f9a8556"
+      }
+    },
+    "seq": {
+      "best_rows": 100,
+      "completed_runs": 100,
+      "directory": "results\\d9_external_comparison\\trace_of_times\\formal_20260924\\evaluation_four_seq",
+      "overall_mean": {
+        "accuracy": 0.8540875,
+        "f1": 0.8708079938106039,
+        "fpr": 0.2718,
+        "precision": 0.7843213016354599,
+        "recall": 0.979975
+      },
+      "scenarios": [
+        "default",
+        "file_count",
+        "filename_length",
+        "system_load"
+      ],
+      "sha256": {
+        "resource.log": "4dc949d26b3a26a91ac7580b47042fb333a50fa4db73afe3434f1584933229ce",
+        "results_offline_all_shift_seq.csv": "b1a640d6e1ff97d0c6dab16dc0e657767dda7783e7ba65109ba226d2fe96785b",
+        "results_offline_best_shift_seq.csv": "a89746aa77e2dd0b6b9175579dfb4177934a4fb6440775419f6e1abca4a8619a",
+        "results_offline_confusion_shift_seq.csv": "d5d1dfba238a722b83dadff74976898f25e281ef7efc4af0cfaa0787db0e0289",
+        "stdout.log": "836394cba94c54b0985707f8db22d1f65afdeb1828f55874fd08ef54f97e0e88",
+        "summary.json": "a1973b91ed2528de59d675b2de55de86b238d3b9a7ad98515b5b5c078dcc41b8"
+      }
+    }
+  },
+  "manifest": "results\\d9_external_comparison\\trace_of_times\\formal_20260924\\events_four_scenario_manifest.json",
+  "manifest_sha256": "a9b48dce976cd5b0597cbb644e97cc7b806ece24a7cfdb668ebf8f940961e1ce",
+  "status": "PASS"
+}

@@ -1,0 +1,72 @@
+{
+  "batches": 1000,
+  "boot_id": "39ec8775-e645-4da9-b60f-4660fb7c747f",
+  "collection_log_sha256": "abd50d3408f0bc736ceb87b8dfd960c8cc33c1c6ae509104c35cbc664d67502f",
+  "confusion": {
+    "tn": 60000,
+    "tp": 40000
+  },
+  "counts": {
+    "default/normal": 150,
+    "default/rootkit": 100,
+    "file_count/normal": 150,
+    "file_count/rootkit": 100,
+    "filename_length/normal": 150,
+    "filename_length/rootkit": 100,
+    "system_load/normal": 150,
+    "system_load/rootkit": 100
+  },
+  "elapsed_seconds": {
+    "default": {
+      "mean_per_batch": 0.5022237439241726,
+      "median_per_batch": 0.4855243944984977,
+      "sum": 125.55593598104315
+    },
+    "file_count": {
+      "mean_per_batch": 1.0534794358880608,
+      "median_per_batch": 1.031508797499555,
+      "sum": 263.3698589720152
+    },
+    "filename_length": {
+      "mean_per_batch": 0.48374820213223574,
+      "median_per_batch": 0.48726099700070336,
+      "sum": 120.93705053305894
+    },
+    "system_load": {
+      "mean_per_batch": 12.383433187355696,
+      "median_per_batch": 12.365057903003617,
+      "sum": 3095.8582968389237
+    }
+  },
+  "hash_seed_pair": [
+    17799924945220832399,
+    9117976559146228272
+  ],
+  "kernel": "6.8.0-138-generic",
+  "per_scenario_confusion": {
+    "default": {
+      "tn": 15000,
+      "tp": 10000
+    },
+    "file_count": {
+      "tn": 15000,
+      "tp": 10000
+    },
+    "filename_length": {
+      "tn": 15000,
+      "tp": 10000
+    },
+    "system_load": {
+      "tn": 15000,
+      "tp": 10000
+    }
+  },
+  "source_hashes": {
+    "bpf": "9e0c09c8d90810515b4144c8c405e5210eb6e275ca73db754e0b64bdbd24c500",
+    "hiding_module": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c",
+    "probe": "5b94e255341476faedf1a08b25fe16fa8955cf9c0ad53275907ba8fe9cf29dbd",
+    "runner": "cc7c0ef27d31381070f4d425ad6a84731e2fcf074b83878482c1d5843669183a"
+  },
+  "status": "valid",
+  "transactions": 100000
+}

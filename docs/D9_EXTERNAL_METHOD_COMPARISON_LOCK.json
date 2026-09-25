@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "locked_at_utc": "2026-09-24T12:05:00Z",
+  "purpose": "D9 external-method comparison extension; existing nine-boot confirmatory evidence is unchanged",
+  "protocol_sha256": "4292e98b7a312385e06ce136773fcbbf7e84340057456185e74d26cc4fd2fa12",
+  "trace_of_times": {
+    "upstream_commit": "269d9b0bc6aafb403cba209bb47b8bdb902ba10e",
+    "probing_sha256": "d78413f49db2c55af985c03444e3f75b07d4dd86fdf60a0bedb2c9ca32146e51",
+    "evaluate_sha256": "2ffba8c49247fb27c69f6a728fdebcd2209f370cd8c2b9a253fecfe5825f7bcc",
+    "kernel_bpf_sha256": "e87200a1a6b04be54bb1a3e05cc933d103d7668eb1bafec303952f3ca19f7f95",
+    "loader_adapter_sha256": "df9e9e926f1edca5caba2ddc7b6bfd02f175ad0d5a205df5c3d2a462cebf68bf",
+    "collection_runner_sha256": "fd2f5b53d4e07adb4964c92f672f06f659dd18c05bf234958ca313b0556366b5",
+    "normal_batches_per_scenario": 150,
+    "anomalous_batches_per_scenario": 100,
+    "listings_per_batch": 100,
+    "scenarios": [
+      "default",
+      "file_count",
+      "system_load",
+      "ls_basic",
+      "filename_length"
+    ],
+    "evaluation": {
+      "seed": 42,
+      "train_ratio": 0.333,
+      "quantiles": 9,
+      "repeat": 100,
+      "mode": "offline",
+      "groupings": ["fun", "seq"],
+      "approach": "shift"
+    }
+  },
+  "shared_filldir_treatment": {
+    "common_source_sha256": "625496e054c75686b6bc570f3de40188d2c0ab9d412eacc5717a68c82351e912",
+    "hiding_source_sha256": "a0db7c17d3fb89fb336735408633349f241eef29e80d4fe32690f672013a4c5e",
+    "magic_word": "caraxes"
+  },
+  "d9_common_matrix": {
+    "collection_runner_sha256": "cc7c0ef27d31381070f4d425ad6a84731e2fcf074b83878482c1d5843669183a",
+    "scenarios": [
+      "default",
+      "file_count",
+      "system_load",
+      "filename_length"
+    ],
+    "normal_batches_per_scenario": 150,
+    "anomalous_batches_per_scenario": 100,
+    "listings_per_batch": 100,
+    "buffer_size": 65536,
+    "iblt_cells": 256,
+    "batch_alert_rule": "at least one fingerprint mismatch among 100 listings",
+    "legacy_getdents_ls_basic_excluded_from_head_to_head": true
+  },
+  "decloaker": {
+    "upstream_commit": "5a2ca88e3f715a221720a0330ae65ca845a3032d",
+    "release": "v0.0.9",
+    "official_archive_sha256": "417f15eeb6e374c43ea12c7037e72711dbb06bd2c4e7d42d2f67ed859add162b",
+    "collection_runner_sha256": "06f0eee72ceae2d39cb715ab7a79111ca441a8ca0bfc91e6cb154d40bbfa371a",
+    "original_collection_runner_sha256": "61ca3f686274044e7bc876e63b7004f901ee3305a52d4e4cb56dd06564640ab1",
+    "preformal_amendment": "findmnt target lookup only; see deviations log dated 2026-09-25",
+    "filesystem": "ext4",
+    "device": "/dev/sda2",
+    "boots": 9,
+    "scans_per_state_per_boot": 20
+  },
+  "rkchk": {
+    "upstream_commit": "a9f4e496e61c65d4787365b883e4b21d74689e49",
+    "requires_author_custom_kernel": true,
+    "head_to_head_requires_d9_rerun_on_same_kernel": true
+  }
+}

@@ -1,29 +1,12 @@
-# Third-party notices
+# 第三方方法與來源
 
-This research artifact contains or derives selected components from earlier academic and open-source work. It does **not** vendor the complete upstream Trace of the Times repository.
+本儲存庫未複製下列第三方專案的完整原始碼或執行檔。重現外部比較時，請由原作者儲存庫取得並 checkout 指定版本；本研究自己的轉接與驗證腳本位於 `tools/external_baselines/`。
 
-## Trace of the Times
+| 方法 | 原作者來源 | 本研究固定版本 | 本儲存庫狀態 |
+|---|---|---|---|
+| Trace of the Times | <https://github.com/ait-aecid/rootkit-detection-ebpf-time-trace> | `269d9b0bc6aafb403cba209bb47b8bdb902ba10e` | 不含 upstream 專案；保留比較摘要、manifest 與本研究 helper |
+| Decloaker | <https://github.com/gustavo-iniguez-goya/decloaker> | v0.0.9，source commit `5a2ca88e3f715a221720a0330ae65ca845a3032d` | 不含 release archive、binary 或完整 source；保留九開機結果摘要與驗證器 |
+| rkchk | <https://github.com/thalium/rkchk> | `a9f4e496e61c65d4787365b883e4b21d74689e49` | 因需作者指定的 Rust-for-Linux 自訂核心，本論文未執行 head-to-head，未收錄其專案 |
+| CARAXES | <https://github.com/ait-aecid/caraxes> | 共同 filldir treatment 由本研究鎖定檔記錄來源雜湊 | 未收錄完整 upstream；正式矩陣使用的最小自製控制版本位於 `attack_variants/d7_controls_r2/` |
 
-- Project: `ait-aecid/rootkit-detection-ebpf-time-trace`
-- Repository: https://github.com/ait-aecid/rootkit-detection-ebpf-time-trace
-- Research-pinned revision: `269d9b0bc6aafb403cba209bb47b8bdb902ba10e`
-- Upstream license: GPL-3.0
-- Use here: experimental starting point, public-data reproduction, and frozen timing comparator.
-
-## CARAXES
-
-- Project: `ait-aecid/caraxes`
-- Repository: https://github.com/ait-aecid/caraxes
-- Upstream license: GPL-3.0
-- Included derivative area: `attack_variants/caraxes_continue/`
-- Research changes: continue-enumeration behavior plus matched pass-through, active-logic, and hiding controls. See `attack_variants/caraxes_continue/README_VARIANT.md` and `docs/method_provenance_audit_2026-09-20.md`.
-
-The copied GPL text is retained at `attack_variants/caraxes_continue/LICENSE`. Some CARAXES files also identify code originating from Diamorphine and `ilammy/ftrace-hook`; their notices and source references remain in the relevant source files.
-
-## Public data set
-
-- M. Landauer et al., *Kernel Function Time Measurement Data Set for Anomaly-based Rootkit Detection*.
-- DOI: https://doi.org/10.5281/zenodo.14679675
-- The original data archive is not redistributed in this repository. Only derived results, compact formal views, provenance, and checksum information needed for the thesis evidence chain are included.
-
-Third-party materials remain subject to their original licenses and attribution requirements. No repository-wide license is granted by this notice.
+第三方專案的授權與使用條件以各自 upstream 為準。本研究的比較範圍與限制詳見 `docs/D9_EXTERNAL_METHOD_COMPARISON_PROTOCOL_zh-TW.md` 與 `docs/D9_EXTERNAL_METHOD_COMPARISON_DEVIATIONS_zh-TW.md`。

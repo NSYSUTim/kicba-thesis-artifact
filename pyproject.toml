@@ -3,24 +3,12 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kicba"
-version = "0.1.0"
-description = "Reproducible experiments for kernel-interference-constrained baseline adaptation"
+name = "kicba-d9-reconciliation"
+version = "1.0.0"
+description = "D9 filldir64-to-getdents64 directory-entry reconciliation artifact"
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-  "numpy>=1.24",
-  "scipy>=1.10",
-  "matplotlib>=3.7",
-]
-
-[project.scripts]
-kicba-build-features = "kicba.data:main"
-kicba-run-public = "kicba.experiments:main"
-kicba-process-context = "kicba.context:main"
-kicba-run-d2 = "kicba.d2_experiments:main"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
+dependencies = []
 
 [tool.setuptools.packages.find]
 where = ["src"]
