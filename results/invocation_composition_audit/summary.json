@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "status": "posthoc_invocation_composition_audit",
+  "call_patterns": {
+    "D2": {
+      "normal": {
+        "batches": 600,
+        "iterate_calls_per_iteration": [
+          2.0
+        ],
+        "pids_with_one_call": [
+          0
+        ],
+        "pids_with_two_calls": [
+          100
+        ]
+      },
+      "rootkit": {
+        "batches": 600,
+        "iterate_calls_per_iteration": [
+          1.0
+        ],
+        "pids_with_one_call": [
+          100
+        ],
+        "pids_with_two_calls": [
+          0
+        ]
+      }
+    },
+    "D3-r1-calibration": {
+      "normal": {
+        "batches": 120,
+        "iterate_calls_per_iteration": [
+          2.0
+        ],
+        "pids_with_one_call": [
+          0
+        ],
+        "pids_with_two_calls": [
+          100
+        ]
+      },
+      "rootkit": {
+        "batches": 0,
+        "iterate_calls_per_iteration": [],
+        "pids_with_one_call": [],
+        "pids_with_two_calls": []
+      }
+    },
+    "D3-r1-test": {
+      "normal": {
+        "batches": 600,
+        "iterate_calls_per_iteration": [
+          2.0
+        ],
+        "pids_with_one_call": [
+          0
+        ],
+        "pids_with_two_calls": [
+          100
+        ]
+      },
+      "rootkit": {
+        "batches": 600,
+        "iterate_calls_per_iteration": [
+          1.0
+        ],
+        "pids_with_one_call": [
+          100
+        ],
+        "pids_with_two_calls": [
+          0
+        ]
+      }
+    }
+  },
+  "within_boot_condition_separation": {
+    "D2": {
+      "all_q10_ns": {
+        "groups": 20,
+        "mean_auc": 0.9966666666666667,
+        "min_auc": 0.9666666666666667,
+        "max_auc": 1.0,
+        "up_fraction": 1.0
+      },
+      "first_median_ns": {
+        "groups": 20,
+        "mean_auc": 0.004666666666666666,
+        "min_auc": 0.0,
+        "max_auc": 0.03333333333333333,
+        "up_fraction": 0.0
+      },
+      "first_q10_ns": {
+        "groups": 20,
+        "mean_auc": 0.008333333333333333,
+        "min_auc": 0.0,
+        "max_auc": 0.06666666666666667,
+        "up_fraction": 0.0
+      },
+      "first_q90_ns": {
+        "groups": 20,
+        "mean_auc": 0.007944444444444445,
+        "min_auc": 0.0,
+        "max_auc": 0.034444444444444444,
+        "up_fraction": 0.0
+      }
+    },
+    "D3-r1-test": {
+      "all_q10_ns": {
+        "groups": 20,
+        "mean_auc": 1.0,
+        "min_auc": 1.0,
+        "max_auc": 1.0,
+        "up_fraction": 1.0
+      },
+      "first_median_ns": {
+        "groups": 20,
+        "mean_auc": 0.0,
+        "min_auc": 0.0,
+        "max_auc": 0.0,
+        "up_fraction": 0.0
+      },
+      "first_q10_ns": {
+        "groups": 20,
+        "mean_auc": 0.0,
+        "min_auc": 0.0,
+        "max_auc": 0.0,
+        "up_fraction": 0.0
+      },
+      "first_q90_ns": {
+        "groups": 20,
+        "mean_auc": 0.0,
+        "min_auc": 0.0,
+        "max_auc": 0.0,
+        "up_fraction": 0.0
+      }
+    }
+  },
+  "interpretation_guardrail": "A difference between all-call quantiles and first-call-only quantiles indicates invocation-composition confounding. All-call timing must not be interpreted as pure per-invocation execution overhead."
+}

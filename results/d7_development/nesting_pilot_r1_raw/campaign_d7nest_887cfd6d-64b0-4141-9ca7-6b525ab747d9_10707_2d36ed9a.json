@@ -1,0 +1,455 @@
+{
+  "protocol_revision": "D7-nesting-development-r1-2026-09-21",
+  "status": "complete",
+  "evidence_role": "single_boot_development_pilot_not_confirmatory",
+  "campaign_id": "d7nest_887cfd6d-64b0-4141-9ca7-6b525ab747d9_10707_2d36ed9a",
+  "boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+  "seed": 10707,
+  "expected_batches": 48,
+  "iterations": 20,
+  "fixture_inode": 2896949,
+  "fixture_creation_order_sha256": "be241da2e10718e1f88e67437fa0424c7adbdcf45388610d712cf1856874e513",
+  "fixture_hidden_creation_index": 64,
+  "source_hashes": {
+    "runner": "908b549fcb1b48daf8af2c1e344277185e1ba85ce4fb7cee75f9634b404352f9",
+    "bpf": "cfcd9325cc942b7603e23fdd4d1476c106bf3bc0159b5977d33eb7b9bf1434fe",
+    "module_pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "module_active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "module_hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c"
+  },
+  "schedule": [
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 0,
+      "position": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_000_11818e1b.json.gz",
+      "completed_utc": "2026-09-21T06:54:00.286730+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 0,
+      "position": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_001_15449ed0.json.gz",
+      "completed_utc": "2026-09-21T06:54:02.087186+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 0,
+      "position": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_002_0c74c329.json.gz",
+      "completed_utc": "2026-09-21T06:54:08.973025+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 0,
+      "position": 3,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_003_eb461f1f.json.gz",
+      "completed_utc": "2026-09-21T06:54:15.902035+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 2,
+      "position": 4,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_004_473f8e4b.json.gz",
+      "completed_utc": "2026-09-21T06:54:16.152960+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 0,
+      "position": 5,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_005_c3fd2a8d.json.gz",
+      "completed_utc": "2026-09-21T06:54:17.949929+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 0,
+      "position": 6,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_006_47fd30e3.json.gz",
+      "completed_utc": "2026-09-21T06:54:24.352982+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 1,
+      "position": 7,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_007_ab830fec.json.gz",
+      "completed_utc": "2026-09-21T06:54:25.347339+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 1,
+      "position": 8,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_008_91662dda.json.gz",
+      "completed_utc": "2026-09-21T06:54:27.079222+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 2,
+      "position": 9,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_009_a25b28ba.json.gz",
+      "completed_utc": "2026-09-21T06:54:33.502687+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 2,
+      "position": 10,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_010_cc9e74fa.json.gz",
+      "completed_utc": "2026-09-21T06:54:40.424514+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 1,
+      "position": 11,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_011_5df08027.json.gz",
+      "completed_utc": "2026-09-21T06:54:42.239333+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 0,
+      "position": 12,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_012_95f5ffd1.json.gz",
+      "completed_utc": "2026-09-21T06:54:42.996230+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 1,
+      "position": 13,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_013_28a01d00.json.gz",
+      "completed_utc": "2026-09-21T06:54:49.874634+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 2,
+      "position": 14,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_014_4c018a3c.json.gz",
+      "completed_utc": "2026-09-21T06:54:50.632701+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 1,
+      "position": 15,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_015_5465eb35.json.gz",
+      "completed_utc": "2026-09-21T06:54:57.552986+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 0,
+      "position": 16,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_016_96f91c4e.json.gz",
+      "completed_utc": "2026-09-21T06:54:58.309597+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 1,
+      "position": 17,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_017_d2ca6b0b.json.gz",
+      "completed_utc": "2026-09-21T06:54:58.438187+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 0,
+      "position": 18,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_018_3279fdf2.json.gz",
+      "completed_utc": "2026-09-21T06:55:04.845116+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 2,
+      "position": 19,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_019_fac57a79.json.gz",
+      "completed_utc": "2026-09-21T06:55:11.880086+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 2,
+      "position": 20,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_020_a564ae9c.json.gz",
+      "completed_utc": "2026-09-21T06:55:13.671549+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 1,
+      "position": 21,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_021_d0388906.json.gz",
+      "completed_utc": "2026-09-21T06:55:14.405698+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 0,
+      "position": 22,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_022_279343a1.json.gz",
+      "completed_utc": "2026-09-21T06:55:21.262588+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 0,
+      "position": 23,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_023_6daab551.json.gz",
+      "completed_utc": "2026-09-21T06:55:22.030883+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 2,
+      "position": 24,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_024_17264411.json.gz",
+      "completed_utc": "2026-09-21T06:55:28.937097+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 1,
+      "position": 25,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_025_6373215b.json.gz",
+      "completed_utc": "2026-09-21T06:55:35.853502+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 1,
+      "position": 26,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_026_8782db38.json.gz",
+      "completed_utc": "2026-09-21T06:55:37.632517+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 1,
+      "position": 27,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_027_6d33b119.json.gz",
+      "completed_utc": "2026-09-21T06:55:44.557493+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 2,
+      "position": 28,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_028_a98a18ae.json.gz",
+      "completed_utc": "2026-09-21T06:55:51.415148+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 2,
+      "position": 29,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_029_685df4af.json.gz",
+      "completed_utc": "2026-09-21T06:55:58.419480+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 0,
+      "position": 30,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_030_72619d2d.json.gz",
+      "completed_utc": "2026-09-21T06:55:59.523705+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 2,
+      "position": 31,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_031_8a6ef2c8.json.gz",
+      "completed_utc": "2026-09-21T06:56:06.441032+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 2,
+      "position": 32,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_032_10d0444a.json.gz",
+      "completed_utc": "2026-09-21T06:56:06.613498+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 0,
+      "position": 33,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_033_1d1052fd.json.gz",
+      "completed_utc": "2026-09-21T06:56:13.061630+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 2,
+      "position": 34,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_034_38ac46e1.json.gz",
+      "completed_utc": "2026-09-21T06:56:13.923934+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 1,
+      "position": 35,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_035_ab6e8774.json.gz",
+      "completed_utc": "2026-09-21T06:56:20.918384+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 2,
+      "position": 36,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_036_3e670d42.json.gz",
+      "completed_utc": "2026-09-21T06:56:22.697109+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 1,
+      "position": 37,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_037_006c4029.json.gz",
+      "completed_utc": "2026-09-21T06:56:29.545188+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 2,
+      "position": 38,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_038_7d303505.json.gz",
+      "completed_utc": "2026-09-21T06:56:35.840403+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 0,
+      "position": 39,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_039_33070aa5.json.gz",
+      "completed_utc": "2026-09-21T06:56:37.129810+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 0,
+      "position": 40,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_040_1291114a.json.gz",
+      "completed_utc": "2026-09-21T06:56:43.884659+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 1,
+      "position": 41,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_041_34e66727.json.gz",
+      "completed_utc": "2026-09-21T06:56:45.179727+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 2,
+      "position": 42,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_042_e5dc8f27.json.gz",
+      "completed_utc": "2026-09-21T06:56:46.870550+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 1,
+      "position": 43,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_043_40665b09.json.gz",
+      "completed_utc": "2026-09-21T06:56:53.142628+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 1,
+      "position": 44,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_044_16bb8b2f.json.gz",
+      "completed_utc": "2026-09-21T06:56:53.423054+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 1,
+      "position": 45,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_045_d6467016.json.gz",
+      "completed_utc": "2026-09-21T06:57:00.330075+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 2,
+      "position": 46,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_046_f02719b3.json.gz",
+      "completed_utc": "2026-09-21T06:57:02.271036+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 0,
+      "position": 47,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/nesting_pilot_r1/batch_047_368cd96f.json.gz",
+      "completed_utc": "2026-09-21T06:57:09.232764+00:00"
+    }
+  ],
+  "completed_utc": "2026-09-21T06:57:09.835290+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "batches": 60,
+  "boots": 1,
+  "labels": {
+    "normal": 48,
+    "rootkit": 12
+  },
+  "conditions": {
+    "baseline": 30,
+    "cpu": 30
+  },
+  "all_valid": true,
+  "failure_count": 0,
+  "exact_output_pass_count": 60,
+  "lost_events_total": 0,
+  "iterate_calls_per_iteration": [
+    2.0
+  ],
+  "factor_cells": 2,
+  "role_composition_match": true,
+  "role_composition_mismatches": [],
+  "failure_batch_ids": []
+}

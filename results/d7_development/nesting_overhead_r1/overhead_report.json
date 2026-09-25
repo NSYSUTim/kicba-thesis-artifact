@@ -1,0 +1,383 @@
+{
+  "protocol": "D7-nesting-overhead-development-r1-2026-09-21",
+  "status": "complete",
+  "evidence_role": "single_boot_development_overhead_pilot",
+  "boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+  "created_utc": "2026-09-21T07:01:34.817734+00:00",
+  "iterations_per_scan": 20,
+  "repeats": 5,
+  "seed": 10708,
+  "runner_sha256": "57f7f79930e556ad0349dc08d992653429029246b7d2e047448f42a30b72ac27",
+  "bpf_sha256": "cfcd9325cc942b7603e23fdd4d1476c106bf3bc0159b5977d33eb7b9bf1434fe",
+  "deployment_model": {
+    "scan_period_seconds": 60.0,
+    "max_scan_wall_seconds": 1.0,
+    "max_amortized_added_wall_fraction": 0.001,
+    "note": "Relative target-operation latency is reported but is not the success rule for this explicitly periodic detector."
+  },
+  "pairs": [
+    {
+      "condition": "baseline",
+      "repeat": 0,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 149000115,
+      "instrumented_collector_cpu_ns": 28350681,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 117583948,
+      "control_collector_cpu_ns": 21364461,
+      "added_wall_ns": 31416167,
+      "relative_wall_overhead": 0.26718074647400003,
+      "amortized_added_wall_fraction": 0.0005236027833333334
+    },
+    {
+      "condition": "baseline",
+      "repeat": 1,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 117615738,
+      "control_collector_cpu_ns": 19238769,
+      "instrumented_wall_ns": 138911723,
+      "instrumented_collector_cpu_ns": 26331623,
+      "instrumented_transactions": 20,
+      "added_wall_ns": 21295985,
+      "relative_wall_overhead": 0.18106407664593321,
+      "amortized_added_wall_fraction": 0.00035493308333333333
+    },
+    {
+      "condition": "baseline",
+      "repeat": 2,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 177392223,
+      "instrumented_collector_cpu_ns": 33988649,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 135228874,
+      "control_collector_cpu_ns": 21909910,
+      "added_wall_ns": 42163349,
+      "relative_wall_overhead": 0.31179250224327093,
+      "amortized_added_wall_fraction": 0.0007027224833333333
+    },
+    {
+      "condition": "baseline",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 166487141,
+      "instrumented_collector_cpu_ns": 28267931,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 129663841,
+      "control_collector_cpu_ns": 24292476,
+      "added_wall_ns": 36823300,
+      "relative_wall_overhead": 0.28399050742295995,
+      "amortized_added_wall_fraction": 0.0006137216666666667
+    },
+    {
+      "condition": "baseline",
+      "repeat": 4,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 152461401,
+      "instrumented_collector_cpu_ns": 29268093,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 149657780,
+      "control_collector_cpu_ns": 25461839,
+      "added_wall_ns": 2803621,
+      "relative_wall_overhead": 0.01873354662884883,
+      "amortized_added_wall_fraction": 4.6727016666666665e-05
+    },
+    {
+      "condition": "cpu",
+      "repeat": 0,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 273408095,
+      "instrumented_collector_cpu_ns": 28372890,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 244503512,
+      "control_collector_cpu_ns": 21540313,
+      "added_wall_ns": 28904583,
+      "relative_wall_overhead": 0.11821745529773822,
+      "amortized_added_wall_fraction": 0.00048174305
+    },
+    {
+      "condition": "cpu",
+      "repeat": 1,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 345824965,
+      "control_collector_cpu_ns": 32677707,
+      "instrumented_wall_ns": 293691410,
+      "instrumented_collector_cpu_ns": 26153039,
+      "instrumented_transactions": 20,
+      "added_wall_ns": -52133555,
+      "relative_wall_overhead": -0.15075127673330352,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "cpu",
+      "repeat": 2,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 203830429,
+      "control_collector_cpu_ns": 17562931,
+      "instrumented_wall_ns": 230600436,
+      "instrumented_collector_cpu_ns": 21531297,
+      "instrumented_transactions": 20,
+      "added_wall_ns": 26770007,
+      "relative_wall_overhead": 0.13133469389891733,
+      "amortized_added_wall_fraction": 0.0004461667833333333
+    },
+    {
+      "condition": "cpu",
+      "repeat": 3,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 264380828,
+      "control_collector_cpu_ns": 20768024,
+      "instrumented_wall_ns": 279097415,
+      "instrumented_collector_cpu_ns": 22151062,
+      "instrumented_transactions": 20,
+      "added_wall_ns": 14716587,
+      "relative_wall_overhead": 0.055664350215288684,
+      "amortized_added_wall_fraction": 0.00024527645
+    },
+    {
+      "condition": "cpu",
+      "repeat": 4,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 263303208,
+      "control_collector_cpu_ns": 18828779,
+      "instrumented_wall_ns": 227257198,
+      "instrumented_collector_cpu_ns": 27324369,
+      "instrumented_transactions": 20,
+      "added_wall_ns": -36046010,
+      "relative_wall_overhead": -0.13689924355194336,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "memory",
+      "repeat": 0,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 123609540,
+      "control_collector_cpu_ns": 24118342,
+      "instrumented_wall_ns": 109809555,
+      "instrumented_collector_cpu_ns": 21531607,
+      "instrumented_transactions": 20,
+      "added_wall_ns": -13799985,
+      "relative_wall_overhead": -0.1116417470690369,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "memory",
+      "repeat": 1,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 130645663,
+      "instrumented_collector_cpu_ns": 22928201,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 109755538,
+      "control_collector_cpu_ns": 19894094,
+      "added_wall_ns": 20890125,
+      "relative_wall_overhead": 0.19033322036105368,
+      "amortized_added_wall_fraction": 0.00034816875
+    },
+    {
+      "condition": "memory",
+      "repeat": 2,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 118449421,
+      "instrumented_collector_cpu_ns": 24519473,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 119659210,
+      "control_collector_cpu_ns": 25149874,
+      "added_wall_ns": -1209789,
+      "relative_wall_overhead": -0.010110287373617124,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "memory",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 105572042,
+      "instrumented_collector_cpu_ns": 22101711,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 121391480,
+      "control_collector_cpu_ns": 21884530,
+      "added_wall_ns": -15819438,
+      "relative_wall_overhead": -0.13031753134569246,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "memory",
+      "repeat": 4,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 143367179,
+      "instrumented_collector_cpu_ns": 28993941,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 106327409,
+      "control_collector_cpu_ns": 27487953,
+      "added_wall_ns": 37039770,
+      "relative_wall_overhead": 0.3483558035350979,
+      "amortized_added_wall_fraction": 0.0006173295
+    },
+    {
+      "condition": "mixed",
+      "repeat": 0,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 249542765,
+      "control_collector_cpu_ns": 23268113,
+      "instrumented_wall_ns": 323712787,
+      "instrumented_collector_cpu_ns": 34306959,
+      "instrumented_transactions": 20,
+      "added_wall_ns": 74170022,
+      "relative_wall_overhead": 0.2972236922997948,
+      "amortized_added_wall_fraction": 0.0012361670333333333
+    },
+    {
+      "condition": "mixed",
+      "repeat": 1,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 261468878,
+      "control_collector_cpu_ns": 19825983,
+      "instrumented_wall_ns": 241933598,
+      "instrumented_collector_cpu_ns": 30121077,
+      "instrumented_transactions": 20,
+      "added_wall_ns": -19535280,
+      "relative_wall_overhead": -0.0747135955507485,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "mixed",
+      "repeat": 2,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 295694885,
+      "instrumented_collector_cpu_ns": 24773790,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 255273931,
+      "control_collector_cpu_ns": 18512462,
+      "added_wall_ns": 40420954,
+      "relative_wall_overhead": 0.1583434463584141,
+      "amortized_added_wall_fraction": 0.0006736825666666667
+    },
+    {
+      "condition": "mixed",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 267933668,
+      "instrumented_collector_cpu_ns": 28165466,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 340099316,
+      "control_collector_cpu_ns": 25824905,
+      "added_wall_ns": -72165648,
+      "relative_wall_overhead": -0.21218992395738898,
+      "amortized_added_wall_fraction": 0.0
+    },
+    {
+      "condition": "mixed",
+      "repeat": 4,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 254837634,
+      "instrumented_collector_cpu_ns": 26692389,
+      "instrumented_transactions": 20,
+      "control_wall_ns": 273807954,
+      "control_collector_cpu_ns": 22910174,
+      "added_wall_ns": -18970320,
+      "relative_wall_overhead": -0.06928330504233635,
+      "amortized_added_wall_fraction": 0.0
+    }
+  ],
+  "summary": [
+    {
+      "condition": "baseline",
+      "pairs": 5,
+      "mean_relative_wall_overhead": 0.2125522758830026,
+      "median_relative_wall_overhead": 0.26718074647400003,
+      "mean_added_wall_ms_per_scan": 26.9004844,
+      "max_instrumented_scan_wall_ms": 177.392223,
+      "mean_amortized_added_wall_fraction": 0.0004483414066666667
+    },
+    {
+      "condition": "cpu",
+      "pairs": 5,
+      "mean_relative_wall_overhead": 0.0035131958253394728,
+      "median_relative_wall_overhead": 0.055664350215288684,
+      "mean_added_wall_ms_per_scan": -3.5576776,
+      "max_instrumented_scan_wall_ms": 293.69141,
+      "mean_amortized_added_wall_fraction": 0.00023463725666666665
+    },
+    {
+      "condition": "memory",
+      "pairs": 5,
+      "mean_relative_wall_overhead": 0.05732389162156102,
+      "median_relative_wall_overhead": -0.010110287373617124,
+      "mean_added_wall_ms_per_scan": 5.420136599999999,
+      "max_instrumented_scan_wall_ms": 143.367179,
+      "mean_amortized_added_wall_fraction": 0.00019309965
+    },
+    {
+      "condition": "mixed",
+      "pairs": 5,
+      "mean_relative_wall_overhead": 0.019876062821547014,
+      "median_relative_wall_overhead": -0.06928330504233635,
+      "mean_added_wall_ms_per_scan": 0.7839456,
+      "max_instrumented_scan_wall_ms": 323.712787,
+      "mean_amortized_added_wall_fraction": 0.00038196992
+    }
+  ],
+  "deployment_rule": {
+    "rule": "for every workload: max 20-listing scan wall <= 1 s and mean positive added wall / 60 s <= 0.1%",
+    "pass": true
+  },
+  "completed_utc": "2026-09-21T07:04:09.190162+00:00"
+}

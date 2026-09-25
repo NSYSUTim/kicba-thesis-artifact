@@ -1,0 +1,11 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    maintenance0:
+      match:
+        macaddress: "00:15:5d:77:aa:01"
+      set-name: maintenance0
+      dhcp4: true
+      dhcp6: false
+      optional: true

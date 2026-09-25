@@ -1,0 +1,27 @@
+{
+  "protocol": "D7-event-probe-r2-2026-09-21",
+  "status": "PASS",
+  "failures": [],
+  "batches": 12,
+  "state_counts": {
+    "hiding": 3,
+    "active": 3,
+    "pass": 3,
+    "unloaded": 3
+  },
+  "bpf_filldir_counts_by_state": {
+    "unloaded": [
+      2620
+    ],
+    "pass": [
+      5240
+    ],
+    "active": [
+      5240
+    ],
+    "hiding": [
+      5220
+    ]
+  },
+  "interpretation": "This audit validates event-path data only; it is not detector efficacy evidence."
+}

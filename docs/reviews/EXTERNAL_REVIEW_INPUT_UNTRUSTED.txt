@@ -1,0 +1,752 @@
+KICBA_TWO_TRACK_REVIEW_20260921.zip
+壓縮封存檔案
+客觀分析 評估 正確 研究邏輯 合理 必要性
+
+我把你這個 KICBA_TWO_TRACK_REVIEW_20260921.zip 當成外部審稿包來看，也實際檢查了論文稿、protocol、analysis lock、結果 CSV、分析程式、CARAXES/sham 程式，並從 predictions.csv 重新計算主要指標。結論很明確：
+
+研究問題本身成立，而且有必要性；整體研究邏輯也不是硬湊的。Track A「降低 timing-based Rootkit detection 的非特異性誤報」可以成立為目前主線。
+但目前證據只能支持一個相當窄、benchmark-specific 的結論，還不能支持「已經做出一般性的低誤報 Rootkit detector」。而且現在有幾個真正會被審稿人抓的 methodological weakness，其中最重要的不是數字，而是 sham control 是否真的控制到你聲稱控制的東西，以及 comparator 是否公平。
+
+整體評估
+面向	我的判斷	原因
+研究問題是否成立	成立	前人自己就指出 system conditions 造成 false positive，並把跨 system-state robustness 列為 future work
+研究必要性	高	timing anomaly ≠ Rootkit；若正常 workload/hook 也造成 timing shift，原方法實際部署會有根本性 specificity 問題
+Track A 研究邏輯	基本合理	negative control → 分離非攻擊 timing cost → security-only alert，邏輯連貫
+Track A 目前證據	部分充分	93.75% recall、0.1% non-attack FPR 很漂亮，但只有一種 Rootkit / VM / kernel，而且有控制設計問題
+Track B 研究邏輯	成立	blind online update 被 attack contamination 污染是標準 poisoning / adaptive AD 問題
+Track B 方法是否成功	沒有	protocol 自己就 FAIL；attack update 6.25%、max contamination 47.92%、drift recall 6.83%
+統計可信度	中等	1,800 test batches 很多，但真正獨立 replication 只有 5 boots
+外部效度	目前偏弱	單一 VM/kernel/rootkit/目錄配置
+重現性	結果檔很好，但 review package 不完整	指標可重算一致；但 raw D6 不在包內，且部分必要程式依賴缺失
+1. 最重要的一點：你的研究問題不是假問題
+
+這點其實可以很有把握。
+
+Trace of the Times 的原作者自己明確指出，system conditions 對 delta time 有顯著影響，而且可能在高度動態系統產生很多 false positives。他們甚至把 dynamic probing、不同 system states 的 rootkit detection、多 scenario normal model 等列為後續方向。
+
+原論文也很清楚地說，他們的 semi-supervised detector 是拿正常 timing 建模，再把 timing shift 視為可能的 Rootkit activity。
+
+所以你現在問的：
+
+「我們量到的是惡意 hiding behavior，還是一般 workload / hook / instrumentation 所造成的 timing change？」
+
+這不是事後硬創一個問題。
+
+反而是原方法要從 proof-of-concept 走向可靠 detector 必須回答的問題。
+
+而且 O'Neill 2025 的工作也確實往 scheduler/system-condition noise 方向走，說明「正常系統狀態干擾 timing detection」已經被其他研究者視為實際問題。
+
+因此研究必要性這一塊，我認為是扎實的。
+
+2. D6-r2 的結果數字本身沒有明顯算錯
+
+我直接從你附的 predictions.csv 重新計算 9,000 筆 predictions。
+
+得到的結果與 report.json、overall_metrics.csv 一致：
+
+Proposed factorized guard
+
+Hiding：800
+TP：750
+FN：50
+Recall：750 / 800 = 93.75%
+Unloaded FP：0 / 900 = 0%
+Sham FP：1 / 100 = 1%
+總 non-attack FP：1 / 1000 = 0.1%
+F1：0.967118
+
+五個 boot 的 recall 也確實是：
+
+98.13%、91.25%、83.75%、96.25%、99.38%。
+
+而最差 boot 的 breakdown 我也重新算過：
+
+CPU 67.5%、mixed 75%。
+
+所以現在問題不是資料表做錯或 F1 算錯。
+
+這一點可以放心。
+
+另外，review package 內有附的主要 frozen source code，其 SHA-256 也確實和 analysis_lock.json 裡列的 hash 對得上，例如 collector、BPF、campaign runner、analysis core、audit、locked analysis、detector 等。
+
+所以至少從包內證據看，不像是「結果出來後偷偷改分析程式」。
+
+3. 你目前最嚴重的方法學問題：sham 其實沒有完全 matched
+
+這是我認為投稿前最需要修的地方。
+
+你的 Track A 現在核心論述是：
+
+pass-through sham 控制 ftrace hook 的成本，再看 hiding 超出 sham 的 timing evidence。
+
+概念非常合理。
+
+但程式實際上：
+
+caraxes_sham.c 只 hook：
+
+filldir64
+
+而 hiding CARAXES 的 hooks.h 安裝的是：
+
+fillonedir
+filldir
+filldir64
+compat_fillonedir
+compat_filldir
+
+也就是 1 個 hook vs 5 個 hooks。
+
+如果你能證明這次 x86-64 ls workload 只會真正進 filldir64，那影響可能很小。
+
+問題是目前 audit 只證明：
+
+iterate_dir 每 iteration 角色組成一致；
+listing output 正確；
+沒有 lost event。
+
+它沒有證明其他四個 hiding hooks 在實驗期間完全沒有被觸發，也沒有證明它們沒有帶來成本。
+
+因此目前最安全的寫法不能是：
+
+sham 完整控制了 Rootkit 的 ftrace hook cost。
+
+應該改成：
+
+sham controls the pass-through filldir64 ftrace-hook path used by the tested workload.
+
+這兩句強度差很多。
+
+4. 還有一個更深的問題：你的 sham 沒有控制「判斷邏輯」成本
+
+這可能比上一點更重要。
+
+Hiding 的 hook_filldir64() 大致是：
+
+if (strstr(name, MAGIC_WORD))
+    return true;
+
+return orig_filldir64(...);
+
+但 sham 是：
+
+return orig_filldir64(...);
+
+因此 hiding 與 sham 的差異不只是：
+
+「有沒有真正隱藏檔案」。
+
+還包含：
+
+每一個 directory entry 都多做了一次 strstr() 與 branch。
+
+換句話說，你現在得到的漂亮 separation 很可能偵測到的是：
+
+「pass-through hook + 額外的 per-entry string matching logic」
+
+而不是純粹：
+
+「file hiding」。
+
+這不代表研究沒意義。
+
+Rootkit hiding 本來就需要執行額外邏輯，timing detector 本來就是利用這種成本。
+
+但會影響你的「security evidence」語義。
+
+一個完全良性的 kernel hook，只要也對 filename 做類似字串判斷、logging、policy checking，很可能落到同一方向。
+
+所以目前把這條 axis 稱為：
+
+Rootkit security evidence
+
+有點太強。
+
+比較準確的是：
+
+hiding-associated timing evidence relative to the pass-through negative control
+
+直到你做更強 negative control。
+
+5. 最值得補的控制不是再跑更多相同 D6，而是做「active sham」
+
+我認為這是最能提升論文品質的一個實驗。
+
+你應該有至少兩種 sham：
+
+Sham A：matched pass-through
+
+安裝和 hiding 完全相同的五個 hooks，但是全部 pass through。
+
+這控制 hook installation / callback framework。
+
+Sham B：active sham
+
+和 hiding 執行：
+
+相同 hook；
+相同 strstr(name, MAGIC_WORD)；
+相同 branch 判斷；
+
+但即使匹配也仍呼叫原始 filldir，不隱藏東西。
+
+這樣：
+
+unloaded
+    ↓
+matched pass-through sham
+    ↓
+active logic sham
+    ↓
+actual hiding
+
+你才能真正拆出：
+
+ftrace hooking cost
++
+per-entry filtering logic cost
++
+actual suppression/hiding behavior difference
+
+如果 proposed detector 在 active sham 上仍維持低 FPR，那 Track A 的可信度會大幅提升。
+
+如果 active sham 也被判成 Rootkit，那也不是研究失敗——反而你得到一個很重要的結果：
+
+timing detector 實際偵測的是 hook computational behavior，而非 malicious hiding semantics。
+
+那會讓論文定位更誠實也更有學術價值。
+
+6. Security gate 沒有 label leakage，但有一個語義上的 circularity 風險
+
+你的 calibration 是：
+
+clean + sham 都是 non-attack。
+
+security axis 是：
+
+clean centroid → sham centroid
+
+threshold 是：
+
+max(clean + sham projection) + 0.01
+
+然後超過就叫 attack。
+
+從「資料洩漏」角度來說，這不是 attack-label leakage。
+
+因為 hiding test data 沒進 calibration。
+
+所以不能說它 circular 到「拿攻擊資料設定門檻，再說攻擊可分」。
+
+這部分是合理的。
+
+但是存在另一個問題。
+
+你其實做的是：
+
+anything farther than our known benign hook along this timing direction → security-positive.
+
+這依賴一個很強的 monotonic assumption：
+
+clean
+→ benign hook
+→ malicious hiding
+
+而現實不保證所有 benign kernel modification 都排在 sham 左側。
+
+一個更重的合法 hook 完全可能：
+
+clean
+→ sham
+→ benign complex hook
+→ threshold
+
+所以這個 gate 現在可以稱為negative-control calibrated detector，但不要把「security axis」寫得好像它已經抽取出 malware-specific semantic feature。
+
+7. Comparator fairness 是 Track A 第二個真正會被 reviewer 問的地方
+
+這點現在文章有提到「public-style baseline」，但還不夠。
+
+Proposed method 每 boot 可以用：
+
+50 clean + 50 sham calibration。
+
+而 public-style fixed baseline 是：
+
+50 clean batches。
+
+而且四個 baseline 的 thresholds 是：
+
+從 D5 development data 選好後 freeze。
+
+Proposed 的 threshold 則是：
+
+每個新 boot 根據該 boot 的 clean + sham calibration 自動重新建立。
+
+這代表 proposed method 其實擁有：
+
+更多 calibration information；
+negative-control class；
+current-boot calibration；
+context stratification。
+
+而 comparator 沒有。
+
+這並不是「不公平到不能比較」。
+
+因為你的研究假設本來就是：
+
+提供 sham negative control 會改善 specificity。
+
+那當然要給 proposed sham。
+
+但目前結果不能把 improvement 全部歸因為：
+
+factorization 本身。
+
+可能是：
+
+sham data
++ boot-specific calibration
++ context split
++ feature choice
++ threshold design
+
+共同造成的。
+
+因此目前最欠缺的是 ablation。
+
+至少應該比較：
+
+Public OAS + per-boot clean calibration
+Public OAS + clean+sham calibration
+Proposed feature + clean only
+Proposed feature + clean+sham but no context split
+Proposed feature + context split + sham
+
+最好再放一個非常簡單的：
+
+first_raw_median only threshold
+
+如果最後 full proposed 還是最好，你才真正證明 architecture 有價值。
+
+8. Blind W50 的 94% FPR 有意義，但不要把它包裝成「原論文線上法被你打敗」
+
+這是另一個我會特別修 wording 的地方。
+
+Trace of the Times 原始 online experiment 確實使用 W=50 sliding window。
+
+但是原作者知道 window 會跨 normal/rootkit transition，因此他們評估時：
+
+window 混有兩個 class 的區段，不拿來當可靠的普通 prediction；
+negatives 要等至少 50 個同 class batches 之後才算。
+
+這在原文說得很清楚。
+
+你現在 D6 的 blind_public_oas_w50 則是更嚴格的 deployment stress test：
+
+每批都預測、每批都無條件更新、混進 attack 後也繼續算、recovery 也照算。
+
+所以它跑出：
+
+94% FPR、100% max contamination，
+
+是很合理的。
+
+但比較正確的論文說法是：
+
+「我們將前人 W50 update core 放入持續運行 deployment-style replay，顯示 blind adaptation 在 attack persistence / recovery 下會產生嚴重 contamination。」
+
+而不是：
+
+「我們的方法比 Trace of the Times 的 online method 好很多。」
+
+前者很強而且正確。
+
+後者不公平。
+
+你稿子目前已經有避免直接 cross-dataset 排名，這方向是對的。
+
+9. 五個 boot 是很好的進步，但還不足以支撐很強的統計語言
+
+這裡要分清楚：
+
+你有：
+
+1,800 test batches。
+
+但真正的獨立 experimental replication unit 是 boot。
+
+所以有效的最高層 sample size 是：
+
+n = 5。
+
+這也是為什麼你用 boot-paired bootstrap 是對的方向，而不是把 1,800 batches 當獨立 observations。
+
+可是 n=5 本身仍然非常少。
+
+例如 proposed vs fixed OAS 的 unloaded FPR：
+
+五個 boot 全部都是 proposed 比較好。
+
+proposed vs fixed recall：
+
+五個 boot 也全部比較好。
+
+如果用最簡單的 exact paired sign test，5/5 同方向：
+
+one-sided p = 0.03125
+two-sided p = 0.0625
+
+所以目前用 percentile bootstrap 得到不跨 0 的 CI，不代表你就可以安全地寫：
+
+statistically significant improvement.
+
+我會建議寫：
+
+consistent improvements across all five boots, with the preregistered paired bootstrap interval ...
+
+而不要使用「統計顯著證明」。
+
+如果最後要投稿，增加獨立 boots 的價值其實遠高於再增加每 boot 的 batch 數。
+
+10. Latin square 是好設計，但 boot 與 sequence 還是無法完全拆開
+
+你這次比以前正常→攻擊→sham 永遠固定順序進步很多。
+
+五個 episode cyclic Latin square，讓每個 episode 在五個 ordinal position 各出現一次。
+
+這是合理的。
+
+但是只有：
+
+一個 boot 對一個 sequence。
+
+所以 sequence effect 和 boot effect 沒有 replication。
+
+尤其很巧的是，你最差的 boot：
+
+e1275...
+
+就是 sequence 3。
+
+它的 recall 只有 83.75%。
+
+目前你不能區分：
+
+是這個 boot 本身 timing distribution 比較特殊，
+
+還是：
+
+該 episode ordering / experiment timing 造成。
+
+你的 protocol 自己寫「不能消除所有 higher-order order effects」是誠實的。
+
+投稿版本如果要更強，應讓每個 sequence 有多個 independent boots。
+
+11. 0% unloaded FPR 很漂亮，但不要把它理解成「正常情形幾乎不會誤報」
+
+目前真正能說的是：
+
+在這 5 個 VM boots、這些 workload、固定 directory configuration 下，900 個 unloaded test batches 沒有 security false positive。
+
+這是好結果。
+
+但 D6-r2 固定：
+
+128 visible files；
+filename length 32；
+hidden slot middle；
+同一 VM；
+同一 kernel；
+同一 CARAXES family。
+
+而且 sham test 只有：
+
+baseline
+CPU
+
+跟 sham calibration 的 workload 類型相同。
+
+沒有：
+
+memory sham；
+mixed sham。
+
+因此 Track A 問的是：
+
+正常 workload + hook 成本造成的誤報
+
+卻沒有完整驗證：
+
+sham + memory
+sham + mixed
+
+這是很明顯的缺 cell。
+
+我會優先補。
+
+12. max + 0.01 threshold 現在可以用，但不是一個很成熟的 statistical calibration
+
+現在 security threshold：
+
+calibration 中所有 clean + sham projection 最大值 + 0.01。
+
+優點是簡單、完全 pre-specified。
+
+但缺點很明顯：
+
+threshold 會強烈受：
+
+calibration sample size；
+一個 extreme sample；
+boot noise
+
+影響。
+
+而你已經看到了：
+
+最差 boot 的 high-context threshold 變高，CPU/mixed attacks 就開始大量漏掉。
+
+所以 D6-r2 的 failure mechanism 其實非常清楚：
+
+高 context calibration
+→ security threshold 高
+→ attack / benign overlap
+→ false negative
+→ security-negative attack 進 W50
+→ contamination
+
+這條因果鏈是合理的。
+
+Track B 下一步提 quantile / conformal + quarantine，方向也合理。
+
+而 2026 的 Le 等人確實研究了「normal drift 與 attack 分離後選擇性更新」這類問題，並強調 blind adaptation 會讓 attack data 污染 model。雖然領域是 smart buildings，不是 rootkit timing，所以它支持的是一般研究邏輯而非直接 prior art。
+
+更早的 online anomaly-detection poisoning 文獻也早已證明，未受控 online adaptation 確實存在 adversarial contamination 問題。
+
+所以 Track B 的問題也是成立的。
+
+13. Track B 現在不能當「成功方法論文」，這份包判斷得對
+
+這點我同意 package 的自我判斷。
+
+Proposed：
+
+attack update = 6.25%
+worst boot = 16.25%
+max window attack fraction = 47.92%
+operational workload-drift recall = 6.83%
+
+這不是安全線上自適應已解決。
+
+尤其最核心的事實是：
+
+security-positive → reject update
+security-negative → 不管 operational 是 drift 還 normal，都更新。
+
+所以 operational detector 根本沒有保護更新 eligibility。
+
+它只是分類後仍照樣更新。
+
+因此目前 Track B 真正證明的是：
+
+blind update 很危險；一個 security gate 可以減少污染，但只要 false negative attack 還能更新，污染仍會累積。
+
+這是一個好的negative result / problem characterization。
+
+但不是完成的 adaptive detector。
+
+package 在這部分沒有過度吹噓，是對的。
+
+14. 有一個「研究敘事」上的問題：Track A 是 D6 FAIL 後重新聚焦
+
+這件事不等於不合法，但論文要說清楚。
+
+D6-r2 protocol 的整體目標原本同時包含：
+
+recall；
+FPR；
+contamination；
+safe update；
+F1；
+cross-boot；
+等等。
+
+最後：
+
+15 個 efficacy rules 只 PASS 9 個。
+
+所以：
+
+method_efficacy_pass = false
+
+是正確的。
+
+Track A 現在是從這個 failed multi-goal experiment 中，把：
+
+低 FPR / security factorization
+
+獨立拉出來變主稿。
+
+問題在於它不是完全事後才發現的新 endpoint——FPR、sham FPR、F1 都本來就在 preregistration 裡。
+
+所以不是典型 HARKing。
+
+但你仍不能寫：
+
+D6-r2 confirmed the proposed method.
+
+因為 preregistered 整體判定就是 FAIL。
+
+比較正確：
+
+D6-r2 failed the overall preregistered efficacy criterion, while providing positive evidence for a subset of prespecified low-false-positive endpoints.
+
+而且其中兩個預設的 FPR superiority criterion 其實也 FAIL：
+
+要比 fixed OAS unloaded FPR 至少降低 10 percentage points；
+paired CI 上界 ≤ −5 points。
+
+實際只有：
+
+6.22 points reduction，CI 到 −3.44。
+
+所以連 Track A 都不能說：
+
+所有事前設定的低誤報 superiority criteria 都成功。
+
+這一點稿子應該非常明確。
+
+15. 你現在的「benchmark correction」反而是很有價值的研究部分
+
+這部分我認為比你可能想像中更重要。
+
+原 Trace of the Times 論文自己承認：
+
+rootkit 與 normal batches 的 event count 有差異，而且這甚至可以形成 trivial rootkit detection shortcut。
+
+你現在：
+
+修掉 CARAXES 提前停止 enumeration；
+保持 visible output 正確；
+強制每 iteration 都驗證 listing；
+iterate_dir role composition 都固定；
+exact output 2300/2300 PASS；
+lost events 0；
+
+這是在處理一個非常典型的 benchmark confound。
+
+不是單純「改一個 return true」。
+
+如果原先 timing detector 的訊號混入：
+
+enumeration 提前中止 / call composition 改變
+
+那修正它是必要的。
+
+只是論文要把它定位成：
+
+measurement validity / benchmark deconfounding
+
+而不是「我修了一個程式 bug所以是一篇研究」。
+
+前者有研究價值。
+
+後者沒有。
+
+16. review package 本身目前還不能算完全可重現
+
+這是我實際執行後發現的。
+
+我嘗試跑包裡的 tests。
+
+即使把：
+
+scripts 和 src
+
+加入 PYTHONPATH，仍然會失敗，因為 package 缺：
+
+analyze_d4_qualification.py
+
+以及分析流程需要的：
+
+d4_context_axis.py
+
+除此之外 run_d6_r2_campaign.py 還 import：
+
+collect_d4_batch.py
+run_campaign.py
+run_d4_sham_control.py
+
+也沒有放進 review package。
+
+而 analysis_lock.json 本身明明有鎖：
+
+extractor hash；
+context_axis hash；
+
+只是檔案沒附。
+
+所以目前狀況是：
+
+結果數字可以從 predictions.csv 獨立驗證；部分 frozen code hash 可以驗證；但不能從這個 ZIP 完整重新執行 D6 analysis pipeline。
+
+另外 2,300 個 raw gzip batches 也沒附。
+
+所以外部 reviewer 無法真正：
+
+raw → features → predictions → report
+
+全程重跑。
+
+如果這是給老師看，大概沒問題。
+
+如果你想把它叫：
+
+reproducibility package
+
+那還不夠。
+
+17. Track A 最合理的結論應該收窄成這樣
+
+我不建議現在寫：
+
+我們證明 negative-control factorization 能有效偵測 Rootkit，並解決 timing detector 的 false positive 問題。
+
+太大。
+
+目前證據真正支持的是：
+
+在單一 VM/kernel、CARAXES-like filldir file-hiding 與受控目錄/工作負載下，使用 pass-through negative-control calibration 的 security gate，可明顯降低此 benchmark 中一般 timing-shift detector 將 unloaded 與 sham 狀態誤判為 Rootkit 的情形，同時保留 93.75% hiding recall。
+
+這句是站得住腳的。
+
+然後再補：
+
+但結果尚未證明對其他合法 hooks、其他 Rootkit implementations、kernel/hardware 或更廣 workload 具有相同 specificity。
+
+這會比誇大更像一篇可信的研究。
+
+最後，我對你這份研究的實際判斷
+
+不是「只是在修 code」，也不是「為了有研究硬湊一個方法」。核心研究問題是真的存在。
+
+尤其因為 Trace of the Times 自己已經把 varying system conditions / false positives 當成 practical limitation，並明確提出跨 system states 等 future work。
+
+而你加入 negative control 的想法，從實驗設計角度是有道理的，也確實得到了一個值得研究的現象。
+
+但是目前最需要修正的不是再把 F1 從 0.967 拉到 0.98。
+
+而是證明：
+
+你偵測到的真的比「有一個比 sham 稍微複雜一點的 hook」更接近 hiding-specific evidence。
+
+如果把下一輪集中在下面四件事，整個研究會扎實很多：
+
+matched 5-hook sham + active-logic sham，真正拆掉 hook / strstr / hiding 三種成本。
+equal-information ablation/comparator，排除成果只是因為 proposed 有額外 sham calibration 和 per-boot threshold。
+補 sham × memory/mixed，並增加獨立 boots，而不是增加同 boot batches。
+全新 validation set 再驗證，不再用 D6 調完後回頭宣稱 confirmatory。
+
+如果這四個做完仍維持目前這種 ≈94% recall + 接近 0 的 benign FPR，那 Track A 就不只是「畢專有結果」，而會變成一個因果控制、benchmark validity、低誤報 specificity 都講得通的完整研究故事。

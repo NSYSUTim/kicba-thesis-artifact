@@ -1,0 +1,13 @@
+{
+  "status": "D4_exploratory_proc_stat_context_guard",
+  "warning": "D4 development only; 5% margin must be frozen before D5.",
+  "feature": "first_raw_median",
+  "context": "cpu_busy_fraction from /proc/stat",
+  "fit": {
+    "intercept": 11.490894657293293,
+    "slope": 0.357395823327968,
+    "threshold": 0.28319181588425113
+  },
+  "attack_labels_used_for_fit_or_threshold": false,
+  "experimental_condition_label_used_for_prediction": false
+}

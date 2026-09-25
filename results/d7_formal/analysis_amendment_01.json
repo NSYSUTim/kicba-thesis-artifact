@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "amendment": "D7-r1-input-layout-erratum-01",
+  "created_before_efficacy_analysis": true,
+  "reason": "The locked audit and analysis select directories with startswith('boot_'), while the locked collector creates sibling boot_XX_fixture workload directories. The first audit therefore treated fixtures as additional boots and failed before efficacy analysis ran.",
+  "first_audit_status": "FAIL preserved",
+  "allowed_change": "Create a byte-identical canonical input view containing only exact boot_01 through boot_08 directories.",
+  "forbidden_changes": [
+    "raw_r1 source records",
+    "locked audit program",
+    "locked analysis program",
+    "features",
+    "decision rule",
+    "timing comparator",
+    "metrics",
+    "thresholds",
+    "success rules"
+  ],
+  "canonical_input_directories": [
+    "boot_01",
+    "boot_02",
+    "boot_03",
+    "boot_04",
+    "boot_05",
+    "boot_06",
+    "boot_07",
+    "boot_08"
+  ],
+  "excluded_non_record_directories": [
+    "boot_01_fixture",
+    "boot_02_fixture",
+    "boot_03_fixture",
+    "boot_04_fixture",
+    "boot_05_fixture",
+    "boot_06_fixture",
+    "boot_07_fixture",
+    "boot_08_fixture"
+  ],
+  "hashes_before_analysis": {
+    "original_analysis_lock": "2c09f3b3db45b4ce9f06da02849a5c318e6981f4805dc3d934edae14c12fdfc7",
+    "formal_state": "c74f8e3cd2cbfee93f20b24027a28b1aed8642ba68c7dbd54deeb21f59e8b130",
+    "preserved_first_failed_audit": "098a056f4f20bbb1889840f466062939e18db8469139d1fa884307aedd9132fb",
+    "canonical_view_preparer": "8bd1cfd015bc3e44aaaefa3b0f229a29b80e9c316a1f04505aebd7bc36e24d8a",
+    "canonical_view_tests": "68a2160ad16e17cd05ca690931135438e24c10cffdb319b90e2cb3362c74013d",
+    "erratum_document": "bd55766ee6a3a2099b5a29c2476e115714e889df5a5f08799172e01605616629",
+    "unchanged_locked_audit": "be6873f8c128dcd40a31dd221c44b17d55c56a4561edfd959bfc7c57c1c2d550",
+    "unchanged_locked_analysis": "a79d486dcead76484075fee3be585ee35e531b8aea4776db9ce504439cd3f43d"
+  },
+  "required_sequence": [
+    "canonical-view regression tests PASS",
+    "create canonical view and verify complete per-file SHA-256 inventory",
+    "run unchanged locked audit against canonical view",
+    "only if audit PASS, run unchanged locked analysis exactly once"
+  ],
+  "planned_outputs": {
+    "canonical_view": "results/d7_formal/raw_r1_canonical",
+    "canonical_manifest": "results/d7_formal/canonical_view_manifest.json",
+    "audit": "results/d7_formal/audit_r1_canonical",
+    "confirmatory": "results/d7_formal/confirmatory_r1"
+  }
+}

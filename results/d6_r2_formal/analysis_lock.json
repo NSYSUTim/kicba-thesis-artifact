@@ -1,0 +1,162 @@
+{
+  "protocol_revision": "D6-r2-2026-09-20",
+  "locked_before_collection": true,
+  "supersedes": "D6-r1 aborted before efficacy analysis because design and implementation were inconsistent",
+  "method": {
+    "security_features": [
+      "first_raw_median",
+      "first_div_last_raw_median"
+    ],
+    "feature_space": "natural log",
+    "context_split": "largest clean+sham calibration CPU-busy gap; minimum 0.20",
+    "security_axis": "clean centroid to sham centroid unit vector per context stratum",
+    "security_threshold": "maximum clean+sham projection plus 0.01 log-unit",
+    "security_threshold_adaptation": false,
+    "rootkit_alert": "security gate only",
+    "operational_feature": "first_raw_median",
+    "operational_threshold": "maximum context-specific clean calibration ratio times 1.01",
+    "operational_window": 50,
+    "operational_windows_per_context": true,
+    "classification": "security -> attack; else operational -> drift; else normal",
+    "prediction_order": "predict before update",
+    "guarded_update": "accept into operational W50 iff security gate is negative",
+    "unknown_class": false
+  },
+  "counterbalance": {
+    "design": "five-episode cyclic Latin square across five boots",
+    "base_episode_order": [
+      "normal_early",
+      "normal_workloads",
+      "attack",
+      "recovery",
+      "sham_control"
+    ],
+    "attack_episode_batches": 160,
+    "attack_episode_contiguous": true,
+    "each_episode_occupies_each_ordinal_once": true
+  },
+  "public_baselines": {
+    "quantiles": [0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9],
+    "intervals": ["first_iterate_dir", "last_iterate_dir"],
+    "distance": "maximum interval Mahalanobis squared distance",
+    "initial_clean_batches": 50,
+    "blind_window": 50,
+    "thresholds_frozen_from_D5_development": {
+      "fixed_public_empirical": 28.17319410417818,
+      "blind_public_empirical_w50": 2.6102339930684484,
+      "fixed_public_oas": 20.146773583634662,
+      "blind_public_oas_w50": 0.8825466351416513
+    },
+    "primary_fixed_comparator": "fixed_public_oas",
+    "primary_blind_comparator": "blind_public_oas_w50"
+  },
+  "collection": {
+    "boots": 5,
+    "seeds": [9701, 9702, 9703, 9704, 9705],
+    "batches_per_boot": 460,
+    "calibration_batches_per_boot": 100,
+    "test_batches_per_boot": 360,
+    "test_state_counts_per_boot": {
+      "unloaded": 180,
+      "hiding": 160,
+      "sham": 20
+    },
+    "iterations_per_batch": 20,
+    "visible_cardinality": 128,
+    "filename_length": 32,
+    "hidden_slot": "middle"
+  },
+  "metric_definitions": {
+    "attack_recall": "security alerts / hiding batches",
+    "unloaded_normal_fpr": "security alerts / unloaded batches",
+    "sham_fpr": "security alerts / sham batches",
+    "non_attack_fpr": "security alerts / (unloaded + sham) batches",
+    "operational_endpoints": "secondary and not part of primary efficacy rules"
+  },
+  "success_rules": {
+    "five_unique_boots": true,
+    "proposed_recall_min": 0.95,
+    "min_boot_recall_min": 0.90,
+    "unloaded_normal_fpr_max": 0.05,
+    "sham_fpr_max": 0.20,
+    "max_boot_sham_fpr_max": 0.30,
+    "attack_update_rate_max": 0.05,
+    "unloaded_update_rate_min": 0.95,
+    "max_window_attack_fraction_max": 0.20,
+    "unknown_rate": 0.0,
+    "f1_margin_vs_fixed_oas_min": 0.05,
+    "unloaded_fpr_reduction_vs_fixed_oas_min": 0.10,
+    "paired_unloaded_fpr_difference_ci_upper_max": -0.05,
+    "paired_recall_difference_ci_lower_min": -0.05,
+    "contamination_reduction_vs_blind_oas_min": 0.50,
+    "deployment_operation_latency_overhead_max": 0.05
+  },
+  "module_hashes": {
+    "hiding": "574fbd9ad7926b1eff0cc8f8452052df246ff8a9aabfddfb59f15c9c289b6445",
+    "sham": "0c36b9a40d30b4778fc304be5bc2b4d4a65c65f382982c59f7eef1bf93cbd2b2"
+  },
+  "files": {
+    "collector": {
+      "path": "collector/collect_d4_aggregate_batch.py",
+      "sha256": "a147f50574e02b1d6b7a2415e315dca40713e8c40ff2f4ddb812adb42deba60a"
+    },
+    "bpf": {
+      "path": "collector/bpf_d4_aggregate.c",
+      "sha256": "2a26164c948805e749045ee7d9c19c53925f89bae9b260a04f472e7d9ebe9c80"
+    },
+    "campaign_runner": {
+      "path": "collector/run_d6_r2_campaign.py",
+      "sha256": "8c0001f690f683aa341e1a02976d13c14d7a5169f4e5504c87487ea702d535de"
+    },
+    "multiboot_runner": {
+      "path": "collector/run_d6_r2_multiboot.py",
+      "sha256": "e2b927d6b7f5b2717edb2b02693798109b767d115df287f40f41b7645864dd44"
+    },
+    "extractor": {
+      "path": "scripts/analyze_d4_qualification.py",
+      "sha256": "584767738026b34a47beb6517f44898c4558ee33eb4f8ba88a0729af901cd790"
+    },
+    "context_axis": {
+      "path": "scripts/d4_context_axis.py",
+      "sha256": "f8e0428a2745aae9d7c0ab6b508ac700bb8ab1dea1c6dafcb16deddedbf41b4f"
+    },
+    "public_detector": {
+      "path": "src/kicba/detector.py",
+      "sha256": "25b595abfdcce301afcdec4970e039a1844e4fcb44710b99ddced455c51223f2"
+    },
+    "analysis_core": {
+      "path": "scripts/d6_r2_analysis_core.py",
+      "sha256": "4fe1c61ca58de14ae0ec92b875882b00b2face7328d575fec201c9a3ea68aba1"
+    },
+    "generic_audit": {
+      "path": "scripts/audit_d4_raw.py",
+      "sha256": "c731294a02c82e417ac42b3a20b3bb73da67423a5483f92c1072c86791aacbd9"
+    },
+    "d6_r2_audit": {
+      "path": "scripts/audit_d6_r2.py",
+      "sha256": "2f3248bbc77b20f0ce708c5fa80e2f17427525acada1e19137cdb7ad738e3aa1"
+    },
+    "analysis": {
+      "path": "scripts/run_d6_r2_locked_analysis.py",
+      "sha256": "f5345419d908d5f8884419eb91030c23c31acb8fcfd42a913f42da9ee5717dfd"
+    },
+    "d6_r2_tests": {
+      "path": "tests/test_d6_r2.py",
+      "sha256": "5485d0934c718f3415626ebd95f0aaaeda05e5e248c70470e137de9e7cda778b"
+    },
+    "service": {
+      "path": "vm/kicba-d6-r2-multiboot.service",
+      "sha256": "d95ae08d33fd8bbd4260fb7c5a9f81423629f5c9bd6fb6202d15a137558aa42e"
+    },
+    "protocol_document": {
+      "path": "docs/D6_R2_CONFIRMATORY_PROTOCOL_zh-TW.md",
+      "sha256": "d8785c7220d2cd4fefab0c31f8c59d8025a9a5792d09caa7537a3b248435e455"
+    }
+  },
+  "analysis_sequence": [
+    "scripts/audit_d4_raw.py",
+    "scripts/audit_d6_r2.py",
+    "scripts/run_d6_r2_locked_analysis.py exactly once"
+  ],
+  "post_lock_policy": "Do not modify features, thresholds, W50, classification, update rule, episode order, metric denominators, success rules, or analysis after D6-r2 collection starts. Preserve failures unchanged."
+}

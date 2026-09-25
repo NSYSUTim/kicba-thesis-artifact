@@ -1,0 +1,13 @@
+[Unit]
+Description=KICBA D6 frozen five-boot collection
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/kicba/kicba
+ExecStart=/usr/bin/python3 /home/kicba/kicba/collector/run_d6_multiboot.py --state /home/kicba/d6_formal/r1_state.json --output-root /home/kicba/d6_formal/r1 --project-root /home/kicba/kicba --sham-ko /home/kicba/caraxes_sham/caraxes_sham.ko --hiding-ko /home/kicba/caraxes_continue/caraxes.ko --isolated-vm-ack I_UNDERSTAND_THIS_LOADS_A_ROOTKIT_IN_AN_ISOLATED_VM
+StandardOutput=append:/home/kicba/d6_formal/service.log
+StandardError=append:/home/kicba/d6_formal/service.log
+
+[Install]
+WantedBy=multi-user.target

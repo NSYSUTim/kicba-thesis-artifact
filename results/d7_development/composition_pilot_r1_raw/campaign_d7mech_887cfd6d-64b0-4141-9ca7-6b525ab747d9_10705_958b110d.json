@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "protocol_revision": "D7-composition-pilot-r1-2026-09-21",
+  "evidence_role": "composition_pilot_not_confirmatory",
+  "status": "complete",
+  "campaign_id": "d7mech_887cfd6d-64b0-4141-9ca7-6b525ab747d9_10705_958b110d",
+  "boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+  "created_utc": "2026-09-21T06:16:00.830574+00:00",
+  "seed": 10705,
+  "iterations": 20,
+  "expected_batches": 48,
+  "states": [
+    "unloaded",
+    "pass",
+    "active",
+    "hiding"
+  ],
+  "conditions": [
+    "baseline",
+    "cpu",
+    "memory",
+    "mixed"
+  ],
+  "replicates_per_cell": 3,
+  "fixture": "/home/kicba/d7_development/composition_pilot_r1_fixture",
+  "fixture_device": 2050,
+  "fixture_inode": 2896741,
+  "fixture_creation_order_sha256": "be241da2e10718e1f88e67437fa0424c7adbdcf45388610d712cf1856874e513",
+  "fixture_hidden_creation_index": 64,
+  "hidden_name": "sample_caraxes_hidden_0000_xxxxx",
+  "cardinality": 128,
+  "filename_length": 32,
+  "module_sha256": {
+    "pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c"
+  },
+  "collector_sha256": "9c7c9a7c14ce8ee60b5a95f682a23f1305c8c7ff02a548c5db403bdb9c333370",
+  "base_collector_sha256": "b307370e0952be968c40c1de3bff7f3c0e109f7e315492c7b93ff2cc2143653c",
+  "bpf_source_sha256": "561cf34c0dfcff45812ce3552b91ca6b7d60d4399ed520cff3114606ecd44954",
+  "runner_sha256": "08c7f587c5b9593ec279a75a1343d56365abe314fbd6bf4e4ada94bb1ae99651",
+  "schedule": [
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061609.905259Z_31290571.json.gz",
+      "position": 0,
+      "completed_utc": "2026-09-21T06:16:09.955356+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061613.528326Z_2bd449be.json.gz",
+      "position": 1,
+      "completed_utc": "2026-09-21T06:16:13.572176+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061616.653254Z_fb7ca4b9.json.gz",
+      "position": 2,
+      "completed_utc": "2026-09-21T06:16:16.708997+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061620.222663Z_788d43b8.json.gz",
+      "position": 3,
+      "completed_utc": "2026-09-21T06:16:20.267544+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061623.484491Z_d24f7643.json.gz",
+      "position": 4,
+      "completed_utc": "2026-09-21T06:16:23.533996+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061627.820163Z_99888185.json.gz",
+      "position": 5,
+      "completed_utc": "2026-09-21T06:16:27.885716+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061637.916205Z_24002d23.json.gz",
+      "position": 6,
+      "completed_utc": "2026-09-21T06:16:37.969073+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061648.005587Z_ce451917.json.gz",
+      "position": 7,
+      "completed_utc": "2026-09-21T06:16:48.060335+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061657.684262Z_d57566c5.json.gz",
+      "position": 8,
+      "completed_utc": "2026-09-21T06:16:57.729934+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061701.756570Z_7d33be46.json.gz",
+      "position": 9,
+      "completed_utc": "2026-09-21T06:17:01.811560+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061711.716299Z_afc01d0a.json.gz",
+      "position": 10,
+      "completed_utc": "2026-09-21T06:17:11.766511+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061721.595712Z_3a7777a0.json.gz",
+      "position": 11,
+      "completed_utc": "2026-09-21T06:17:21.618714+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061729.398426Z_8cdafa2b.json.gz",
+      "position": 12,
+      "completed_utc": "2026-09-21T06:17:29.464734+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061739.346701Z_5d532db5.json.gz",
+      "position": 13,
+      "completed_utc": "2026-09-21T06:17:39.397744+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061749.308725Z_a81cdeae.json.gz",
+      "position": 14,
+      "completed_utc": "2026-09-21T06:17:49.363065+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061759.770636Z_74696737.json.gz",
+      "position": 15,
+      "completed_utc": "2026-09-21T06:17:59.828471+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061810.283231Z_700af417.json.gz",
+      "position": 16,
+      "completed_utc": "2026-09-21T06:18:10.343352+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061814.287165Z_3a4414e7.json.gz",
+      "position": 17,
+      "completed_utc": "2026-09-21T06:18:14.338163+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061818.913290Z_bff5a11b.json.gz",
+      "position": 18,
+      "completed_utc": "2026-09-21T06:18:18.976165+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061828.754222Z_8498cd3e.json.gz",
+      "position": 19,
+      "completed_utc": "2026-09-21T06:18:28.808174+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061833.507634Z_b0deba10.json.gz",
+      "position": 20,
+      "completed_utc": "2026-09-21T06:18:33.558775+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061843.353419Z_dd663010.json.gz",
+      "position": 21,
+      "completed_utc": "2026-09-21T06:18:43.405905+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061846.398196Z_6d439483.json.gz",
+      "position": 22,
+      "completed_utc": "2026-09-21T06:18:46.450804+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061850.175289Z_bd07f3a5.json.gz",
+      "position": 23,
+      "completed_utc": "2026-09-21T06:18:50.227934+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061859.932648Z_c70c211b.json.gz",
+      "position": 24,
+      "completed_utc": "2026-09-21T06:18:59.982518+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061904.629281Z_43ca6959.json.gz",
+      "position": 25,
+      "completed_utc": "2026-09-21T06:19:04.708031+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061914.412762Z_65c25249.json.gz",
+      "position": 26,
+      "completed_utc": "2026-09-21T06:19:14.477564+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061923.656187Z_d4081c81.json.gz",
+      "position": 27,
+      "completed_utc": "2026-09-21T06:19:23.699390+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061928.370272Z_01303260.json.gz",
+      "position": 28,
+      "completed_utc": "2026-09-21T06:19:28.416099+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061931.669309Z_8d0e94ae.json.gz",
+      "position": 29,
+      "completed_utc": "2026-09-21T06:19:31.718540+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061936.362211Z_8dfe7cc8.json.gz",
+      "position": 30,
+      "completed_utc": "2026-09-21T06:19:36.408812+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061939.900235Z_06377f79.json.gz",
+      "position": 31,
+      "completed_utc": "2026-09-21T06:19:39.952052+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061949.602246Z_ff2e4b56.json.gz",
+      "position": 32,
+      "completed_utc": "2026-09-21T06:19:49.655510+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T061959.227220Z_b0d35ac7.json.gz",
+      "position": 33,
+      "completed_utc": "2026-09-21T06:19:59.281507+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062002.150359Z_31058f9d.json.gz",
+      "position": 34,
+      "completed_utc": "2026-09-21T06:20:02.197426+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062011.992383Z_e2f75853.json.gz",
+      "position": 35,
+      "completed_utc": "2026-09-21T06:20:12.038493+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062021.513270Z_ceeb0925.json.gz",
+      "position": 36,
+      "completed_utc": "2026-09-21T06:20:21.559282+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062025.892241Z_e5b588d1.json.gz",
+      "position": 37,
+      "completed_utc": "2026-09-21T06:20:25.946484+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062030.697170Z_ab4e7579.json.gz",
+      "position": 38,
+      "completed_utc": "2026-09-21T06:20:30.754215+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062033.735650Z_6d3682ae.json.gz",
+      "position": 39,
+      "completed_utc": "2026-09-21T06:20:33.783198+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062043.698574Z_86b17228.json.gz",
+      "position": 40,
+      "completed_utc": "2026-09-21T06:20:43.751775+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062048.239672Z_7d12d6c4.json.gz",
+      "position": 41,
+      "completed_utc": "2026-09-21T06:20:48.285366+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062052.286500Z_613af6ae.json.gz",
+      "position": 42,
+      "completed_utc": "2026-09-21T06:20:52.333520+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062101.933446Z_73b6c13c.json.gz",
+      "position": 43,
+      "completed_utc": "2026-09-21T06:21:01.980984+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062111.969340Z_dc4452d3.json.gz",
+      "position": 44,
+      "completed_utc": "2026-09-21T06:21:12.024555+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062121.822583Z_8cfc6546.json.gz",
+      "position": 45,
+      "completed_utc": "2026-09-21T06:21:21.871130+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062124.884325Z_522113aa.json.gz",
+      "position": 46,
+      "completed_utc": "2026-09-21T06:21:24.929995+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/composition_pilot_r1/batch_20260921T062129.370265Z_e248a04b.json.gz",
+      "position": 47,
+      "completed_utc": "2026-09-21T06:21:29.415049+00:00"
+    }
+  ],
+  "completed_utc": "2026-09-21T06:21:29.919204+00:00"
+}

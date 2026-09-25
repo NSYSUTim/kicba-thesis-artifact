@@ -1,0 +1,6 @@
+boot_id,method,attack_n,attack_recall,unloaded_n,unloaded_normal_fpr,sham_n,sham_fpr,non_attack_n,non_attack_fpr,f1,attack_update_rate,unloaded_update_rate,sham_update_rate,benign_update_rate,max_window_attack_fraction,unknown_rate,operational_workload_drift_recall,operational_baseline_drift_fpr,min_boot_attack_recall,max_boot_sham_fpr
+ALL,blind_public_empirical_w50,800,0.9,900,0.8944444444444445,100,1.0,1000,0.905,0.5938144329896907,1.0,1.0,1.0,1.0,1.0,0.0,nan,nan,0.80625,1.0
+ALL,blind_public_oas_w50,800,0.9575,900,0.94,100,0.94,1000,0.94,0.6113328012769355,1.0,1.0,1.0,1.0,1.0,0.0,nan,nan,0.8875,1.0
+ALL,fixed_public_empirical,800,0.88875,900,0.23,100,0.69,1000,0.276,0.795747062115277,0.0,0.0,0.0,0.0,0.0,0.0,nan,nan,0.44375,1.0
+ALL,fixed_public_oas,800,0.47375,900,0.06222222222222222,100,0.11,1000,0.067,0.608346709470305,0.0,0.0,0.0,0.0,0.0,0.0,nan,nan,0.23125,0.25
+ALL,proposed_factorized_guard_w50,800,0.9375,900,0.0,100,0.01,1000,0.001,0.9671179883945842,0.0625,1.0,0.99,0.999,0.4791666666666667,0.0,0.06833333333333333,0.11666666666666667,0.8375,0.05

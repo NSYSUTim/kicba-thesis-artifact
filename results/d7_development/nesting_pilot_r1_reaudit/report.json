@@ -1,0 +1,88 @@
+{
+  "protocol": "D7-nesting-development-r1-2026-09-21",
+  "status": "PASS",
+  "failures": [],
+  "evidence_role": "single_boot_development_pilot_not_confirmatory",
+  "feature_leakage_check": {
+    "uses_userspace_entry_count": false,
+    "uses_filename_or_magic_word": false,
+    "uses_module_identity": false,
+    "uses_attack_label": false,
+    "decision_inputs": [
+      "forwarded_top_calls",
+      "short_circuit_top_calls"
+    ]
+  },
+  "decision_rule": "alert iff forwarded_top_calls > 0 and short_circuit_top_calls > 0 within one listing",
+  "state_metrics": {
+    "unloaded": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "top_level_calls_values": [
+        131
+      ],
+      "forwarded_top_calls_values": [
+        0
+      ],
+      "short_circuit_top_calls_values": [
+        131
+      ],
+      "max_depth_values": [
+        1
+      ]
+    },
+    "pass": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "top_level_calls_values": [
+        131
+      ],
+      "forwarded_top_calls_values": [
+        131
+      ],
+      "short_circuit_top_calls_values": [
+        0
+      ],
+      "max_depth_values": [
+        2
+      ]
+    },
+    "active": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "top_level_calls_values": [
+        131
+      ],
+      "forwarded_top_calls_values": [
+        131
+      ],
+      "short_circuit_top_calls_values": [
+        0
+      ],
+      "max_depth_values": [
+        2
+      ]
+    },
+    "hiding": {
+      "batches": 12,
+      "alert_rate": 1.0,
+      "top_level_calls_values": [
+        131
+      ],
+      "forwarded_top_calls_values": [
+        130
+      ],
+      "short_circuit_top_calls_values": [
+        1
+      ],
+      "max_depth_values": [
+        2
+      ]
+    }
+  },
+  "hiding_recall": 1.0,
+  "active_fpr": 0.0,
+  "pass_fpr": 0.0,
+  "unloaded_fpr": 0.0,
+  "scope": "Detects selective short-circuiting in a same-symbol wrapper path; it is not a universal rootkit detector."
+}

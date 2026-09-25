@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "protocol_revision": "D6-r2-2026-09-20",
+  "created_utc": "2026-09-20T08:32:59.536461+00:00",
+  "total_boots": 5,
+  "next_sequence": 6,
+  "status": "complete",
+  "completed_boots": [
+    {
+      "sequence": 1,
+      "boot_id": "812b4ab4-a286-4405-9614-20804cdb1ca4",
+      "seed": 9701,
+      "batches": 460,
+      "manifest": "/home/kicba/d6_formal/r2/boot_01/campaign_d6r2_812b4ab4-a286-4405-9614-20804cdb1ca4_9701_24913cbd.json",
+      "completed_utc": "2026-09-20T09:16:33.568205+00:00"
+    },
+    {
+      "sequence": 2,
+      "boot_id": "b9d1d4a9-5661-4a35-aec7-79b6fdaa703b",
+      "seed": 9702,
+      "batches": 460,
+      "manifest": "/home/kicba/d6_formal/r2/boot_02/campaign_d6r2_b9d1d4a9-5661-4a35-aec7-79b6fdaa703b_9702_fd1dfd48.json",
+      "completed_utc": "2026-09-20T09:58:01.492775+00:00"
+    },
+    {
+      "sequence": 3,
+      "boot_id": "e1275f44-59b6-41ca-8780-f54220a9a565",
+      "seed": 9703,
+      "batches": 460,
+      "manifest": "/home/kicba/d6_formal/r2/boot_03/campaign_d6r2_e1275f44-59b6-41ca-8780-f54220a9a565_9703_66867d38.json",
+      "completed_utc": "2026-09-20T10:39:11.839780+00:00"
+    },
+    {
+      "sequence": 4,
+      "boot_id": "1e673d62-53d4-4be9-b2cd-fb83808bb286",
+      "seed": 9704,
+      "batches": 460,
+      "manifest": "/home/kicba/d6_formal/r2/boot_04/campaign_d6r2_1e673d62-53d4-4be9-b2cd-fb83808bb286_9704_1fbb17c4.json",
+      "completed_utc": "2026-09-20T11:19:37.794213+00:00"
+    },
+    {
+      "sequence": 5,
+      "boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+      "seed": 9705,
+      "batches": 460,
+      "manifest": "/home/kicba/d6_formal/r2/boot_05/campaign_d6r2_887cfd6d-64b0-4141-9ca7-6b525ab747d9_9705_b0ed3801.json",
+      "completed_utc": "2026-09-20T12:00:34.631919+00:00"
+    }
+  ],
+  "multiboot_runner_sha256": "e2b927d6b7f5b2717edb2b02693798109b767d115df287f40f41b7645864dd44",
+  "campaign_runner_sha256": "8c0001f690f683aa341e1a02976d13c14d7a5169f4e5504c87487ea702d535de",
+  "active_sequence": 5,
+  "active_boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+  "active_seed": 9705,
+  "active_started_utc": "2026-09-20T11:19:54.570624+00:00",
+  "completed_utc": "2026-09-20T12:00:34.631961+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "D4_posthoc_sham_control",
+  "warning": "One boot and one batch per state/cell are mechanism diagnostics, not a confirmatory detector evaluation.",
+  "batches": 36,
+  "factor_cells": 12,
+  "states": [
+    "unloaded",
+    "sham",
+    "hiding"
+  ]
+}

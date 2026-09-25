@@ -1,0 +1,15 @@
+{
+  "status": "D4_exploratory_same_inode_pilot",
+  "warning": "One fixture and one boot; condition_oracle uses experimental load labels.",
+  "boot_id": "48c03e11-137a-4048-98c3-210b601631e0",
+  "batches": 60,
+  "calibration_batches": 24,
+  "test_batches": 36,
+  "normal_only_calibration": true,
+  "threshold_quantile": 0.95,
+  "features": [
+    "first_raw_q10",
+    "first_raw_median"
+  ],
+  "primary_mode": "pooled"
+}

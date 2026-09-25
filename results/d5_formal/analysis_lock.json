@@ -1,0 +1,44 @@
+{
+  "protocol_revision": "D5-r1-2026-09-19",
+  "locked_before_collection": true,
+  "method": {
+    "window": 20,
+    "security_features": ["first_raw_median", "first_div_last_raw_median"],
+    "context": "cpu_busy_fraction from /proc/stat",
+    "context_split": "largest calibration CPU-busy gap; minimum gap 0.20",
+    "security_axis": "unit vector from clean centroid to sham centroid in log-feature space, per context stratum",
+    "security_threshold": "maximum benign clean+sham projection plus 0.01 log-unit",
+    "operational_feature": "first_raw_median",
+    "operational_threshold": "maximum low-context clean calibration ratio times 1.01",
+    "prediction_order": "predict then update",
+    "guarded_update": "accept iff security gate does not alert",
+    "unknown_class": false
+  },
+  "success_rules": {
+    "boots": 5,
+    "guarded_recall_min": 0.95,
+    "max_recall_drop_vs_fixed": 0.02,
+    "min_absolute_fpr_reduction_vs_fixed": 0.20,
+    "paired_bootstrap_fpr_difference_ci_upper_max": -0.05,
+    "guarded_attack_update_rate_max": 0.10,
+    "guarded_normal_update_rate_min": 0.90,
+    "max_window_attack_fraction_max": 0.30,
+    "unknown_rate": 0.0,
+    "sham_fpr_max": 0.20,
+    "deployment_operation_latency_overhead_max": 0.05
+  },
+  "module_hashes": {
+    "hiding": "574fbd9ad7926b1eff0cc8f8452052df246ff8a9aabfddfb59f15c9c289b6445",
+    "sham": "0c36b9a40d30b4778fc304be5bc2b4d4a65c65f382982c59f7eef1bf93cbd2b2"
+  },
+  "files": {
+    "collector": {"path": "collector/collect_d4_aggregate_batch.py", "sha256": "a147f50574e02b1d6b7a2415e315dca40713e8c40ff2f4ddb812adb42deba60a"},
+    "bpf": {"path": "collector/bpf_d4_aggregate.c", "sha256": "2a26164c948805e749045ee7d9c19c53925f89bae9b260a04f472e7d9ebe9c80"},
+    "campaign_runner": {"path": "collector/run_d5_campaign.py", "sha256": "8596e3999ade25190b699b26525a43fd6e94576c4343d54e905e8a44b29d2aaa"},
+    "multiboot_runner": {"path": "collector/run_d5_multiboot.py", "sha256": "7bc1c8cff780b3661fd3f7c24a14e356ee329efad99efff08e4d333bd20577a2"},
+    "extractor": {"path": "scripts/analyze_d4_qualification.py", "sha256": "584767738026b34a47beb6517f44898c4558ee33eb4f8ba88a0729af901cd790"},
+    "context_axis": {"path": "scripts/d4_context_axis.py", "sha256": "f8e0428a2745aae9d7c0ab6b508ac700bb8ab1dea1c6dafcb16deddedbf41b4f"},
+    "analysis": {"path": "scripts/run_d5_locked_analysis.py", "sha256": "1f2870d65e20570a2e12ef347ac80c3054da92eb2b0b8de49d9217de72751e6c"},
+    "audit": {"path": "scripts/audit_d4_raw.py", "sha256": "c731294a02c82e417ac42b3a20b3bb73da67423a5483f92c1072c86791aacbd9"}
+  }
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=KICBA D3 isolated six-boot collection
+After=multi-user.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/kicba/kicba
+ExecStart=/usr/bin/python3 /home/kicba/kicba/collector/run_d3_multiboot.py --state /home/kicba/d3_formal/r1_state.json --output-root /home/kicba/d3_formal/r1 --caraxes-ko /opt/kicba/caraxes/caraxes.ko --project-root /home/kicba/kicba --batches-per-cell 30 --iterations 100 --isolated-vm-ack I_UNDERSTAND_THIS_LOADS_A_ROOTKIT_IN_AN_ISOLATED_VM
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target

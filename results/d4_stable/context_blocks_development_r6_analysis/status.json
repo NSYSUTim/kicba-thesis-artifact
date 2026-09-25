@@ -1,0 +1,50 @@
+{
+  "status": "D4_exploratory_dual_timescale_replay",
+  "warning": "Development campaign; W20/W50/W100 are separate sensitivity runs.",
+  "security_feature": "context-stratified clean-to-sham projection",
+  "security_axis_features": [
+    "first_raw_median",
+    "first_div_last_raw_median"
+  ],
+  "security_model": {
+    "context_split": 0.6151456310679612,
+    "strata": {
+      "low": {
+        "origin": [
+          11.467068748687574,
+          4.4203661232410445
+        ],
+        "axis": [
+          0.6387385661858279,
+          0.7694238390294862
+        ],
+        "threshold": 0.4072607282763817,
+        "clean_n": 12,
+        "sham_n": 12
+      },
+      "high": {
+        "origin": [
+          11.730310825170841,
+          4.363400268557811
+        ],
+        "axis": [
+          0.6302498209766814,
+          0.7763924028214476
+        ],
+        "threshold": 0.4201396874464996,
+        "clean_n": 12,
+        "sham_n": 12
+      }
+    }
+  },
+  "operational_feature": "first_raw_median / fixed-or-window median",
+  "attack_labels_used_for_thresholds": false,
+  "security_threshold_rule": "max benign clean+sham projection + 0.01 log-unit",
+  "operational_threshold_rule": "max baseline-clean ratio * 1.01",
+  "windows": [
+    20,
+    50,
+    100
+  ],
+  "experimental_condition_label_used_for_prediction": false
+}

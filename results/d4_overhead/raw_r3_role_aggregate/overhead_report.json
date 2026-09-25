@@ -1,0 +1,423 @@
+{
+  "protocol_revision": "D4-overhead-development-r1-2026-09-19",
+  "status": "complete",
+  "created_utc": "2026-09-19T08:36:35.978919+00:00",
+  "boot_id": "7d9cd8f6-f1b9-4a3a-a784-7b3453a4210d",
+  "seed": 7503,
+  "repeats": 5,
+  "iterations": 20,
+  "profiles": [
+    "role_aggregate"
+  ],
+  "role_poll_policy": "continuous",
+  "collector_sha256": "a5f8d9dd1f5c01f58206e646d9621a5e398ab53769050c84dc52e52ef5cbcb42",
+  "aggregate_collector_sha256": "ff5919fea2de372e9316c3cd2da3ee47758f9865a4acfc48df6a41c9c4121167",
+  "aggregate_bpf_sha256": "2a26164c948805e749045ee7d9c19c53925f89bae9b260a04f472e7d9ebe9c80",
+  "minimal_bpf_sha256": "986bd2a0ff68346cc70949c35b918e59cb8b49703b7ac396b9d673671b80b358",
+  "context_bpf_sha256": "bfdbca99576b8cafb96d4b45bc8211645af6dcdf6dae0c46f0b4d7aed01007bd",
+  "pairs": [
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 0,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 100125956,
+      "instrumented_wall_ns": 115851015,
+      "collector_process_cpu_ns": 23597729,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083637.852832Z_c916d562.json.gz",
+      "wall_overhead_fraction": 0.1570527726097317
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 1,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 113513109,
+      "collector_process_cpu_ns": 21761782,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083639.622660Z_ae2d09b0.json.gz",
+      "control_wall_ns": 96406425,
+      "wall_overhead_fraction": 0.17744340172348472
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 2,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 103077526,
+      "instrumented_wall_ns": 113186229,
+      "collector_process_cpu_ns": 20805750,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083641.563371Z_f0d9c152.json.gz",
+      "wall_overhead_fraction": 0.09806893308634512
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 104298839,
+      "collector_process_cpu_ns": 22110668,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083643.325417Z_57ddbfd0.json.gz",
+      "control_wall_ns": 101884850,
+      "wall_overhead_fraction": 0.02369330670850475
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 4,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 112761902,
+      "collector_process_cpu_ns": 21966497,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083645.300174Z_689e5bd3.json.gz",
+      "control_wall_ns": 101685296,
+      "wall_overhead_fraction": 0.10893026264092302
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 0,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 206070189,
+      "instrumented_wall_ns": 263550653,
+      "collector_process_cpu_ns": 23702608,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083659.529583Z_07cfb916.json.gz",
+      "wall_overhead_fraction": 0.2789363385307518
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 1,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 225388003,
+      "instrumented_wall_ns": 240702158,
+      "collector_process_cpu_ns": 24300848,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083713.645893Z_4430d73d.json.gz",
+      "wall_overhead_fraction": 0.0679457415486307
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 2,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 223656252,
+      "instrumented_wall_ns": 246303913,
+      "collector_process_cpu_ns": 24958557,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083727.796565Z_e26dc572.json.gz",
+      "wall_overhead_fraction": 0.10126102354607999
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 266966058,
+      "collector_process_cpu_ns": 26768433,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083735.728771Z_88c0f5a8.json.gz",
+      "control_wall_ns": 199331949,
+      "wall_overhead_fraction": 0.33930390657044146
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 4,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 194657728,
+      "instrumented_wall_ns": 259062781,
+      "collector_process_cpu_ns": 26035881,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083756.040539Z_e1825225.json.gz",
+      "wall_overhead_fraction": 0.3308630675068806
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 0,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 183132730,
+      "instrumented_wall_ns": 221268105,
+      "collector_process_cpu_ns": 65414282,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083758.218702Z_92ce4a6c.json.gz",
+      "wall_overhead_fraction": 0.20823899146810076
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 1,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 267543124,
+      "collector_process_cpu_ns": 67364230,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083800.246389Z_5e460aa0.json.gz",
+      "control_wall_ns": 190459623,
+      "wall_overhead_fraction": 0.4047235828036896
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 2,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 189482984,
+      "instrumented_wall_ns": 218953548,
+      "collector_process_cpu_ns": 62940604,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083802.681090Z_5e2ab918.json.gz",
+      "wall_overhead_fraction": 0.15553145394839255
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 3,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 248112354,
+      "collector_process_cpu_ns": 63887456,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083804.653379Z_e3efbb0e.json.gz",
+      "control_wall_ns": 183162753,
+      "wall_overhead_fraction": 0.35460048473938366
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 4,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 191349219,
+      "instrumented_wall_ns": 268791608,
+      "collector_process_cpu_ns": 66900521,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083807.162603Z_97599ee2.json.gz",
+      "wall_overhead_fraction": 0.40471755988719244
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 0,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 568036167,
+      "collector_process_cpu_ns": 62662643,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083815.443950Z_2341a650.json.gz",
+      "control_wall_ns": 382794115,
+      "wall_overhead_fraction": 0.4839208460662986
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 1,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 395738922,
+      "instrumented_wall_ns": 611993483,
+      "collector_process_cpu_ns": 67172862,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083836.798691Z_8e70b308.json.gz",
+      "wall_overhead_fraction": 0.546457649166993
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 2,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 426333989,
+      "instrumented_wall_ns": 557983085,
+      "collector_process_cpu_ns": 70489572,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083851.564969Z_e73d7a8a.json.gz",
+      "wall_overhead_fraction": 0.30879333901759354
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 3,
+      "order": [
+        "control",
+        "instrumented"
+      ],
+      "control_wall_ns": 405887986,
+      "instrumented_wall_ns": 520520596,
+      "collector_process_cpu_ns": 68242367,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083906.330352Z_4dcdfcdb.json.gz",
+      "wall_overhead_fraction": 0.28242424992593895
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "repeat": 4,
+      "order": [
+        "instrumented",
+        "control"
+      ],
+      "instrumented_wall_ns": 671775818,
+      "collector_process_cpu_ns": 79883601,
+      "events": 20,
+      "batch_path": "/home/kicba/d4_overhead/raw_r3_role_aggregate/batch_20260919T083914.755469Z_147702f0.json.gz",
+      "control_wall_ns": 385277107,
+      "wall_overhead_fraction": 0.7436172712955924
+    }
+  ],
+  "completed_utc": "2026-09-19T08:39:21.223331+00:00",
+  "summary": [
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "pairs": 5,
+      "mean_wall_overhead_fraction": 0.11303773535379787,
+      "median_events_per_iteration": 1.0
+    },
+    {
+      "visible_cardinality": 8,
+      "filename_length": 32,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "pairs": 5,
+      "mean_wall_overhead_fraction": 0.22366201554055692,
+      "median_events_per_iteration": 1.0
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "baseline",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "pairs": 5,
+      "mean_wall_overhead_fraction": 0.3055624145693518,
+      "median_events_per_iteration": 1.0
+    },
+    {
+      "visible_cardinality": 1024,
+      "filename_length": 160,
+      "condition": "cpu",
+      "profile": "role_aggregate",
+      "poll_policy": "none",
+      "pairs": 5,
+      "mean_wall_overhead_fraction": 0.47304267109448334,
+      "median_events_per_iteration": 1.0
+    }
+  ]
+}

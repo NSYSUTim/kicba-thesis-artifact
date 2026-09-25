@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "protocol_revision": "D7-mechanism-r1-2026-09-21",
+  "evidence_role": "mechanism_qualification_not_confirmatory",
+  "status": "complete",
+  "campaign_id": "d7mech_887cfd6d-64b0-4141-9ca7-6b525ab747d9_10701_f7616b54",
+  "boot_id": "887cfd6d-64b0-4141-9ca7-6b525ab747d9",
+  "created_utc": "2026-09-21T05:27:46.841172+00:00",
+  "seed": 10701,
+  "iterations": 20,
+  "expected_batches": 48,
+  "states": [
+    "unloaded",
+    "pass",
+    "active",
+    "hiding"
+  ],
+  "conditions": [
+    "baseline",
+    "cpu",
+    "memory",
+    "mixed"
+  ],
+  "replicates_per_cell": 3,
+  "fixture": "/home/kicba/d7_development/mechanism_r1_fixture",
+  "fixture_device": 2050,
+  "fixture_inode": 2896180,
+  "fixture_creation_order_sha256": "be241da2e10718e1f88e67437fa0424c7adbdcf45388610d712cf1856874e513",
+  "fixture_hidden_creation_index": 64,
+  "hidden_name": "sample_caraxes_hidden_0000_xxxxx",
+  "cardinality": 128,
+  "filename_length": 32,
+  "module_sha256": {
+    "pass": "2325f3cca559b73ccf6025d483a431a08b184cfcb987456f2c8864f8575d4c4b",
+    "active": "01142350b49aea9ca0e82441483e660b94b4de94a9fccb4b36a20072e134f550",
+    "hiding": "9fcd84fc21018b80c55c2ee63b40cc9a13251197f169e0356f708976bfe9d2e0"
+  },
+  "collector_sha256": "63431d0c1d9658775fcba41465b264d27aa545c22435275cc62c8981af5a9a8f",
+  "base_collector_sha256": "a147f50574e02b1d6b7a2415e315dca40713e8c40ff2f4ddb812adb42deba60a",
+  "bpf_source_sha256": "2a26164c948805e749045ee7d9c19c53925f89bae9b260a04f472e7d9ebe9c80",
+  "runner_sha256": "b180897941d184ff9aaa2d086e53b9096eda05037d2aaa3f2ef11a0a3b327d89",
+  "schedule": [
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052755.244537Z_f5e59fb2.json.gz",
+      "position": 0,
+      "completed_utc": "2026-09-21T05:27:55.304380+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052759.322207Z_edb989ba.json.gz",
+      "position": 1,
+      "completed_utc": "2026-09-21T05:27:59.375144+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052803.210694Z_c716d7e1.json.gz",
+      "position": 2,
+      "completed_utc": "2026-09-21T05:28:03.259587+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052812.079546Z_c76eddc5.json.gz",
+      "position": 3,
+      "completed_utc": "2026-09-21T05:28:12.141794+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052821.236382Z_7998eab8.json.gz",
+      "position": 4,
+      "completed_utc": "2026-09-21T05:28:21.292725+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052824.139535Z_3de5069c.json.gz",
+      "position": 5,
+      "completed_utc": "2026-09-21T05:28:24.189660+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052832.550544Z_cf70162b.json.gz",
+      "position": 6,
+      "completed_utc": "2026-09-21T05:28:32.609237+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052835.432395Z_2fab7ac1.json.gz",
+      "position": 7,
+      "completed_utc": "2026-09-21T05:28:35.482962+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052844.279445Z_abf67e10.json.gz",
+      "position": 8,
+      "completed_utc": "2026-09-21T05:28:44.341997+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052846.575285Z_2fddc480.json.gz",
+      "position": 9,
+      "completed_utc": "2026-09-21T05:28:46.628446+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052849.389493Z_23fce283.json.gz",
+      "position": 10,
+      "completed_utc": "2026-09-21T05:28:49.460055+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052858.401272Z_48f38b1a.json.gz",
+      "position": 11,
+      "completed_utc": "2026-09-21T05:28:58.466214+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052907.576675Z_f2827e05.json.gz",
+      "position": 12,
+      "completed_utc": "2026-09-21T05:29:07.627326+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052916.779519Z_cd15ae18.json.gz",
+      "position": 13,
+      "completed_utc": "2026-09-21T05:29:16.834528+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052925.847658Z_42670344.json.gz",
+      "position": 14,
+      "completed_utc": "2026-09-21T05:29:25.900828+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052929.266237Z_1c86f173.json.gz",
+      "position": 15,
+      "completed_utc": "2026-09-21T05:29:29.316734+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052933.082575Z_8b43d1dc.json.gz",
+      "position": 16,
+      "completed_utc": "2026-09-21T05:29:33.138078+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052942.038305Z_75c94cf3.json.gz",
+      "position": 17,
+      "completed_utc": "2026-09-21T05:29:42.088680+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052945.826993Z_444374e0.json.gz",
+      "position": 18,
+      "completed_utc": "2026-09-21T05:29:45.881462+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052949.111742Z_7441ab2d.json.gz",
+      "position": 19,
+      "completed_utc": "2026-09-21T05:29:49.162113+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T052958.057786Z_40e154a0.json.gz",
+      "position": 20,
+      "completed_utc": "2026-09-21T05:29:58.121471+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053006.939239Z_9ce49233.json.gz",
+      "position": 21,
+      "completed_utc": "2026-09-21T05:30:06.988627+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053015.351808Z_55c6bc34.json.gz",
+      "position": 22,
+      "completed_utc": "2026-09-21T05:30:15.403711+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053024.238805Z_e8dcc8e9.json.gz",
+      "position": 23,
+      "completed_utc": "2026-09-21T05:30:24.298138+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053032.763324Z_65df858a.json.gz",
+      "position": 24,
+      "completed_utc": "2026-09-21T05:30:32.814141+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053035.657267Z_ae97e08c.json.gz",
+      "position": 25,
+      "completed_utc": "2026-09-21T05:30:35.725323+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053044.209583Z_47f9392e.json.gz",
+      "position": 26,
+      "completed_utc": "2026-09-21T05:30:44.264757+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053053.490388Z_a9f8e982.json.gz",
+      "position": 27,
+      "completed_utc": "2026-09-21T05:30:53.541030+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053102.448253Z_1b6c1417.json.gz",
+      "position": 28,
+      "completed_utc": "2026-09-21T05:31:02.508772+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053105.403586Z_02aed0d4.json.gz",
+      "position": 29,
+      "completed_utc": "2026-09-21T05:31:05.458274+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053109.357604Z_9d033b9c.json.gz",
+      "position": 30,
+      "completed_utc": "2026-09-21T05:31:09.412068+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053118.444246Z_4c94987d.json.gz",
+      "position": 31,
+      "completed_utc": "2026-09-21T05:31:18.496933+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053121.224257Z_c9eb4bcf.json.gz",
+      "position": 32,
+      "completed_utc": "2026-09-21T05:31:21.278513+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053130.177257Z_a13421bf.json.gz",
+      "position": 33,
+      "completed_utc": "2026-09-21T05:31:30.228010+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053133.908432Z_efc43dbe.json.gz",
+      "position": 34,
+      "completed_utc": "2026-09-21T05:31:33.964163+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053137.241513Z_2001df24.json.gz",
+      "position": 35,
+      "completed_utc": "2026-09-21T05:31:37.292170+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053139.972366Z_23bda8ee.json.gz",
+      "position": 36,
+      "completed_utc": "2026-09-21T05:31:40.028583+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053142.627677Z_4951deaf.json.gz",
+      "position": 37,
+      "completed_utc": "2026-09-21T05:31:42.678326+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053144.918296Z_529ad755.json.gz",
+      "position": 38,
+      "completed_utc": "2026-09-21T05:31:44.970464+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053148.958446Z_3fa56a33.json.gz",
+      "position": 39,
+      "completed_utc": "2026-09-21T05:31:49.018350+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053152.579565Z_25ead104.json.gz",
+      "position": 40,
+      "completed_utc": "2026-09-21T05:31:52.639312+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053201.546470Z_35f9a77e.json.gz",
+      "position": 41,
+      "completed_utc": "2026-09-21T05:32:01.607029+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053210.980003Z_519878c0.json.gz",
+      "position": 42,
+      "completed_utc": "2026-09-21T05:32:11.037492+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053213.306070Z_1e2103c6.json.gz",
+      "position": 43,
+      "completed_utc": "2026-09-21T05:32:13.360816+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053222.311476Z_1bfcae6b.json.gz",
+      "position": 44,
+      "completed_utc": "2026-09-21T05:32:22.390419+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053226.228823Z_ced10fd2.json.gz",
+      "position": 45,
+      "completed_utc": "2026-09-21T05:32:26.283608+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053235.128811Z_3d9b9980.json.gz",
+      "position": 46,
+      "completed_utc": "2026-09-21T05:32:35.188210+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_development/mechanism_r1/batch_20260921T053237.455224Z_c5dc25bd.json.gz",
+      "position": 47,
+      "completed_utc": "2026-09-21T05:32:37.511960+00:00"
+    }
+  ],
+  "completed_utc": "2026-09-21T05:32:38.023244+00:00"
+}

@@ -1,0 +1,2181 @@
+{
+  "schema_version": 2,
+  "protocol_revision": "D2-r1-2026-09-14",
+  "primary_timing_functions": [
+    "iterate_dir",
+    "filldir64",
+    "touch_atime"
+  ],
+  "campaign_id": "fd7e85ef-6a6d-4480-abca-1596c505a72e_1003_697e8e34",
+  "created_utc": "2026-09-14T15:27:27.795993+00:00",
+  "boot_id": "fd7e85ef-6a6d-4480-abca-1596c505a72e",
+  "kernel": "6.8.0-138-generic",
+  "machine": "x86_64",
+  "seed": 1003,
+  "rounds": 30,
+  "iterations_per_batch": 100,
+  "caraxes_sha256": "a4edd4a2bd79d01677af8e95cf7da5511539e87a90fb89143bf49215a868f390",
+  "schedule": [
+    {
+      "position": 0,
+      "block": 0,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152741.379987Z_d7d93870.json.gz",
+      "completed_utc": "2026-09-14T15:27:42.334962+00:00"
+    },
+    {
+      "position": 1,
+      "block": 0,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152755.136989Z_7ce38b7b.json.gz",
+      "completed_utc": "2026-09-14T15:27:56.079126+00:00"
+    },
+    {
+      "position": 2,
+      "block": 0,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152802.529595Z_dd27f0e7.json.gz",
+      "completed_utc": "2026-09-14T15:28:03.488492+00:00"
+    },
+    {
+      "position": 3,
+      "block": 0,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152810.480829Z_0a0ceb47.json.gz",
+      "completed_utc": "2026-09-14T15:28:11.387263+00:00"
+    },
+    {
+      "position": 4,
+      "block": 0,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152817.643707Z_58bb9e98.json.gz",
+      "completed_utc": "2026-09-14T15:28:18.513186+00:00"
+    },
+    {
+      "position": 5,
+      "block": 0,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152831.344948Z_fe4d87b7.json.gz",
+      "completed_utc": "2026-09-14T15:28:32.212184+00:00"
+    },
+    {
+      "position": 6,
+      "block": 0,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152839.696051Z_37440940.json.gz",
+      "completed_utc": "2026-09-14T15:28:40.590167+00:00"
+    },
+    {
+      "position": 7,
+      "block": 0,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152853.703805Z_16584a24.json.gz",
+      "completed_utc": "2026-09-14T15:28:54.573679+00:00"
+    },
+    {
+      "position": 8,
+      "block": 1,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152907.398911Z_dea1b86b.json.gz",
+      "completed_utc": "2026-09-14T15:29:08.290641+00:00"
+    },
+    {
+      "position": 9,
+      "block": 1,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152920.393122Z_e3c6a2c4.json.gz",
+      "completed_utc": "2026-09-14T15:29:21.318628+00:00"
+    },
+    {
+      "position": 10,
+      "block": 1,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152927.915135Z_1d75ebf2.json.gz",
+      "completed_utc": "2026-09-14T15:29:28.813712+00:00"
+    },
+    {
+      "position": 11,
+      "block": 1,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152934.418175Z_290a60c0.json.gz",
+      "completed_utc": "2026-09-14T15:29:35.333701+00:00"
+    },
+    {
+      "position": 12,
+      "block": 1,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152947.546677Z_593e5367.json.gz",
+      "completed_utc": "2026-09-14T15:29:48.403625+00:00"
+    },
+    {
+      "position": 13,
+      "block": 1,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T152955.061749Z_be7307f5.json.gz",
+      "completed_utc": "2026-09-14T15:29:55.891514+00:00"
+    },
+    {
+      "position": 14,
+      "block": 1,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153008.056585Z_dbdd3b74.json.gz",
+      "completed_utc": "2026-09-14T15:30:08.888962+00:00"
+    },
+    {
+      "position": 15,
+      "block": 1,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153014.429829Z_76171577.json.gz",
+      "completed_utc": "2026-09-14T15:30:15.254439+00:00"
+    },
+    {
+      "position": 16,
+      "block": 2,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153027.503555Z_18beae7d.json.gz",
+      "completed_utc": "2026-09-14T15:30:28.362709+00:00"
+    },
+    {
+      "position": 17,
+      "block": 2,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153033.878766Z_f6e2de8a.json.gz",
+      "completed_utc": "2026-09-14T15:30:34.711978+00:00"
+    },
+    {
+      "position": 18,
+      "block": 2,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153046.810147Z_919cd25c.json.gz",
+      "completed_utc": "2026-09-14T15:30:47.642567+00:00"
+    },
+    {
+      "position": 19,
+      "block": 2,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153054.373406Z_562f03c8.json.gz",
+      "completed_utc": "2026-09-14T15:30:55.215317+00:00"
+    },
+    {
+      "position": 20,
+      "block": 2,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153107.872327Z_d0e564a5.json.gz",
+      "completed_utc": "2026-09-14T15:31:08.767229+00:00"
+    },
+    {
+      "position": 21,
+      "block": 2,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153114.330091Z_601a28b0.json.gz",
+      "completed_utc": "2026-09-14T15:31:15.240947+00:00"
+    },
+    {
+      "position": 22,
+      "block": 2,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153121.784923Z_5fcc9be1.json.gz",
+      "completed_utc": "2026-09-14T15:31:22.719167+00:00"
+    },
+    {
+      "position": 23,
+      "block": 2,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153134.930388Z_ac2b2cb5.json.gz",
+      "completed_utc": "2026-09-14T15:31:35.851238+00:00"
+    },
+    {
+      "position": 24,
+      "block": 3,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153148.026160Z_c6204975.json.gz",
+      "completed_utc": "2026-09-14T15:31:48.939453+00:00"
+    },
+    {
+      "position": 25,
+      "block": 3,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153154.510759Z_a162f6da.json.gz",
+      "completed_utc": "2026-09-14T15:31:55.412926+00:00"
+    },
+    {
+      "position": 26,
+      "block": 3,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153202.020075Z_9df85b30.json.gz",
+      "completed_utc": "2026-09-14T15:32:02.942208+00:00"
+    },
+    {
+      "position": 27,
+      "block": 3,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153215.129720Z_2a3e1f52.json.gz",
+      "completed_utc": "2026-09-14T15:32:16.051493+00:00"
+    },
+    {
+      "position": 28,
+      "block": 3,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153221.770740Z_52c85796.json.gz",
+      "completed_utc": "2026-09-14T15:32:22.632404+00:00"
+    },
+    {
+      "position": 29,
+      "block": 3,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153229.305944Z_57e52665.json.gz",
+      "completed_utc": "2026-09-14T15:32:30.163966+00:00"
+    },
+    {
+      "position": 30,
+      "block": 3,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153242.346426Z_eebb483c.json.gz",
+      "completed_utc": "2026-09-14T15:32:43.186484+00:00"
+    },
+    {
+      "position": 31,
+      "block": 3,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153255.240082Z_4f06c51f.json.gz",
+      "completed_utc": "2026-09-14T15:32:56.071184+00:00"
+    },
+    {
+      "position": 32,
+      "block": 4,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153301.779800Z_e505bde9.json.gz",
+      "completed_utc": "2026-09-14T15:33:02.650606+00:00"
+    },
+    {
+      "position": 33,
+      "block": 4,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153314.866646Z_d6f27383.json.gz",
+      "completed_utc": "2026-09-14T15:33:15.751610+00:00"
+    },
+    {
+      "position": 34,
+      "block": 4,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153322.350039Z_57628a74.json.gz",
+      "completed_utc": "2026-09-14T15:33:23.190073+00:00"
+    },
+    {
+      "position": 35,
+      "block": 4,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153335.324140Z_9ad13a1d.json.gz",
+      "completed_utc": "2026-09-14T15:33:36.171365+00:00"
+    },
+    {
+      "position": 36,
+      "block": 4,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153348.885516Z_9f7faa12.json.gz",
+      "completed_utc": "2026-09-14T15:33:49.770958+00:00"
+    },
+    {
+      "position": 37,
+      "block": 4,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153356.408070Z_a549a493.json.gz",
+      "completed_utc": "2026-09-14T15:33:57.313517+00:00"
+    },
+    {
+      "position": 38,
+      "block": 4,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153409.525786Z_784fb61c.json.gz",
+      "completed_utc": "2026-09-14T15:34:10.477050+00:00"
+    },
+    {
+      "position": 39,
+      "block": 4,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153416.038561Z_09f93082.json.gz",
+      "completed_utc": "2026-09-14T15:34:16.942606+00:00"
+    },
+    {
+      "position": 40,
+      "block": 5,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153422.680383Z_117508e0.json.gz",
+      "completed_utc": "2026-09-14T15:34:23.525166+00:00"
+    },
+    {
+      "position": 41,
+      "block": 5,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153435.669231Z_c203f8e0.json.gz",
+      "completed_utc": "2026-09-14T15:34:36.493069+00:00"
+    },
+    {
+      "position": 42,
+      "block": 5,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153448.605166Z_a920f76e.json.gz",
+      "completed_utc": "2026-09-14T15:34:49.446882+00:00"
+    },
+    {
+      "position": 43,
+      "block": 5,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153456.157247Z_af2c9835.json.gz",
+      "completed_utc": "2026-09-14T15:34:57.013425+00:00"
+    },
+    {
+      "position": 44,
+      "block": 5,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153504.180224Z_01000e05.json.gz",
+      "completed_utc": "2026-09-14T15:35:05.090132+00:00"
+    },
+    {
+      "position": 45,
+      "block": 5,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153517.373068Z_15afabfa.json.gz",
+      "completed_utc": "2026-09-14T15:35:18.259128+00:00"
+    },
+    {
+      "position": 46,
+      "block": 5,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153523.897434Z_6e957e48.json.gz",
+      "completed_utc": "2026-09-14T15:35:24.793185+00:00"
+    },
+    {
+      "position": 47,
+      "block": 5,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153536.991419Z_76bfab60.json.gz",
+      "completed_utc": "2026-09-14T15:35:37.915666+00:00"
+    },
+    {
+      "position": 48,
+      "block": 6,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153550.108620Z_31e01683.json.gz",
+      "completed_utc": "2026-09-14T15:35:51.000925+00:00"
+    },
+    {
+      "position": 49,
+      "block": 6,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153556.592053Z_660440ab.json.gz",
+      "completed_utc": "2026-09-14T15:35:57.501593+00:00"
+    },
+    {
+      "position": 50,
+      "block": 6,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153604.169105Z_49373be0.json.gz",
+      "completed_utc": "2026-09-14T15:36:05.078965+00:00"
+    },
+    {
+      "position": 51,
+      "block": 6,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153617.211142Z_8150c46b.json.gz",
+      "completed_utc": "2026-09-14T15:36:18.090714+00:00"
+    },
+    {
+      "position": 52,
+      "block": 6,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153623.879989Z_59c5bfb0.json.gz",
+      "completed_utc": "2026-09-14T15:36:24.729153+00:00"
+    },
+    {
+      "position": 53,
+      "block": 6,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153636.913272Z_5401451f.json.gz",
+      "completed_utc": "2026-09-14T15:36:37.732277+00:00"
+    },
+    {
+      "position": 54,
+      "block": 6,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153644.379207Z_c32f4198.json.gz",
+      "completed_utc": "2026-09-14T15:36:45.259076+00:00"
+    },
+    {
+      "position": 55,
+      "block": 6,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153657.381689Z_a85a5f06.json.gz",
+      "completed_utc": "2026-09-14T15:36:58.237590+00:00"
+    },
+    {
+      "position": 56,
+      "block": 7,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153704.908637Z_b7e1982a.json.gz",
+      "completed_utc": "2026-09-14T15:37:05.767620+00:00"
+    },
+    {
+      "position": 57,
+      "block": 7,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153717.939524Z_141e7ea6.json.gz",
+      "completed_utc": "2026-09-14T15:37:18.789141+00:00"
+    },
+    {
+      "position": 58,
+      "block": 7,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153730.889826Z_916d4be3.json.gz",
+      "completed_utc": "2026-09-14T15:37:31.734199+00:00"
+    },
+    {
+      "position": 59,
+      "block": 7,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153737.337067Z_bf93975f.json.gz",
+      "completed_utc": "2026-09-14T15:37:38.165478+00:00"
+    },
+    {
+      "position": 60,
+      "block": 7,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153744.302247Z_6638c976.json.gz",
+      "completed_utc": "2026-09-14T15:37:45.228836+00:00"
+    },
+    {
+      "position": 61,
+      "block": 7,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153757.411738Z_a2fe1ad5.json.gz",
+      "completed_utc": "2026-09-14T15:37:58.334329+00:00"
+    },
+    {
+      "position": 62,
+      "block": 7,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153810.497638Z_601f2b41.json.gz",
+      "completed_utc": "2026-09-14T15:38:11.397593+00:00"
+    },
+    {
+      "position": 63,
+      "block": 7,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153818.003095Z_c942622c.json.gz",
+      "completed_utc": "2026-09-14T15:38:18.931929+00:00"
+    },
+    {
+      "position": 64,
+      "block": 8,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153825.608744Z_5b308356.json.gz",
+      "completed_utc": "2026-09-14T15:38:26.449279+00:00"
+    },
+    {
+      "position": 65,
+      "block": 8,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153832.052736Z_4f5672a9.json.gz",
+      "completed_utc": "2026-09-14T15:38:32.933938+00:00"
+    },
+    {
+      "position": 66,
+      "block": 8,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153845.093343Z_9e78dcc6.json.gz",
+      "completed_utc": "2026-09-14T15:38:45.948004+00:00"
+    },
+    {
+      "position": 67,
+      "block": 8,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153858.084485Z_627b2b4a.json.gz",
+      "completed_utc": "2026-09-14T15:38:58.924591+00:00"
+    },
+    {
+      "position": 68,
+      "block": 8,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153906.028849Z_059fd92a.json.gz",
+      "completed_utc": "2026-09-14T15:39:06.918082+00:00"
+    },
+    {
+      "position": 69,
+      "block": 8,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153919.087995Z_6a962ba6.json.gz",
+      "completed_utc": "2026-09-14T15:39:20.008399+00:00"
+    },
+    {
+      "position": 70,
+      "block": 8,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153925.580050Z_c0f42fbe.json.gz",
+      "completed_utc": "2026-09-14T15:39:26.468591+00:00"
+    },
+    {
+      "position": 71,
+      "block": 8,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153938.567432Z_46fc3fb3.json.gz",
+      "completed_utc": "2026-09-14T15:39:39.470947+00:00"
+    },
+    {
+      "position": 72,
+      "block": 9,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153951.642703Z_3bb71a76.json.gz",
+      "completed_utc": "2026-09-14T15:39:52.517333+00:00"
+    },
+    {
+      "position": 73,
+      "block": 9,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T153958.156824Z_e65b4c0d.json.gz",
+      "completed_utc": "2026-09-14T15:39:59.011547+00:00"
+    },
+    {
+      "position": 74,
+      "block": 9,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154011.192894Z_9063bf98.json.gz",
+      "completed_utc": "2026-09-14T15:40:12.021275+00:00"
+    },
+    {
+      "position": 75,
+      "block": 9,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154018.667208Z_2d67ea46.json.gz",
+      "completed_utc": "2026-09-14T15:40:19.503873+00:00"
+    },
+    {
+      "position": 76,
+      "block": 9,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154032.144309Z_26f76d3d.json.gz",
+      "completed_utc": "2026-09-14T15:40:33.039149+00:00"
+    },
+    {
+      "position": 77,
+      "block": 9,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154039.611225Z_3c0457c4.json.gz",
+      "completed_utc": "2026-09-14T15:40:40.500898+00:00"
+    },
+    {
+      "position": 78,
+      "block": 9,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154052.610003Z_8b914585.json.gz",
+      "completed_utc": "2026-09-14T15:40:53.523889+00:00"
+    },
+    {
+      "position": 79,
+      "block": 9,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154059.077139Z_a2f519fe.json.gz",
+      "completed_utc": "2026-09-14T15:40:59.998598+00:00"
+    },
+    {
+      "position": 80,
+      "block": 10,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154105.646868Z_8c4f061c.json.gz",
+      "completed_utc": "2026-09-14T15:41:06.575576+00:00"
+    },
+    {
+      "position": 81,
+      "block": 10,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154118.761023Z_a9075135.json.gz",
+      "completed_utc": "2026-09-14T15:41:19.658562+00:00"
+    },
+    {
+      "position": 82,
+      "block": 10,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154131.901455Z_27b23c37.json.gz",
+      "completed_utc": "2026-09-14T15:41:32.800010+00:00"
+    },
+    {
+      "position": 83,
+      "block": 10,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154139.365351Z_a2bc1fdf.json.gz",
+      "completed_utc": "2026-09-14T15:41:40.260274+00:00"
+    },
+    {
+      "position": 84,
+      "block": 10,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154152.517048Z_4dc6f3b8.json.gz",
+      "completed_utc": "2026-09-14T15:41:53.372092+00:00"
+    },
+    {
+      "position": 85,
+      "block": 10,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154159.031226Z_cfa285a7.json.gz",
+      "completed_utc": "2026-09-14T15:41:59.890793+00:00"
+    },
+    {
+      "position": 86,
+      "block": 10,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154206.557655Z_09a03e45.json.gz",
+      "completed_utc": "2026-09-14T15:42:07.425909+00:00"
+    },
+    {
+      "position": 87,
+      "block": 10,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154219.513958Z_6cdb71d5.json.gz",
+      "completed_utc": "2026-09-14T15:42:20.381759+00:00"
+    },
+    {
+      "position": 88,
+      "block": 11,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154227.459727Z_9f3a628a.json.gz",
+      "completed_utc": "2026-09-14T15:42:28.352725+00:00"
+    },
+    {
+      "position": 89,
+      "block": 11,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154240.453222Z_e80c380c.json.gz",
+      "completed_utc": "2026-09-14T15:42:41.366121+00:00"
+    },
+    {
+      "position": 90,
+      "block": 11,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154253.513955Z_2e90c87d.json.gz",
+      "completed_utc": "2026-09-14T15:42:54.444982+00:00"
+    },
+    {
+      "position": 91,
+      "block": 11,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154300.093084Z_008de239.json.gz",
+      "completed_utc": "2026-09-14T15:43:01.011615+00:00"
+    },
+    {
+      "position": 92,
+      "block": 11,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154307.688174Z_7944e326.json.gz",
+      "completed_utc": "2026-09-14T15:43:08.533769+00:00"
+    },
+    {
+      "position": 93,
+      "block": 11,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154320.696336Z_5a6ab1f2.json.gz",
+      "completed_utc": "2026-09-14T15:43:21.545023+00:00"
+    },
+    {
+      "position": 94,
+      "block": 11,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154327.156203Z_2a20661c.json.gz",
+      "completed_utc": "2026-09-14T15:43:28.015749+00:00"
+    },
+    {
+      "position": 95,
+      "block": 11,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154340.128991Z_5d93eff0.json.gz",
+      "completed_utc": "2026-09-14T15:43:40.987079+00:00"
+    },
+    {
+      "position": 96,
+      "block": 12,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154353.671435Z_f26d3a06.json.gz",
+      "completed_utc": "2026-09-14T15:43:54.611911+00:00"
+    },
+    {
+      "position": 97,
+      "block": 12,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154400.194805Z_b7665cd2.json.gz",
+      "completed_utc": "2026-09-14T15:44:01.108390+00:00"
+    },
+    {
+      "position": 98,
+      "block": 12,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154407.693075Z_d00c5a75.json.gz",
+      "completed_utc": "2026-09-14T15:44:08.610343+00:00"
+    },
+    {
+      "position": 99,
+      "block": 12,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154420.742744Z_1a482d15.json.gz",
+      "completed_utc": "2026-09-14T15:44:21.672930+00:00"
+    },
+    {
+      "position": 100,
+      "block": 12,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154427.364370Z_5d3f206b.json.gz",
+      "completed_utc": "2026-09-14T15:44:28.197012+00:00"
+    },
+    {
+      "position": 101,
+      "block": 12,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154434.835275Z_cd75a3e7.json.gz",
+      "completed_utc": "2026-09-14T15:44:35.678924+00:00"
+    },
+    {
+      "position": 102,
+      "block": 12,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154447.853806Z_14287c81.json.gz",
+      "completed_utc": "2026-09-14T15:44:48.730474+00:00"
+    },
+    {
+      "position": 103,
+      "block": 12,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154500.876799Z_d9ce6feb.json.gz",
+      "completed_utc": "2026-09-14T15:45:01.745909+00:00"
+    },
+    {
+      "position": 104,
+      "block": 13,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154508.825912Z_d8d2c777.json.gz",
+      "completed_utc": "2026-09-14T15:45:09.721601+00:00"
+    },
+    {
+      "position": 105,
+      "block": 13,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154515.406381Z_50a4541f.json.gz",
+      "completed_utc": "2026-09-14T15:45:16.317388+00:00"
+    },
+    {
+      "position": 106,
+      "block": 13,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154528.478447Z_c587567d.json.gz",
+      "completed_utc": "2026-09-14T15:45:29.403966+00:00"
+    },
+    {
+      "position": 107,
+      "block": 13,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154541.562429Z_0b110f69.json.gz",
+      "completed_utc": "2026-09-14T15:45:42.468688+00:00"
+    },
+    {
+      "position": 108,
+      "block": 13,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154554.832798Z_0cafc7f0.json.gz",
+      "completed_utc": "2026-09-14T15:45:55.670106+00:00"
+    },
+    {
+      "position": 109,
+      "block": 13,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154607.809027Z_4b1043e5.json.gz",
+      "completed_utc": "2026-09-14T15:46:08.668737+00:00"
+    },
+    {
+      "position": 110,
+      "block": 13,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154614.272285Z_dcee2605.json.gz",
+      "completed_utc": "2026-09-14T15:46:15.120396+00:00"
+    },
+    {
+      "position": 111,
+      "block": 13,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154621.733172Z_62aa101e.json.gz",
+      "completed_utc": "2026-09-14T15:46:22.580051+00:00"
+    },
+    {
+      "position": 112,
+      "block": 14,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154629.672950Z_3ed6bf1a.json.gz",
+      "completed_utc": "2026-09-14T15:46:30.581491+00:00"
+    },
+    {
+      "position": 113,
+      "block": 14,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154642.747583Z_adf14f64.json.gz",
+      "completed_utc": "2026-09-14T15:46:43.660033+00:00"
+    },
+    {
+      "position": 114,
+      "block": 14,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154655.865772Z_c26ac044.json.gz",
+      "completed_utc": "2026-09-14T15:46:56.786076+00:00"
+    },
+    {
+      "position": 115,
+      "block": 14,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154702.406429Z_b9c62fb5.json.gz",
+      "completed_utc": "2026-09-14T15:47:03.303091+00:00"
+    },
+    {
+      "position": 116,
+      "block": 14,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154710.008950Z_b692759b.json.gz",
+      "completed_utc": "2026-09-14T15:47:10.861210+00:00"
+    },
+    {
+      "position": 117,
+      "block": 14,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154723.040599Z_fd272b0d.json.gz",
+      "completed_utc": "2026-09-14T15:47:23.863735+00:00"
+    },
+    {
+      "position": 118,
+      "block": 14,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154736.020858Z_eb4b7a17.json.gz",
+      "completed_utc": "2026-09-14T15:47:36.863963+00:00"
+    },
+    {
+      "position": 119,
+      "block": 14,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154742.474488Z_e9b8ef51.json.gz",
+      "completed_utc": "2026-09-14T15:47:43.340934+00:00"
+    },
+    {
+      "position": 120,
+      "block": 15,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154749.961625Z_ad050d2c.json.gz",
+      "completed_utc": "2026-09-14T15:47:50.844473+00:00"
+    },
+    {
+      "position": 121,
+      "block": 15,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154803.098830Z_450dd84d.json.gz",
+      "completed_utc": "2026-09-14T15:48:03.977995+00:00"
+    },
+    {
+      "position": 122,
+      "block": 15,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154809.629755Z_86e29ae0.json.gz",
+      "completed_utc": "2026-09-14T15:48:10.477014+00:00"
+    },
+    {
+      "position": 123,
+      "block": 15,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154822.639271Z_3299ce3d.json.gz",
+      "completed_utc": "2026-09-14T15:48:23.530182+00:00"
+    },
+    {
+      "position": 124,
+      "block": 15,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154830.592173Z_b09c58e2.json.gz",
+      "completed_utc": "2026-09-14T15:48:31.509968+00:00"
+    },
+    {
+      "position": 125,
+      "block": 15,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154843.767781Z_44022858.json.gz",
+      "completed_utc": "2026-09-14T15:48:44.678832+00:00"
+    },
+    {
+      "position": 126,
+      "block": 15,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154856.807208Z_56de5fe4.json.gz",
+      "completed_utc": "2026-09-14T15:48:57.724974+00:00"
+    },
+    {
+      "position": 127,
+      "block": 15,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154903.343035Z_2fdf699c.json.gz",
+      "completed_utc": "2026-09-14T15:49:04.251440+00:00"
+    },
+    {
+      "position": 128,
+      "block": 16,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154909.866662Z_981597dd.json.gz",
+      "completed_utc": "2026-09-14T15:49:10.798826+00:00"
+    },
+    {
+      "position": 129,
+      "block": 16,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154923.017352Z_e7c00f15.json.gz",
+      "completed_utc": "2026-09-14T15:49:23.906966+00:00"
+    },
+    {
+      "position": 130,
+      "block": 16,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154936.081175Z_1952b466.json.gz",
+      "completed_utc": "2026-09-14T15:49:36.953266+00:00"
+    },
+    {
+      "position": 131,
+      "block": 16,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154943.636740Z_25683dd5.json.gz",
+      "completed_utc": "2026-09-14T15:49:44.575101+00:00"
+    },
+    {
+      "position": 132,
+      "block": 16,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T154956.837933Z_1af29c3d.json.gz",
+      "completed_utc": "2026-09-14T15:49:57.690177+00:00"
+    },
+    {
+      "position": 133,
+      "block": 16,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155009.850487Z_9b182e7d.json.gz",
+      "completed_utc": "2026-09-14T15:50:10.690482+00:00"
+    },
+    {
+      "position": 134,
+      "block": 16,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155017.307343Z_c3b93834.json.gz",
+      "completed_utc": "2026-09-14T15:50:18.167645+00:00"
+    },
+    {
+      "position": 135,
+      "block": 16,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155023.786880Z_db436c67.json.gz",
+      "completed_utc": "2026-09-14T15:50:24.655805+00:00"
+    },
+    {
+      "position": 136,
+      "block": 17,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155030.801910Z_019aac7f.json.gz",
+      "completed_utc": "2026-09-14T15:50:31.723340+00:00"
+    },
+    {
+      "position": 137,
+      "block": 17,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155043.799413Z_59dea1e7.json.gz",
+      "completed_utc": "2026-09-14T15:50:44.739093+00:00"
+    },
+    {
+      "position": 138,
+      "block": 17,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155056.938712Z_c99ced6c.json.gz",
+      "completed_utc": "2026-09-14T15:50:57.846913+00:00"
+    },
+    {
+      "position": 139,
+      "block": 17,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155104.423945Z_c7f34039.json.gz",
+      "completed_utc": "2026-09-14T15:51:05.313264+00:00"
+    },
+    {
+      "position": 140,
+      "block": 17,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155112.056680Z_abfbb26f.json.gz",
+      "completed_utc": "2026-09-14T15:51:12.908631+00:00"
+    },
+    {
+      "position": 141,
+      "block": 17,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155118.586497Z_3fad960e.json.gz",
+      "completed_utc": "2026-09-14T15:51:19.451182+00:00"
+    },
+    {
+      "position": 142,
+      "block": 17,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155131.909681Z_af8f7ed7.json.gz",
+      "completed_utc": "2026-09-14T15:51:32.738760+00:00"
+    },
+    {
+      "position": 143,
+      "block": 17,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155145.036454Z_a6cc52a8.json.gz",
+      "completed_utc": "2026-09-14T15:51:45.862107+00:00"
+    },
+    {
+      "position": 144,
+      "block": 18,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155158.573993Z_6394b55d.json.gz",
+      "completed_utc": "2026-09-14T15:51:59.488652+00:00"
+    },
+    {
+      "position": 145,
+      "block": 18,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155211.713412Z_5e8362be.json.gz",
+      "completed_utc": "2026-09-14T15:52:12.607166+00:00"
+    },
+    {
+      "position": 146,
+      "block": 18,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155218.249836Z_129ac550.json.gz",
+      "completed_utc": "2026-09-14T15:52:19.158469+00:00"
+    },
+    {
+      "position": 147,
+      "block": 18,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155225.754172Z_7f4c44b8.json.gz",
+      "completed_utc": "2026-09-14T15:52:26.645006+00:00"
+    },
+    {
+      "position": 148,
+      "block": 18,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155233.357085Z_ee611f40.json.gz",
+      "completed_utc": "2026-09-14T15:52:34.205051+00:00"
+    },
+    {
+      "position": 149,
+      "block": 18,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155246.509121Z_a933522c.json.gz",
+      "completed_utc": "2026-09-14T15:52:47.375272+00:00"
+    },
+    {
+      "position": 150,
+      "block": 18,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155253.369242Z_5639e2ee.json.gz",
+      "completed_utc": "2026-09-14T15:52:54.247132+00:00"
+    },
+    {
+      "position": 151,
+      "block": 18,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155306.686762Z_02f57a66.json.gz",
+      "completed_utc": "2026-09-14T15:53:07.546264+00:00"
+    },
+    {
+      "position": 152,
+      "block": 19,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155320.252034Z_b19264ce.json.gz",
+      "completed_utc": "2026-09-14T15:53:21.151462+00:00"
+    },
+    {
+      "position": 153,
+      "block": 19,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155327.046255Z_c0866e61.json.gz",
+      "completed_utc": "2026-09-14T15:53:27.936542+00:00"
+    },
+    {
+      "position": 154,
+      "block": 19,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155340.219024Z_c373d8b4.json.gz",
+      "completed_utc": "2026-09-14T15:53:41.060747+00:00"
+    },
+    {
+      "position": 155,
+      "block": 19,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155347.858499Z_63b0799e.json.gz",
+      "completed_utc": "2026-09-14T15:53:48.726053+00:00"
+    },
+    {
+      "position": 156,
+      "block": 19,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155401.454325Z_62fd1adc.json.gz",
+      "completed_utc": "2026-09-14T15:54:02.354998+00:00"
+    },
+    {
+      "position": 157,
+      "block": 19,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155414.670863Z_b1882b8b.json.gz",
+      "completed_utc": "2026-09-14T15:54:15.565055+00:00"
+    },
+    {
+      "position": 158,
+      "block": 19,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155421.256271Z_de5263f8.json.gz",
+      "completed_utc": "2026-09-14T15:54:22.176048+00:00"
+    },
+    {
+      "position": 159,
+      "block": 19,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155428.842937Z_5bff98ee.json.gz",
+      "completed_utc": "2026-09-14T15:54:29.712703+00:00"
+    },
+    {
+      "position": 160,
+      "block": 20,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155435.481468Z_b086f62a.json.gz",
+      "completed_utc": "2026-09-14T15:54:36.348641+00:00"
+    },
+    {
+      "position": 161,
+      "block": 20,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155448.555909Z_4482b21c.json.gz",
+      "completed_utc": "2026-09-14T15:54:49.404098+00:00"
+    },
+    {
+      "position": 162,
+      "block": 20,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155456.129549Z_2abd38a4.json.gz",
+      "completed_utc": "2026-09-14T15:54:56.985980+00:00"
+    },
+    {
+      "position": 163,
+      "block": 20,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155509.307562Z_a56a4e31.json.gz",
+      "completed_utc": "2026-09-14T15:55:10.153903+00:00"
+    },
+    {
+      "position": 164,
+      "block": 20,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155523.110907Z_eeb810db.json.gz",
+      "completed_utc": "2026-09-14T15:55:23.997469+00:00"
+    },
+    {
+      "position": 165,
+      "block": 20,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155529.781713Z_2cef432c.json.gz",
+      "completed_utc": "2026-09-14T15:55:30.713068+00:00"
+    },
+    {
+      "position": 166,
+      "block": 20,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155537.461768Z_a4d61795.json.gz",
+      "completed_utc": "2026-09-14T15:55:38.386138+00:00"
+    },
+    {
+      "position": 167,
+      "block": 20,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155550.579320Z_59af4ef8.json.gz",
+      "completed_utc": "2026-09-14T15:55:51.489448+00:00"
+    },
+    {
+      "position": 168,
+      "block": 21,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155603.802964Z_ca0d5c03.json.gz",
+      "completed_utc": "2026-09-14T15:56:04.650002+00:00"
+    },
+    {
+      "position": 169,
+      "block": 21,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155616.979686Z_84cf5464.json.gz",
+      "completed_utc": "2026-09-14T15:56:17.842564+00:00"
+    },
+    {
+      "position": 170,
+      "block": 21,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155623.593719Z_09bef487.json.gz",
+      "completed_utc": "2026-09-14T15:56:24.454766+00:00"
+    },
+    {
+      "position": 171,
+      "block": 21,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155631.233532Z_93c5143e.json.gz",
+      "completed_utc": "2026-09-14T15:56:32.081698+00:00"
+    },
+    {
+      "position": 172,
+      "block": 21,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155644.991589Z_00b9b565.json.gz",
+      "completed_utc": "2026-09-14T15:56:45.896610+00:00"
+    },
+    {
+      "position": 173,
+      "block": 21,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155652.550114Z_a9323123.json.gz",
+      "completed_utc": "2026-09-14T15:56:53.460309+00:00"
+    },
+    {
+      "position": 174,
+      "block": 21,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155659.079268Z_e83c986d.json.gz",
+      "completed_utc": "2026-09-14T15:57:00.000569+00:00"
+    },
+    {
+      "position": 175,
+      "block": 21,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155712.147772Z_9f167c4a.json.gz",
+      "completed_utc": "2026-09-14T15:57:13.040516+00:00"
+    },
+    {
+      "position": 176,
+      "block": 22,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155725.330487Z_83653b2f.json.gz",
+      "completed_utc": "2026-09-14T15:57:26.234131+00:00"
+    },
+    {
+      "position": 177,
+      "block": 22,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155732.975358Z_a80d462c.json.gz",
+      "completed_utc": "2026-09-14T15:57:33.877139+00:00"
+    },
+    {
+      "position": 178,
+      "block": 22,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155739.600161Z_3b0749bc.json.gz",
+      "completed_utc": "2026-09-14T15:57:40.517704+00:00"
+    },
+    {
+      "position": 179,
+      "block": 22,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155752.882571Z_581fbbe6.json.gz",
+      "completed_utc": "2026-09-14T15:57:53.789359+00:00"
+    },
+    {
+      "position": 180,
+      "block": 22,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155806.139810Z_beb57dd8.json.gz",
+      "completed_utc": "2026-09-14T15:58:06.984386+00:00"
+    },
+    {
+      "position": 181,
+      "block": 22,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155819.288372Z_cc12ed1a.json.gz",
+      "completed_utc": "2026-09-14T15:58:20.140051+00:00"
+    },
+    {
+      "position": 182,
+      "block": 22,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155826.897491Z_22a84e7e.json.gz",
+      "completed_utc": "2026-09-14T15:58:27.768251+00:00"
+    },
+    {
+      "position": 183,
+      "block": 22,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155833.598192Z_8cccfe66.json.gz",
+      "completed_utc": "2026-09-14T15:58:34.446647+00:00"
+    },
+    {
+      "position": 184,
+      "block": 23,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155847.227683Z_ad9bb1f9.json.gz",
+      "completed_utc": "2026-09-14T15:58:48.141452+00:00"
+    },
+    {
+      "position": 185,
+      "block": 23,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155900.465885Z_fad0a4d1.json.gz",
+      "completed_utc": "2026-09-14T15:59:01.351147+00:00"
+    },
+    {
+      "position": 186,
+      "block": 23,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155907.065203Z_c9a1af49.json.gz",
+      "completed_utc": "2026-09-14T15:59:07.957764+00:00"
+    },
+    {
+      "position": 187,
+      "block": 23,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155914.649475Z_0c03640c.json.gz",
+      "completed_utc": "2026-09-14T15:59:15.557767+00:00"
+    },
+    {
+      "position": 188,
+      "block": 23,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155922.377824Z_667cb079.json.gz",
+      "completed_utc": "2026-09-14T15:59:23.199176+00:00"
+    },
+    {
+      "position": 189,
+      "block": 23,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155928.942315Z_49dd61c5.json.gz",
+      "completed_utc": "2026-09-14T15:59:29.808609+00:00"
+    },
+    {
+      "position": 190,
+      "block": 23,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155942.142481Z_82afd1c8.json.gz",
+      "completed_utc": "2026-09-14T15:59:42.959783+00:00"
+    },
+    {
+      "position": 191,
+      "block": 23,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T155955.304977Z_41c5478e.json.gz",
+      "completed_utc": "2026-09-14T15:59:56.154876+00:00"
+    },
+    {
+      "position": 192,
+      "block": 24,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160001.871091Z_8d63d56d.json.gz",
+      "completed_utc": "2026-09-14T16:00:02.762944+00:00"
+    },
+    {
+      "position": 193,
+      "block": 24,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160015.189549Z_3a717786.json.gz",
+      "completed_utc": "2026-09-14T16:00:16.033261+00:00"
+    },
+    {
+      "position": 194,
+      "block": 24,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160022.803528Z_5680433f.json.gz",
+      "completed_utc": "2026-09-14T16:00:23.681850+00:00"
+    },
+    {
+      "position": 195,
+      "block": 24,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160035.927985Z_985f2144.json.gz",
+      "completed_utc": "2026-09-14T16:00:36.777262+00:00"
+    },
+    {
+      "position": 196,
+      "block": 24,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160043.037203Z_944978b9.json.gz",
+      "completed_utc": "2026-09-14T16:00:43.941537+00:00"
+    },
+    {
+      "position": 197,
+      "block": 24,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160050.643974Z_f14f9f5e.json.gz",
+      "completed_utc": "2026-09-14T16:00:51.562034+00:00"
+    },
+    {
+      "position": 198,
+      "block": 24,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160103.827441Z_f6656826.json.gz",
+      "completed_utc": "2026-09-14T16:01:04.743338+00:00"
+    },
+    {
+      "position": 199,
+      "block": 24,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160117.127014Z_cb107779.json.gz",
+      "completed_utc": "2026-09-14T16:01:18.018870+00:00"
+    },
+    {
+      "position": 200,
+      "block": 25,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160124.852118Z_811fb468.json.gz",
+      "completed_utc": "2026-09-14T16:01:25.715274+00:00"
+    },
+    {
+      "position": 201,
+      "block": 25,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160131.441473Z_cedf694d.json.gz",
+      "completed_utc": "2026-09-14T16:01:32.295139+00:00"
+    },
+    {
+      "position": 202,
+      "block": 25,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160144.572385Z_ac9985ef.json.gz",
+      "completed_utc": "2026-09-14T16:01:45.398560+00:00"
+    },
+    {
+      "position": 203,
+      "block": 25,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160157.702709Z_298c4df8.json.gz",
+      "completed_utc": "2026-09-14T16:01:58.573666+00:00"
+    },
+    {
+      "position": 204,
+      "block": 25,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160205.833241Z_3b3a6608.json.gz",
+      "completed_utc": "2026-09-14T16:02:06.761235+00:00"
+    },
+    {
+      "position": 205,
+      "block": 25,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160218.997765Z_866cd97c.json.gz",
+      "completed_utc": "2026-09-14T16:02:19.912020+00:00"
+    },
+    {
+      "position": 206,
+      "block": 25,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160225.623000Z_7924812a.json.gz",
+      "completed_utc": "2026-09-14T16:02:26.553724+00:00"
+    },
+    {
+      "position": 207,
+      "block": 25,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160238.758659Z_9a46a06e.json.gz",
+      "completed_utc": "2026-09-14T16:02:39.654951+00:00"
+    },
+    {
+      "position": 208,
+      "block": 26,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160246.376026Z_98ca0bf3.json.gz",
+      "completed_utc": "2026-09-14T16:02:47.335550+00:00"
+    },
+    {
+      "position": 209,
+      "block": 26,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160259.619321Z_4bd3999f.json.gz",
+      "completed_utc": "2026-09-14T16:03:00.512919+00:00"
+    },
+    {
+      "position": 210,
+      "block": 26,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160312.844263Z_a8b6b4b8.json.gz",
+      "completed_utc": "2026-09-14T16:03:13.761792+00:00"
+    },
+    {
+      "position": 211,
+      "block": 26,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160319.401516Z_ca9d8da0.json.gz",
+      "completed_utc": "2026-09-14T16:03:20.328971+00:00"
+    },
+    {
+      "position": 212,
+      "block": 26,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160332.642037Z_87e67c42.json.gz",
+      "completed_utc": "2026-09-14T16:03:33.484762+00:00"
+    },
+    {
+      "position": 213,
+      "block": 26,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160345.722546Z_373e041a.json.gz",
+      "completed_utc": "2026-09-14T16:03:46.586954+00:00"
+    },
+    {
+      "position": 214,
+      "block": 26,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160352.410522Z_b5bd476c.json.gz",
+      "completed_utc": "2026-09-14T16:03:53.259995+00:00"
+    },
+    {
+      "position": 215,
+      "block": 26,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160400.016822Z_cecb94b1.json.gz",
+      "completed_utc": "2026-09-14T16:04:00.865396+00:00"
+    },
+    {
+      "position": 216,
+      "block": 27,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160413.212568Z_72d5d862.json.gz",
+      "completed_utc": "2026-09-14T16:04:14.072825+00:00"
+    },
+    {
+      "position": 217,
+      "block": 27,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160420.859252Z_82d90de4.json.gz",
+      "completed_utc": "2026-09-14T16:04:21.711186+00:00"
+    },
+    {
+      "position": 218,
+      "block": 27,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160427.420546Z_6e21f470.json.gz",
+      "completed_utc": "2026-09-14T16:04:28.256333+00:00"
+    },
+    {
+      "position": 219,
+      "block": 27,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160440.431510Z_aac9158c.json.gz",
+      "completed_utc": "2026-09-14T16:04:41.285780+00:00"
+    },
+    {
+      "position": 220,
+      "block": 27,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160454.047367Z_97e0547f.json.gz",
+      "completed_utc": "2026-09-14T16:04:54.962906+00:00"
+    },
+    {
+      "position": 221,
+      "block": 27,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160501.731383Z_794306dc.json.gz",
+      "completed_utc": "2026-09-14T16:05:02.689231+00:00"
+    },
+    {
+      "position": 222,
+      "block": 27,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160508.442245Z_0926fb7c.json.gz",
+      "completed_utc": "2026-09-14T16:05:09.361429+00:00"
+    },
+    {
+      "position": 223,
+      "block": 27,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160521.576625Z_f2c32ddd.json.gz",
+      "completed_utc": "2026-09-14T16:05:22.504896+00:00"
+    },
+    {
+      "position": 224,
+      "block": 28,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160528.221831Z_40a89574.json.gz",
+      "completed_utc": "2026-09-14T16:05:29.136923+00:00"
+    },
+    {
+      "position": 225,
+      "block": 28,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160541.327421Z_86ddc542.json.gz",
+      "completed_utc": "2026-09-14T16:05:42.226399+00:00"
+    },
+    {
+      "position": 226,
+      "block": 28,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160554.478215Z_b1f6de20.json.gz",
+      "completed_utc": "2026-09-14T16:05:55.397257+00:00"
+    },
+    {
+      "position": 227,
+      "block": 28,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160602.050643Z_1299c408.json.gz",
+      "completed_utc": "2026-09-14T16:06:02.984014+00:00"
+    },
+    {
+      "position": 228,
+      "block": 28,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160608.792749Z_3bdeffd6.json.gz",
+      "completed_utc": "2026-09-14T16:06:09.650222+00:00"
+    },
+    {
+      "position": 229,
+      "block": 28,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160621.982664Z_2caec23a.json.gz",
+      "completed_utc": "2026-09-14T16:06:22.827260+00:00"
+    },
+    {
+      "position": 230,
+      "block": 28,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160629.593805Z_6dbf809c.json.gz",
+      "completed_utc": "2026-09-14T16:06:30.439051+00:00"
+    },
+    {
+      "position": 231,
+      "block": 28,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160642.735777Z_fcc2271a.json.gz",
+      "completed_utc": "2026-09-14T16:06:43.560438+00:00"
+    },
+    {
+      "position": 232,
+      "block": 29,
+      "label": "normal",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160649.801590Z_9d2f3ab4.json.gz",
+      "completed_utc": "2026-09-14T16:06:50.701729+00:00"
+    },
+    {
+      "position": 233,
+      "block": 29,
+      "label": "normal",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160703.201666Z_66af197b.json.gz",
+      "completed_utc": "2026-09-14T16:07:04.096835+00:00"
+    },
+    {
+      "position": 234,
+      "block": 29,
+      "label": "normal",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160716.434044Z_7e545b76.json.gz",
+      "completed_utc": "2026-09-14T16:07:17.351996+00:00"
+    },
+    {
+      "position": 235,
+      "block": 29,
+      "label": "normal",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160724.037671Z_8ffcc940.json.gz",
+      "completed_utc": "2026-09-14T16:07:24.969131+00:00"
+    },
+    {
+      "position": 236,
+      "block": 29,
+      "label": "rootkit",
+      "condition": "baseline",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160730.795889Z_491165c2.json.gz",
+      "completed_utc": "2026-09-14T16:07:31.657898+00:00"
+    },
+    {
+      "position": 237,
+      "block": 29,
+      "label": "rootkit",
+      "condition": "memory",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160738.466573Z_0b46b4a2.json.gz",
+      "completed_utc": "2026-09-14T16:07:39.327744+00:00"
+    },
+    {
+      "position": 238,
+      "block": 29,
+      "label": "rootkit",
+      "condition": "cpu",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160751.596458Z_663f824d.json.gz",
+      "completed_utc": "2026-09-14T16:07:52.424313+00:00"
+    },
+    {
+      "position": 239,
+      "block": 29,
+      "label": "rootkit",
+      "condition": "mixed",
+      "status": "complete",
+      "output": "/home/kicba/d2_formal/r1/boot_03/batch_20260914T160804.701396Z_d04ef38a.json.gz",
+      "completed_utc": "2026-09-14T16:08:05.550939+00:00"
+    }
+  ],
+  "completed_utc": "2026-09-14T16:08:06.080867+00:00"
+}

@@ -1,0 +1,9 @@
+﻿{
+    "package":  "KICBA_AI_REVIEW_CURRENT",
+    "generated_at":  "2026-09-22T06:36:12.7220142Z",
+    "generator":  "scripts/build_ai_review_bundle.ps1",
+    "canonical_source_policy":  "Edit only workspace canonical sources; never edit deliverables.",
+    "raw_batch_payloads_included":  false,
+    "raw_data_policy":  "Describe and index canonical datasets; package metadata/reports/code, not raw batches.",
+    "d1_raw_source":  "Zenodo DOI 10.5281/zenodo.14679675"
+}

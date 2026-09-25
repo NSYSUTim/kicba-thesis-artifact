@@ -1,0 +1,13 @@
+[Unit]
+Description=KICBA D7 nesting eight-boot confirmation
+After=multi-user.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/kicba/kicba
+Environment=PYTHONPATH=/home/kicba/kicba/src:/home/kicba/kicba/collector:/home/kicba/kicba/scripts
+ExecStart=/usr/bin/python3 /home/kicba/kicba/collector/run_d7_nesting_multiboot.py --state /home/kicba/d7_formal/r1_state.json --output-root /home/kicba/d7_formal/r1 --project-root /home/kicba/kicba --pass-ko /home/kicba/kicba/attack_variants/d7_controls_r2/kicba_d7_pass.ko --active-ko /home/kicba/kicba/attack_variants/d7_controls_r2/kicba_d7_active.ko --hiding-ko /home/kicba/kicba/attack_variants/d7_controls_r2/kicba_d7_hiding.ko --isolated-vm-ack I_UNDERSTAND_THIS_LOADS_A_ROOTKIT_IN_AN_ISOLATED_VM
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Reproduction outputs are generated locally and must not overwrite formal results.
+reproduction_fresh/
+
+# Native build products and virtual-machine media.
+*.ko
+*.o
+*.mod
+*.mod.c
+*.symvers
+modules.order
+vm/iso/
+
+# Local editor and operating-system files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

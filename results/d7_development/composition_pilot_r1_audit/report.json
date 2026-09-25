@@ -1,0 +1,56 @@
+{
+  "protocol": "D7-composition-pilot-r1-2026-09-21",
+  "status": "PASS",
+  "failures": [],
+  "evidence_role": "single_boot_development_pilot_not_confirmatory",
+  "batches": 48,
+  "transactions": 960,
+  "state_metrics": {
+    "unloaded": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "filldir64_calls_values": [
+        131
+      ],
+      "suppression_residual_values": [
+        0
+      ]
+    },
+    "pass": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "filldir64_calls_values": [
+        262
+      ],
+      "suppression_residual_values": [
+        0
+      ]
+    },
+    "active": {
+      "batches": 12,
+      "alert_rate": 0.0,
+      "filldir64_calls_values": [
+        262
+      ],
+      "suppression_residual_values": [
+        0
+      ]
+    },
+    "hiding": {
+      "batches": 12,
+      "alert_rate": 1.0,
+      "filldir64_calls_values": [
+        261
+      ],
+      "suppression_residual_values": [
+        1
+      ]
+    }
+  },
+  "pilot_hiding_recall": 1.0,
+  "pilot_active_fpr": 0.0,
+  "pilot_pass_fpr": 0.0,
+  "pilot_unloaded_fpr": 0.0,
+  "decision_rule": "For a double-path listing, suppression_residual = filldir64_calls - 2 * user_visible_entries; alert iff residual > 0.",
+  "scope_warning": "The invariant is specific to the tested CARAXES-like ftrace callback path and this kernel/probe ordering."
+}

@@ -1,0 +1,28 @@
+{
+  "role": "frozen_development_timing_comparator",
+  "not_primary_proposed_method": true,
+  "fit_protocol": "D7-mechanism-r2-2026-09-21",
+  "features": [
+    "first_raw_median",
+    "first_div_last_raw_median"
+  ],
+  "transform": "natural_log",
+  "origin": [
+    11.627891703067148,
+    4.265525477636575
+  ],
+  "axis": [
+    0.5889041676613479,
+    0.8082028713826097
+  ],
+  "threshold": 0.5317951138942805,
+  "fit_states": [
+    "unloaded",
+    "pass"
+  ],
+  "fit_batches": 24,
+  "input_tree_sha256": "e0e0265f0cd557a730b816fb9b974dbbda62dd5e34fda9a738f5af4574aca008",
+  "audit_sha256": "0f40bdec61f54b8e919901bd49e86d94ef310a74c6f3cfb7289801f76722494f",
+  "script_sha256": "ee12868976776754b936f536a662da0e725e79cc2cb70b6d7b4cbc3f6b3ccd85",
+  "warning": "This comparator is frozen from one development boot; D7 formal data are not used for fitting."
+}

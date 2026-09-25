@@ -1,0 +1,511 @@
+{
+  "protocol_revision": "D7-nesting-confirmatory-r1-2026-09-21",
+  "status": "complete",
+  "evidence_role": "locked_confirmatory",
+  "campaign_id": "d7formal_478d2593-60c9-409a-b862-41678b85e6a9_11703_5fa007ae",
+  "sequence": 3,
+  "state_order": [
+    "active",
+    "hiding",
+    "pass",
+    "unloaded"
+  ],
+  "boot_id": "478d2593-60c9-409a-b862-41678b85e6a9",
+  "seed": 11703,
+  "expected_batches": 48,
+  "iterations": 20,
+  "fixture_inode": 2897684,
+  "fixture_creation_order_sha256": "be241da2e10718e1f88e67437fa0424c7adbdcf45388610d712cf1856874e513",
+  "fixture_hidden_creation_index": 64,
+  "source_hashes": {
+    "campaign_runner": "21daaf845a04f4e2b894c310563e6b8e93cf8b199ecba453accb2446c394cf18",
+    "helper": "908b549fcb1b48daf8af2c1e344277185e1ba85ce4fb7cee75f9634b404352f9",
+    "bpf": "fff6eeab63ba99be54f64ab14b6f493f5ba577ca0cbbaa25a46677a7334e4f5c",
+    "module_pass": "7689eb945c580a9889e727d310e791ba670852adc58b2355ea55f3c412f46949",
+    "module_active": "c1c38de4ad476210b939b6c11a0f139475d68bb912b233e00a2740a58bee52e9",
+    "module_hiding": "02f826eeade88af01c85f1c3098dee7bc4c3038f672fa69d4b5442184471e60c"
+  },
+  "schedule": [
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 2,
+      "episode_ordinal": 0,
+      "position": 0,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_000_43061a48.json.gz",
+      "completed_utc": "2026-09-21T07:35:45.749831+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 1,
+      "episode_ordinal": 0,
+      "position": 1,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_001_95d9988f.json.gz",
+      "completed_utc": "2026-09-21T07:35:46.553197+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 1,
+      "episode_ordinal": 0,
+      "position": 2,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_002_8ebe8188.json.gz",
+      "completed_utc": "2026-09-21T07:35:53.636699+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 1,
+      "episode_ordinal": 0,
+      "position": 3,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_003_cd0df98e.json.gz",
+      "completed_utc": "2026-09-21T07:36:00.716943+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "cpu",
+      "replicate": 0,
+      "episode_ordinal": 0,
+      "position": 4,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_004_503c3058.json.gz",
+      "completed_utc": "2026-09-21T07:36:07.905772+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 1,
+      "episode_ordinal": 0,
+      "position": 5,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_005_1c94c164.json.gz",
+      "completed_utc": "2026-09-21T07:36:09.841266+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 0,
+      "episode_ordinal": 0,
+      "position": 6,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_006_f0164d2c.json.gz",
+      "completed_utc": "2026-09-21T07:36:10.688436+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 2,
+      "episode_ordinal": 0,
+      "position": 7,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_007_590bd10c.json.gz",
+      "completed_utc": "2026-09-21T07:36:17.702402+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 0,
+      "episode_ordinal": 0,
+      "position": 8,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_008_10d0bd0a.json.gz",
+      "completed_utc": "2026-09-21T07:36:19.603969+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "memory",
+      "replicate": 2,
+      "episode_ordinal": 0,
+      "position": 9,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_009_d78a59c6.json.gz",
+      "completed_utc": "2026-09-21T07:36:21.469900+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "baseline",
+      "replicate": 2,
+      "episode_ordinal": 0,
+      "position": 10,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_010_28dd6dcb.json.gz",
+      "completed_utc": "2026-09-21T07:36:22.297514+00:00"
+    },
+    {
+      "state": "active",
+      "condition": "mixed",
+      "replicate": 0,
+      "episode_ordinal": 0,
+      "position": 11,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_011_07af5c05.json.gz",
+      "completed_utc": "2026-09-21T07:36:29.489002+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 0,
+      "episode_ordinal": 1,
+      "position": 12,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_012_466bfbaa.json.gz",
+      "completed_utc": "2026-09-21T07:36:36.675015+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 2,
+      "episode_ordinal": 1,
+      "position": 13,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_013_6dc5367e.json.gz",
+      "completed_utc": "2026-09-21T07:36:38.655232+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 0,
+      "episode_ordinal": 1,
+      "position": 14,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_014_9ef96a57.json.gz",
+      "completed_utc": "2026-09-21T07:36:40.529828+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 2,
+      "episode_ordinal": 1,
+      "position": 15,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_015_bfc8b386.json.gz",
+      "completed_utc": "2026-09-21T07:36:47.787747+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "cpu",
+      "replicate": 1,
+      "episode_ordinal": 1,
+      "position": 16,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_016_375c2a15.json.gz",
+      "completed_utc": "2026-09-21T07:36:54.906899+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 1,
+      "episode_ordinal": 1,
+      "position": 17,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_017_b92c70bd.json.gz",
+      "completed_utc": "2026-09-21T07:36:55.802410+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "memory",
+      "replicate": 1,
+      "episode_ordinal": 1,
+      "position": 18,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_018_3e3f8ea7.json.gz",
+      "completed_utc": "2026-09-21T07:36:57.669179+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 1,
+      "episode_ordinal": 1,
+      "position": 19,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_019_f215f6f2.json.gz",
+      "completed_utc": "2026-09-21T07:37:04.687117+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 2,
+      "episode_ordinal": 1,
+      "position": 20,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_020_051e8512.json.gz",
+      "completed_utc": "2026-09-21T07:37:11.794134+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "mixed",
+      "replicate": 0,
+      "episode_ordinal": 1,
+      "position": 21,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_021_45ab430b.json.gz",
+      "completed_utc": "2026-09-21T07:37:18.773183+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 0,
+      "episode_ordinal": 1,
+      "position": 22,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_022_aade2102.json.gz",
+      "completed_utc": "2026-09-21T07:37:19.687560+00:00"
+    },
+    {
+      "state": "hiding",
+      "condition": "baseline",
+      "replicate": 2,
+      "episode_ordinal": 1,
+      "position": 23,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_023_ee0d4da6.json.gz",
+      "completed_utc": "2026-09-21T07:37:20.491235+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 2,
+      "episode_ordinal": 2,
+      "position": 24,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_024_333386f1.json.gz",
+      "completed_utc": "2026-09-21T07:37:22.332229+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 0,
+      "episode_ordinal": 2,
+      "position": 25,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_025_07c0256f.json.gz",
+      "completed_utc": "2026-09-21T07:37:24.168054+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 1,
+      "episode_ordinal": 2,
+      "position": 26,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_026_334a8c3d.json.gz",
+      "completed_utc": "2026-09-21T07:37:31.142733+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 0,
+      "episode_ordinal": 2,
+      "position": 27,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_027_4b420496.json.gz",
+      "completed_utc": "2026-09-21T07:37:38.201888+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "memory",
+      "replicate": 1,
+      "episode_ordinal": 2,
+      "position": 28,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_028_326c9c6c.json.gz",
+      "completed_utc": "2026-09-21T07:37:40.042378+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 0,
+      "episode_ordinal": 2,
+      "position": 29,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_029_99bd2a60.json.gz",
+      "completed_utc": "2026-09-21T07:37:47.074308+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 1,
+      "episode_ordinal": 2,
+      "position": 30,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_030_ace5a140.json.gz",
+      "completed_utc": "2026-09-21T07:37:54.056992+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "cpu",
+      "replicate": 2,
+      "episode_ordinal": 2,
+      "position": 31,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_031_d4eb9e07.json.gz",
+      "completed_utc": "2026-09-21T07:38:01.184456+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 1,
+      "episode_ordinal": 2,
+      "position": 32,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_032_e3113d05.json.gz",
+      "completed_utc": "2026-09-21T07:38:01.983819+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "mixed",
+      "replicate": 2,
+      "episode_ordinal": 2,
+      "position": 33,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_033_37183745.json.gz",
+      "completed_utc": "2026-09-21T07:38:08.968635+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 2,
+      "episode_ordinal": 2,
+      "position": 34,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_034_df6f9a38.json.gz",
+      "completed_utc": "2026-09-21T07:38:09.866363+00:00"
+    },
+    {
+      "state": "pass",
+      "condition": "baseline",
+      "replicate": 0,
+      "episode_ordinal": 2,
+      "position": 35,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_035_467ce820.json.gz",
+      "completed_utc": "2026-09-21T07:38:10.638467+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 2,
+      "episode_ordinal": 3,
+      "position": 36,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_036_bb0d34a0.json.gz",
+      "completed_utc": "2026-09-21T07:38:17.642481+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 1,
+      "episode_ordinal": 3,
+      "position": 37,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_037_0575c455.json.gz",
+      "completed_utc": "2026-09-21T07:38:17.862897+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 0,
+      "episode_ordinal": 3,
+      "position": 38,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_038_3f0d4a22.json.gz",
+      "completed_utc": "2026-09-21T07:38:18.063400+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "baseline",
+      "replicate": 2,
+      "episode_ordinal": 3,
+      "position": 39,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_039_937bfaf1.json.gz",
+      "completed_utc": "2026-09-21T07:38:18.296401+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 0,
+      "episode_ordinal": 3,
+      "position": 40,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_040_0208f900.json.gz",
+      "completed_utc": "2026-09-21T07:38:24.691064+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 0,
+      "episode_ordinal": 3,
+      "position": 41,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_041_86413bf6.json.gz",
+      "completed_utc": "2026-09-21T07:38:25.934458+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "mixed",
+      "replicate": 1,
+      "episode_ordinal": 3,
+      "position": 42,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_042_651c3914.json.gz",
+      "completed_utc": "2026-09-21T07:38:32.236058+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 2,
+      "episode_ordinal": 3,
+      "position": 43,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_043_ea195481.json.gz",
+      "completed_utc": "2026-09-21T07:38:38.574873+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 1,
+      "episode_ordinal": 3,
+      "position": 44,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_044_52bf7ec3.json.gz",
+      "completed_utc": "2026-09-21T07:38:39.783506+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "memory",
+      "replicate": 2,
+      "episode_ordinal": 3,
+      "position": 45,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_045_3a691b04.json.gz",
+      "completed_utc": "2026-09-21T07:38:41.015117+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 1,
+      "episode_ordinal": 3,
+      "position": 46,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_046_b2f5b2d0.json.gz",
+      "completed_utc": "2026-09-21T07:38:47.382494+00:00"
+    },
+    {
+      "state": "unloaded",
+      "condition": "cpu",
+      "replicate": 0,
+      "episode_ordinal": 3,
+      "position": 47,
+      "status": "complete",
+      "output": "/home/kicba/d7_formal/r1/boot_03/batch_047_58015f8e.json.gz",
+      "completed_utc": "2026-09-21T07:38:53.775511+00:00"
+    }
+  ],
+  "completed_utc": "2026-09-21T07:38:53.921977+00:00"
+}
