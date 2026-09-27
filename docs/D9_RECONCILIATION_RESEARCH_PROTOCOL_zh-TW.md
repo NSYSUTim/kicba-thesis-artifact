@@ -1,6 +1,6 @@
 # D9 目錄項跨邊界 reconciliation：開發與正式驗證規約
 
-狀態：**正式設計候選；須在 timing model 與 source manifest 產生後鎖定**  
+狀態：**已鎖定**  
 日期：2026-09-24
 
 ## 一句話方法
