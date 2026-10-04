@@ -1,0 +1,62 @@
+{
+  "source_guest_path": "/var/log/apt/history.log.1.gz",
+  "source_sha256": "82b3ee03c7f1ca3b2f0e1aa82a46a38e0f0c2835ace44297e9558c0c9977bc82",
+  "guest_timezone": "Asia/Taipei",
+  "latest_start_date_guest_local": "2026-09-14  21:22:13",
+  "selected_events": [
+    {
+      "start_date_guest_local": "2026-09-14  12:04:49",
+      "operation": "Upgrade",
+      "package": "python3.10",
+      "version_record": "3.10.12-1~22.04.5, 3.10.12-1~22.04.18"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "libbpfcc",
+      "version_record": "0.18.0+ds-2, automatic"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "gcc-11",
+      "version_record": "11.4.0-1ubuntu1~22.04.3, automatic"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "python3-bpfcc",
+      "version_record": "0.18.0+ds-2"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "libllvm11",
+      "version_record": "1:11.1.0-6, automatic"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "libclang-cpp11",
+      "version_record": "1:11.1.0-6, automatic"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "bpfcc-tools",
+      "version_record": "0.18.0+ds-2"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:14:00",
+      "operation": "Install",
+      "package": "stress-ng",
+      "version_record": "0.13.12-2ubuntu1"
+    },
+    {
+      "start_date_guest_local": "2026-09-14  20:16:05",
+      "operation": "Install",
+      "package": "gcc-12",
+      "version_record": "12.3.0-1ubuntu1~22.04.3"
+    }
+  ]
+}

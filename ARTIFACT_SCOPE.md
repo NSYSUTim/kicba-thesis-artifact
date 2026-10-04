@@ -8,6 +8,7 @@
 - 九開機 confirmatory matrix 的壓縮資料、鎖定檔、timing model 與正式分析輸出。
 - 論文實際引用的 boundary、IBLT capacity、robustness、filesystem/namespace 與 overhead 結果。
 - D9 外部比較的自製資料；Trace of the Times 與 Decloaker 僅保留論文採用的摘要、manifest、驗證紀錄及本研究撰寫的轉接/驗證腳本。
+- D9 實驗 VM 的建置紀錄、宿主狀態摘要、客體發行版輸出、相關 apt 事件摘要、Kbuild 命令及環境追溯說明。
 
 ## 刻意排除
 

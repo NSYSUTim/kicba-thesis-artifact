@@ -20,10 +20,11 @@ D9 在 `filldir64` 已接受的目錄項與 `getdents64` 回傳給使用者空�
 | `results/d9_formal/` | 九次開機的壓縮正式資料、分析鎖定檔、timing model 與結果 |
 | `results/d9_development/` | 論文引用的邊界、容量、穩健性、namespace 與成本證據；早期 quick/pilot 已排除 |
 | `results/d9_external_comparison/` | D9 原始比較資料，以及 Trace of the Times / Decloaker 的必要摘要與驗證紀錄 |
+| `results/environment/` | VM 建置紀錄、宿主狀態、客體發行版輸出、相關 apt 事件摘要與實際 Kbuild 命令 |
 | `docs/` | 研究協定、正式結果、外部比較鎖定與偏差紀錄 |
 | `tools/external_baselines/` | 本研究撰寫的最小驗證/轉接腳本；不含外部專案本體或二進位 |
 
-完整收錄/排除原則見 [`ARTIFACT_SCOPE.md`](ARTIFACT_SCOPE.md)，外部方法與固定版本見 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+完整收錄/排除原則見 [`ARTIFACT_SCOPE.md`](ARTIFACT_SCOPE.md)，外部方法與固定版本見 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。實驗 VM、工具鏈、apt 歷史與事後讀數的界線見 [`D9 環境追溯紀錄`](docs/D9_ENVIRONMENT_AUDIT_20261004_zh-TW.md)。
 
 ## 快速驗證
 

@@ -175,10 +175,11 @@ short-circuit、`getdents64` buffer removal、等量 substitution 與 policy fil
 
 ## 9. 可稽核檔案
 
-- 環境版本佐證：正式資料保存 Linux 核心 `6.8.0-138-generic`，但本倉庫沒有
-  實驗客體當時的 `/etc/os-release` 或 `lsb_release` 輸出，故不把
-  `Ubuntu 22.04.5` 當作已由重現套件驗證的發行版本。若要恢復該精確版本，
-  需從原實驗 VM 保存客體輸出，並連同取得時的 boot ID 與檔案雜湊納入套件。
+- 環境追溯：本次已從原 VM 補取 `/etc/os-release`，並對照實驗前 apt
+  安裝紀錄、正式二進位雜湊、VM 建置設定與掛載資訊；詳見
+  [`D9_ENVIRONMENT_AUDIT_20261004_zh-TW.md`](D9_ENVIRONMENT_AUDIT_20261004_zh-TW.md)。
+  原九開機批次仍沒有逐 boot 的發行版、宿主負載及 mount options 快照，
+  耗時數字只適用於該 VM／宿主配置。
 - 正式 lock：`results/d9_formal/analysis_lock.json`
 - timing model：`results/d9_formal/timing_model.json`
 - 九開機原始證據：`results/d9_formal/raw/boot_01` 至 `boot_09`

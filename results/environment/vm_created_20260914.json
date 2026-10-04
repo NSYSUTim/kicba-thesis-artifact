@@ -1,0 +1,11 @@
+﻿{
+    "Name":  "KICBA-Lab",
+    "State":  "Off",
+    "Generation":  2,
+    "MemoryGB":  8,
+    "ProcessorCount":  4,
+    "VhdPath":  "D:\\KICBA-Lab\\vm\\KICBA-Lab.vhdx",
+    "IsoPath":  "D:\\KICBA-Lab\\iso\\ubuntu-22.04.5-live-server-amd64.iso",
+    "SwitchName":  "Default Switch",
+    "IsolationRule":  "Disconnect the VM network adapter before loading CARAXES"
+}
