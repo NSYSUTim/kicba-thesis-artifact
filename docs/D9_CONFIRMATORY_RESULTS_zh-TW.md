@@ -132,9 +132,11 @@ namespace 案例，以及到 65,536 項的成本量測。失敗的 oracle 污染
 - 檔案系統／namespace：ext4 與 overlayfs 的 host、mount、user+mount 組合
   18/18 通過；`/proc`、`/sys`、`/dev` 動態 pseudo-fs 控制 6/6 通過。
 
-成本不是「免費」。在 paired-overhead protocol 的 65,536 項 baseline 測量中，
-raw probe 平均約 38.18 ms，fingerprint-only 約 48.68 ms，完整 D9 約
-183.18 ms；完整 D9 約為 raw 的 4.80 倍。另一方面，在另一個 iteration 數與
+成本不是「免費」。在開發期 paired-overhead protocol 的 65,536 項 baseline 測量中，
+raw probe 平均約 38.16 ms，userspace sketch 約 45.59 ms，完整 D9 約
+181.51 ms；完整 D9 約為 raw 的 4.76 倍。這組數值由
+`results/d9_development/overhead_full_r2_branch8/overhead.json` 的三次 repeat
+各自除以 10 次列舉後取平均；不併入九開機正式成效矩陣。另一方面，在另一個 iteration 數與
 runner 不同的 exact-trace protocol 中：
 
 | 目錄項數 | D9 完整方法 | 逐項 exact trace | D9 輸出 | Exact trace 輸出 |
@@ -151,7 +153,7 @@ D9 比未插樁的原始列舉更快。
 
 ### 可以成立
 
-在本次 Ubuntu 6.8.0-138-generic VM、受控 probe、受測 ftrace `filldir64`
+在本次 Ubuntu VM、Linux `6.8.0-138-generic`、受控 probe、受測 ftrace `filldir64`
 short-circuit、`getdents64` buffer removal、等量 substitution 與 policy filter
 機制下，D9 能可靠辨識 `filldir64` 接受後至 `getdents64` 輸出前的項目身分
 差異，並在差異量落於容量時還原差異 token。它相較只比 count 能辨識等量
@@ -173,6 +175,10 @@ short-circuit、`getdents64` buffer removal、等量 substitution 與 policy fil
 
 ## 9. 可稽核檔案
 
+- 環境版本佐證：正式資料保存 Linux 核心 `6.8.0-138-generic`，但本倉庫沒有
+  實驗客體當時的 `/etc/os-release` 或 `lsb_release` 輸出，故不把
+  `Ubuntu 22.04.5` 當作已由重現套件驗證的發行版本。若要恢復該精確版本，
+  需從原實驗 VM 保存客體輸出，並連同取得時的 boot ID 與檔案雜湊納入套件。
 - 正式 lock：`results/d9_formal/analysis_lock.json`
 - timing model：`results/d9_formal/timing_model.json`
 - 九開機原始證據：`results/d9_formal/raw/boot_01` 至 `boot_09`

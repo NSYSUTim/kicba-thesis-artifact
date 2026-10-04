@@ -101,7 +101,7 @@ bytes、inode 與 d_type 建立 multiset fingerprint 與 IBLT。Fingerprint 先
 
 資料：
 
-- `results/d9_development/overhead_full_r1/overhead.json`
+- `results/d9_development/overhead_full_r2_branch8/overhead.json`
 - `results/d9_development/exact_trace_full_r1/exact_trace_baseline.json`
 
 Paired overhead 以相同目錄與負載、隨機模式順序比較 raw count、只做使用者端
@@ -109,13 +109,13 @@ sketch，以及完整 D9。以下為每次列舉的三次重複平均：
 
 | 項目數 | 負載 | Raw count | Userspace sketch | Full D9 |
 |---:|---|---:|---:|---:|
-| 512 | baseline | 2.23 ms | 2.92 ms | 15.53 ms |
-| 8,192 | baseline | 6.05 ms | 8.02 ms | 31.66 ms |
-| 65,536 | baseline | 38.18 ms | 48.68 ms | 183.18 ms |
-| 65,536 | mixed | 50.30 ms | 58.57 ms | 216.00 ms |
+| 512 | baseline | 2.25 ms | 2.98 ms | 12.91 ms |
+| 8,192 | baseline | 8.05 ms | 8.91 ms | 29.93 ms |
+| 65,536 | baseline | 38.16 ms | 45.59 ms | 181.51 ms |
+| 65,536 | mixed | 47.25 ms | 58.08 ms | 220.27 ms |
 
-目前 full D9 約為 raw count 的 4.3–7.0 倍；絕對時間在 65,536 項時低於
-220 ms，但這仍是明顯成本，不能只報「固定大小」而省略時間。D9 probe 的
+在這 12 個項目數與負載組合中，full D9 約為 raw count 的 3.72–7.94 倍；
+65,536 項 baseline 為 4.76 倍。這仍是明顯成本，不能只報「固定大小」而省略時間。D9 probe 的
 稀疏 IBLT JSON 約 15 KiB，未隨目錄大小線性增加。
 
 另實作 accepted-entry exact map trace 作資源基線。它保存每個名稱，並由
@@ -151,7 +151,7 @@ Python 逐項讀回；不是 Synacktiv 工具的逐行復現，也不是完整�
 只有在完成下列項目後，才建立 `results/d9_formal/`：
 
 1. overlayfs 與 namespace 邊界；
-2. 決定是否優化目前約 4.3–7.0× raw count 的核心 hashing 成本；若修改，
+2. 決定是否優化約 3.72–7.94× raw count 的整體成本；若修改，
    所有新結果另開 revision，舊結果不得混用；
 3. 固定容量、seed 產生規則、case schedule、主要指標與分析程式；
 4. source snapshot/hash 後進行多次獨立開機確認實驗；
