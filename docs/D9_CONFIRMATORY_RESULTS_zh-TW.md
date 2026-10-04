@@ -178,8 +178,11 @@ short-circuit、`getdents64` buffer removal、等量 substitution 與 policy fil
 - 環境追溯：本次已從原 VM 補取 `/etc/os-release`，並對照實驗前 apt
   安裝紀錄、正式二進位雜湊、VM 建置設定與掛載資訊；詳見
   [`D9_ENVIRONMENT_AUDIT_20261004_zh-TW.md`](D9_ENVIRONMENT_AUDIT_20261004_zh-TW.md)。
-  原九開機批次仍沒有逐 boot 的發行版、宿主負載及 mount options 快照，
-  耗時數字只適用於該 VM／宿主配置。
+  另由[2026-09-24 工作紀錄](../results/environment/experiment_day_record_excerpt_20260924.md)
+  補得同日 `lsb_release -ds` 的 Ubuntu 22.04.5 輸出、探針完整 GCC
+  指令及正式批次前後的掛載資訊。原九開機批次仍沒有
+  逐 boot 的發行版、宿主負載及完整 mount options 快照；耗時數字
+  只適用於該 VM／宿主配置。
 - 正式 lock：`results/d9_formal/analysis_lock.json`
 - timing model：`results/d9_formal/timing_model.json`
 - 九開機原始證據：`results/d9_formal/raw/boot_01` 至 `boot_09`

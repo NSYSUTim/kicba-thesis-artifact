@@ -1,7 +1,8 @@
 # D9 實驗環境追溯紀錄
 
-正式實驗日期為 2026-09-24 至 09-25。本紀錄於 2026-10-04 從原實驗 VM
-`KICBA-Lab` 唯讀取得；當前 boot ID 為
+正式實驗日期為 2026-09-24 至 09-25。本紀錄結合
+[2026-09-24 的實驗工作紀錄摘錄](../results/environment/experiment_day_record_excerpt_20260924.md)
+與 2026-10-04 從原實驗 VM `KICBA-Lab` 唯讀取得的資料；當前 boot ID 為
 `6048e21a-6cd7-492e-8ca4-4b6888574b24`，不是正式實驗的 boot ID。
 歷史建置檔、正式分析鎖與 apt/dpkg 紀錄用於判斷哪些事後讀數可回溯到實驗前。
 
@@ -14,7 +15,7 @@
 | 宿主 CPU／記憶體 | 13th Gen Intel Core i7-1355U；約 32 GB RAM | CPU 型號於 2026-10-04 由宿主處理器登錄資訊及客體 `lscpu` 一致核對；記憶體為[2026-09-14 宿主狀態紀錄](../results/environment/host_status_20260914.md)的近似值。沒有實驗當日的宿主負載快照。 |
 | VM CPU／記憶體 | 4 vCPU；固定 8 GiB，未啟用動態記憶體 | 建置檔與建立腳本一致；當前客體 `lscpu` 顯示 4 CPU，`free -b` 顯示可用於 Linux 的總記憶體 8,326,762,496 bytes。 |
 | 虛擬磁碟 | 60 GiB 動態 VHDX | [2026-09-14 建置後宿主狀態紀錄](../results/environment/host_status_20260914.md)；路徑為 `D:\KICBA-Lab\vm\KICBA-Lab.vhdx`。當前帳號的 `Get-VHD` 查詢遭系統拒絕，型態依建置紀錄。 |
-| 測試目錄掛載 | 正式 runner 以 `/home/kicba/d9_campaign_*` 建立 fixture。2026-10-04 對 `/home/kicba` 執行 `findmnt -T`，得 `/dev/sda2`、ext4、`rw,relatime` | `collector/run_d9_campaign.py` 指定 `dir="/home/kicba"`；Decloaker 紀錄亦記有 ext4／`/dev/sda2`。`rw,relatime` 是**事後讀數**，D9 正式批次沒有保存當時的 mount options。 |
+| 測試目錄掛載 | 正式 runner 以 `/home/kicba/d9_campaign_*` 建立 fixture。2026-09-24 15:16 查得 `/dev/sda2`、ext4；同日 19:54 查得 `/dev/sda2`、ext4、`rw,relatime` | 正式批次在同日 16:17–17:26 完成；原 VM 保留的 boot 05–09 核心日誌亦顯示 `/dev/sda2` 於各次開機重新掛為可寫。runner 未在每個 batch 同步保存完整 mount options；詳見[工作紀錄摘錄](../results/environment/experiment_day_record_excerpt_20260924.md)。 |
 
 ## 客體作業系統與工具鏈
 
@@ -23,7 +24,9 @@
 顯示 `PRETTY_NAME="Ubuntu 22.04.5 LTS"` 與 `VERSION_ID="22.04"`。
 該檔在客體的建立／狀態變更時間是 2026-09-14 19:51（Asia/Taipei）；
 建置紀錄也指定 Ubuntu 22.04.5 ISO。這使 22.04.5 作為實驗客體版本有
-可追溯的支持，但正式九開機資料本身沒有逐 boot 保存 `os-release`。
+可追溯的支持；更直接的[同日工作紀錄](../results/environment/experiment_day_record_excerpt_20260924.md)
+於 2026-09-24 19:54 執行 `lsb_release -ds`，輸出 `Ubuntu 22.04.5 LTS`。
+正式九開機資料本身沒有逐 boot 保存 `os-release`。
 
 | 項目 | 版本與驗證 | 安裝時間／來源 |
 |---|---|---|
@@ -52,8 +55,10 @@
   於 2026-09-24 產生，顯示 `gcc-12 -std=gnu11 -O2 -DDEBUG=1`；
   其餘核心旗標由該核心的 Kbuild 加入。
 - 正式 runner 以 BCC `BPF(src_file=..., cflags=["-I<collector 路徑>"])`
-  編譯 eBPF 原始碼。`d9_enum_probe` 的原始 GCC 命令列旗標未保存於
-  倉庫或 ELF；只能由匹配鎖定雜湊的二進位確認 GCC 11.4.0。
+  編譯 eBPF 原始碼。2026-09-24 的[工作紀錄](../results/environment/experiment_day_record_excerpt_20260924.md)
+  保存了 `d9_enum_probe` 的完整 GCC 指令：
+  `gcc -O2 -Wall -Wextra -Werror -Icollector collector/d9_enum_probe.c -o /home/kicba/d9_enum_probe`。
+  執行檔 mtime 為同日 14:19，SHA-256 與正式鎖相符；ELF `.comment` 為 GCC 11.4.0。
 - `pyproject.toml` 指定 Python `>=3.10`、建置需求 `setuptools>=68`，
   `dependencies = []`。這不是完整套件鎖；BCC 與 stress-ng 依上述
   Ubuntu 套件及實驗鎖定資料追溯。
@@ -69,6 +74,8 @@
 ## 使用這些數值的界線
 
 九開機正式成效可依當時保存的 boot ID、核心、原始資料及來源／二進位雜湊稽核。
-本次補查提高了硬體與工具鏈的可追溯性；宿主 CPU 型號、Hyper-V 服務版本
-及 mount options 仍主要是事後讀數，沒有每次量測當日的完整主機快照。
+同日工作紀錄補足探針編譯指令，並對測試掛載提供正式批次前後的佐證。
+宿主 CPU 型號、Hyper-V 服務檔案版本仍主要由建置紀錄及事後讀數追溯；
+當日 `Get-VM` 查詢遭拒，沒有宿主負載或 VM configuration version 的量測值。
+這兩項不是本研究已量得的變數，也不應憑現在環境補造。
 耗時數字應限定於上述單一 VM／宿主配置，不能當作跨硬體的效能估計。
