@@ -1,21 +1,27 @@
-# D9 artifact 收錄範圍
+# 跨層目錄項一致性檢查研究成品收錄範圍
+
+本儲存庫保存目前論文所需的程式與可查核證據。方法、結果解讀與後續工作見 [README](README.md) 及[目前方法與下一步](docs/METHOD_AND_NEXT_STEPS_zh-TW.md)。原始程式、協定與資料檔名保留，以維持既有雜湊及重現關係。
 
 ## 已收錄
 
-- 指定的 D9 繁體中文會議論文。
-- D9 fingerprint/IBLT 核心實作、單元測試、eBPF 收集器與列舉 probe。
-- 正式實驗使用的三組自製控制模組：filldir 控制、getdents 控制與等基數替換。
-- 九開機 confirmatory matrix 的壓縮資料、鎖定檔、timing model 與正式分析輸出。
-- 論文實際引用的 boundary、IBLT capacity、robustness、filesystem/namespace 與 overhead 結果。
-- D9 外部比較的自製資料；Trace of the Times 與 Decloaker 僅保留論文採用的摘要、manifest、驗證紀錄及本研究撰寫的轉接/驗證腳本。
-- D9 實驗 VM 的建置紀錄、宿主狀態摘要、客體發行版輸出、相關 apt 事件摘要、Kbuild 命令及環境追溯說明。
+- 使用者於 2026-10-20 提供的 `eBPF_最終繳交.docx`，以 `paper/cross_layer_directory_entry_consistency_zhTW.docx` 原樣保存。
+- 多重集合指紋與 IBLT 實作、單元測試、eBPF 收集器及完整目錄列舉程式。
+- 正式矩陣使用的三組自製控制模組：filldir 控制、getdents 控制與等量替換。
+- 九次開機主實驗的壓縮資料、分析鎖、時序校準模型與正式分析輸出。
+- 論文引用的邊界、容量、穩健性、檔案系統、namespace、執行成本與逐項追蹤比較結果；開發期資料不併入正式成效矩陣。
+- 本方法在外部比較中的原始資料；Trace of the Times 與 Decloaker 的必要摘要、清單、驗證紀錄，以及本研究撰寫的轉接與驗證腳本。
+- 實驗 VM 建置紀錄、宿主狀態、客體發行版輸出、apt 事件摘要、Kbuild 命令與環境追溯說明。
 
-## 刻意排除
+## 未收錄
 
-- D1–D8 的論文、資料、圖表、程式與成品。
-- D9 的 smoke、quick、早期 pilot、重複修訂與文件產生中間檔。
-- `_docx_work`、rendered pages、暫存目錄、cache、編譯產物與 VM/SSH 憑證。
-- 重複封存用 `.tar`、Trace of the Times 約 400 MB 的逐事件副本，以及可由摘要/manifest 驗證但論文不需直接散布的衍生表格。
-- Trace of the Times、Decloaker、rkchk 的完整 upstream source、release archive 或 binary；取得方式與固定版本改以 `THIRD_PARTY_NOTICES.md` 說明。
+- 與目前論文不同研究問題的早期方向、資料與成品。
+- 快速測試、早期試跑、重複封存與文件產生中間檔。
+- 渲染頁面、快取、編譯產物、VM 映像及登入憑證。
+- Trace of the Times 約 400 MB 的逐事件資料、原作者公開資料集，以及不需直接散布的重複衍生表格。
+- Trace of the Times、Decloaker 與 rkchk 的完整第三方原始碼、發行壓縮檔或執行檔；固定版本見[第三方來源](THIRD_PARTY_NOTICES.md)。
 
-這個範圍的目的，是讓書面論文所需的程式與證據可查核，同時避免把其他研究方向、暫存物或第三方完整專案混入提交版本。
+## 可以重現的範圍
+
+九次開機主實驗可由本儲存庫的壓縮資料重新執行鎖定分析。外部工具的摘要與驗證紀錄可查核，但不表示所有外部數值都能只靠本套件重算；Trace of the Times 的完整比較需取得固定版本並重新收集逐事件資料。
+
+舊論文檔由目前版本取代，前一版本仍可由 Git 歷史查得。文件與論文更新不改動既有正式資料、分析核心、校準模型或實驗鎖。

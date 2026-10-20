@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "kicba-d9-reconciliation"
 version = "1.0.0"
-description = "D9 filldir64-to-getdents64 directory-entry reconciliation artifact"
+description = "Cross-layer directory-entry consistency checking with eBPF fingerprints and IBLT"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
