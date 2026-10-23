@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-24",
+  "purpose": "Publication checks after integrating the two preserved research commits and updating reading documents; no new VM experiment",
+  "formal_analysis": {
+    "passed": true,
+    "batches": 1296,
+    "transactions": 25920,
+    "criteria": {
+      "nine_unique_boots": true,
+      "no_integrity_failures": true,
+      "d9_difference_recall_ge_0_95": true,
+      "d9_control_fpr_le_0_05": true,
+      "each_difference_state_recall_ge_0_95": true,
+      "each_control_state_fpr_le_0_05": true,
+      "each_boot_control_fpr_le_0_10": true,
+      "exact_recovery_ge_0_95": true,
+      "zero_incorrect_success": true,
+      "zero_measurement_invalid": true,
+      "substitution_advantage_over_count_ge_0_90": true,
+      "authorized_policy_difference_visible_ge_0_95": true
+    }
+  },
+  "research_recomputation": {
+    "passed": true,
+    "archives_verified": 17,
+    "historical_snapshots_verified": {
+      "b6fd4af9d581d0af24e70915fdaeb65d8aa1e416": 1146,
+      "cb0a27a": 1305
+    },
+    "frozen_sources_verified": {
+      "phase1/CONFIRMATION_LOCK.json": 37,
+      "phase2/locks/kernel65.json": 66,
+      "phase2/locks/kernel68.json": 66
+    },
+    "confirmation_boots_recomputed": {
+      "phase1": 3,
+      "phase2": 6
+    },
+    "explicit_catalog_updates": [
+      "ARTIFACT_SCOPE.md",
+      "FILE_SHA256.csv",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/METHOD_AND_NEXT_STEPS_zh-TW.md"
+    ]
+  },
+  "python_tests": {
+    "executed": 46,
+    "skipped": 12,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  },
+  "independent_agent_review_completed": false,
+  "experimental_runtime_and_locks_changed": false,
+  "paper_docx_changed": false,
+  "reproduce": "python scripts/verify_research_updates.py --recompute --output reproduced/research_updates.json"
+}
