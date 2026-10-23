@@ -1,0 +1,36 @@
+test_parse_rejects_duplicate_event_even_when_counts_match (test_coverage.ProfileTests.test_parse_rejects_duplicate_event_even_when_counts_match) ... ok
+test_parse_rejects_empty_or_missing_source (test_coverage.ProfileTests.test_parse_rejects_empty_or_missing_source) ... ok
+test_parse_rejects_missing_extra_or_malformed_columns (test_coverage.ProfileTests.test_parse_rejects_missing_extra_or_malformed_columns) ... ok
+test_parse_retains_exact_names_and_integer_counters (test_coverage.ProfileTests.test_parse_retains_exact_names_and_integer_counters) ... ok
+test_coverage_failure_dominates_both_fingerprint_states (test_coverage.VerdictTests.test_coverage_failure_dominates_both_fingerprint_states) ... ok
+test_missing_or_failed_original_completion_always_invalidates (test_coverage.VerdictTests.test_missing_or_failed_original_completion_always_invalidates) ... ok
+test_unknown_fingerprint_status_is_invalid (test_coverage.VerdictTests.test_unknown_fingerprint_status_is_invalid) ... ok
+test_valid_original_completion_and_coverage_allow_fingerprint_verdict (test_coverage.VerdictTests.test_valid_original_completion_and_coverage_allow_fingerprint_verdict) ... ok
+test_both_counter_resets_invalidate_without_clamping_negative_deltas (test_coverage.WindowTests.test_both_counter_resets_invalidate_without_clamping_negative_deltas) ... ok
+test_complete_zero_miss_window_is_valid (test_coverage.WindowTests.test_complete_zero_miss_window_is_valid) ... ok
+test_empty_duplicate_or_malformed_expected_identities_invalidate (test_coverage.WindowTests.test_empty_duplicate_or_malformed_expected_identities_invalidate) ... ok
+test_exact_identity_cannot_be_replaced_by_an_unrelated_event (test_coverage.WindowTests.test_exact_identity_cannot_be_replaced_by_an_unrelated_event) ... ok
+test_global_missed_increment_invalidates_whole_window (test_coverage.WindowTests.test_global_missed_increment_invalidates_whole_window) ... ok
+test_hits_reset_alone_invalidates (test_coverage.WindowTests.test_hits_reset_alone_invalidates) ... ok
+test_missed_reset_alone_invalidates (test_coverage.WindowTests.test_missed_reset_alone_invalidates) ... ok
+test_missing_parsed_counter_does_not_default_to_zero (test_coverage.WindowTests.test_missing_parsed_counter_does_not_default_to_zero) ... ok
+test_missing_snapshot_never_becomes_zero (test_coverage.WindowTests.test_missing_snapshot_never_becomes_zero) ... ok
+test_parse_errors_fail_closed_instead_of_raising_or_using_partial_data (test_coverage.WindowTests.test_parse_errors_fail_closed_instead_of_raising_or_using_partial_data) ... ok
+test_parsed_counters_must_be_nonnegative_integers_excluding_booleans (test_coverage.WindowTests.test_parsed_counters_must_be_nonnegative_integers_excluding_booleans) ... ok
+test_parsed_dicts_use_the_same_contract (test_coverage.WindowTests.test_parsed_dicts_use_the_same_contract) ... ok
+test_record_with_malformed_identity_or_shape_fails_closed (test_coverage.WindowTests.test_record_with_malformed_identity_or_shape_fails_closed) ... ok
+test_unrelated_events_do_not_replace_or_rename_expected_events (test_coverage.WindowTests.test_unrelated_events_do_not_replace_or_rename_expected_events) ... ok
+test_each_random_block_contains_every_cost_mode_once (test_runner_contract.RunnerContractTests.test_each_random_block_contains_every_cost_mode_once) ... ok
+test_exact_record_comparison_keeps_multiplicity_and_name_bytes (test_runner_contract.RunnerContractTests.test_exact_record_comparison_keeps_multiplicity_and_name_bytes) ... ok
+test_malformed_exact_record_cannot_be_treated_as_valid_empty_output (test_runner_contract.RunnerContractTests.test_malformed_exact_record_cannot_be_treated_as_valid_empty_output) ... ok
+test_exact_dump_retains_name_bytes_and_identity (test_variants.EnumVariantTests.test_exact_dump_retains_name_bytes_and_identity) ... skipped 'requires Linux getdents64'
+test_existing_dump_is_never_overwritten (test_variants.EnumVariantTests.test_existing_dump_is_never_overwritten) ... skipped 'requires Linux getdents64'
+test_fingerprint_mode_matches_independent_python_and_has_no_table (test_variants.EnumVariantTests.test_fingerprint_mode_matches_independent_python_and_has_no_table) ... skipped 'requires Linux getdents64'
+test_full_mode_table_cancels_against_independent_python (test_variants.EnumVariantTests.test_full_mode_table_cancels_against_independent_python) ... skipped 'requires Linux getdents64'
+test_invalid_mode_or_numeric_arguments_are_rejected (test_variants.EnumVariantTests.test_invalid_mode_or_numeric_arguments_are_rejected) ... skipped 'requires Linux getdents64'
+test_parse_mode_counts_without_claiming_hashes (test_variants.EnumVariantTests.test_parse_mode_counts_without_claiming_hashes) ... skipped 'requires Linux getdents64'
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.009s
+
+OK (skipped=6)

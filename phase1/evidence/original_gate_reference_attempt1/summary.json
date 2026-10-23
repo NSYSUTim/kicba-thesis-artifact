@@ -1,0 +1,18 @@
+{
+  "1": {
+    "windows": 3,
+    "transactions": 56,
+    "original_valid": 0,
+    "original_rejected": 56,
+    "original_pipeline_errors": 40,
+    "missed_windows": 3
+  },
+  "256": {
+    "windows": 3,
+    "transactions": 56,
+    "original_valid": 56,
+    "original_rejected": 0,
+    "original_pipeline_errors": 0,
+    "missed_windows": 0
+  }
+}

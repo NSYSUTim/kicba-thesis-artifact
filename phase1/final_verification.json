@@ -1,0 +1,24 @@
+{
+  "kernel_unchanged": true,
+  "packages_unchanged": true,
+  "timer_states": {
+    "apt-daily.timer": {
+      "returncode": 0,
+      "stdout": "ActiveState=active\nUnitFileState=enabled\n",
+      "stderr": ""
+    },
+    "apt-daily-upgrade.timer": {
+      "returncode": 0,
+      "stdout": "ActiveState=active\nUnitFileState=enabled\n",
+      "stderr": ""
+    },
+    "unattended-upgrades.service": {
+      "returncode": 0,
+      "stdout": "ActiveState=active\nUnitFileState=enabled\n",
+      "stderr": ""
+    }
+  },
+  "source_drift": [],
+  "known_modules_loaded": [],
+  "remaining_tracefs_probes": ""
+}

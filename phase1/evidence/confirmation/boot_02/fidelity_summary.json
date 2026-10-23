@@ -1,0 +1,8 @@
+{
+  "trials": 600,
+  "full_trials": 240,
+  "setup_failures": 0,
+  "output_mismatch": 0,
+  "verdict_mismatch": 0,
+  "decode_mismatch": 0
+}

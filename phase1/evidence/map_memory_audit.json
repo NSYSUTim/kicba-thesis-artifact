@@ -1,0 +1,169 @@
+{
+  "bpf_source_sha256": "c20d6267186f72652712828ac58ae8101ad79f0dfc39f56a0915d7665709f1dc",
+  "audit_source_sha256": "93461a12bff6185783a01e81fb37fb2ecb50958d9cc77da6f8a17e521735968b",
+  "probes_attached": false,
+  "maps": {
+    "monitored_pids": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t4\nvalue_size:\t1\nmax_entries:\t1024\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t83296\nmap_id:\t335\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "4",
+        "value_size": "1",
+        "max_entries": "1024",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "83296",
+        "map_id": "335",
+        "frozen": "0"
+      }
+    },
+    "collection_enabled": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t2\nkey_size:\t4\nvalue_size:\t1\nmax_entries:\t1\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t392\nmap_id:\t334\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "2",
+        "key_size": "4",
+        "value_size": "1",
+        "max_entries": "1",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "392",
+        "map_id": "334",
+        "frozen": "0"
+      }
+    },
+    "hash_seeds": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t2\nkey_size:\t4\nvalue_size:\t8\nmax_entries:\t2\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t400\nmap_id:\t333\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "2",
+        "key_size": "4",
+        "value_size": "8",
+        "max_entries": "2",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "400",
+        "map_id": "333",
+        "frozen": "0"
+      }
+    },
+    "iblt_cell_count": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t2\nkey_size:\t4\nvalue_size:\t4\nmax_entries:\t1\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t392\nmap_id:\t332\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "2",
+        "key_size": "4",
+        "value_size": "4",
+        "max_entries": "1",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "392",
+        "map_id": "332",
+        "frozen": "0"
+      }
+    },
+    "depth_by_pid": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t4\nvalue_size:\t4\nmax_entries:\t1024\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t83296\nmap_id:\t331\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "4",
+        "value_size": "4",
+        "max_entries": "1024",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "83296",
+        "map_id": "331",
+        "frozen": "0"
+      }
+    },
+    "pending_by_pid": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t4\nvalue_size:\t24\nmax_entries:\t1024\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t99744\nmap_id:\t330\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "4",
+        "value_size": "24",
+        "max_entries": "1024",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "99744",
+        "map_id": "330",
+        "frozen": "0"
+      }
+    },
+    "kernel_fingerprints": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t4\nvalue_size:\t24\nmax_entries:\t1024\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t99744\nmap_id:\t329\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "4",
+        "value_size": "24",
+        "max_entries": "1024",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "99744",
+        "map_id": "329",
+        "frozen": "0"
+      }
+    },
+    "kernel_iblt": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t8\nvalue_size:\t40\nmax_entries:\t65536\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t7341536\nmap_id:\t328\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "8",
+        "value_size": "40",
+        "max_entries": "65536",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "7341536",
+        "map_id": "328",
+        "frozen": "0"
+      }
+    },
+    "stats_by_pid": {
+      "raw_fdinfo": "pos:\t0\nflags:\t02000002\nmnt_id:\t16\nino:\t37\nmap_type:\t1\nkey_size:\t4\nvalue_size:\t80\nmax_entries:\t1024\nmap_flags:\t0x0\nmap_extra:\t0x0\nmemlock:\t157312\nmap_id:\t327\nfrozen:\t0\n",
+      "fields": {
+        "pos": "0",
+        "flags": "02000002",
+        "mnt_id": "16",
+        "ino": "37",
+        "map_type": "1",
+        "key_size": "4",
+        "value_size": "80",
+        "max_entries": "1024",
+        "map_flags": "0x0",
+        "map_extra": "0x0",
+        "memlock": "157312",
+        "map_id": "327",
+        "frozen": "0"
+      }
+    }
+  }
+}

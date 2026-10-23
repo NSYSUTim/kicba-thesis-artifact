@@ -1,0 +1,209 @@
+{
+  "cells": 8,
+  "pid": 3868,
+  "original_valid": true,
+  "readback_ns": 951629,
+  "decode_ns": 138827,
+  "cleanup_ns": 273620,
+  "returncode": 0,
+  "stderr": "",
+  "json_parse_ns": 56200,
+  "userspace": {
+    "schema_version": 1,
+    "mode": 2,
+    "exact_capture": false,
+    "count": 547,
+    "sum1": 7954914096310573523,
+    "sum2": 5284996023564311716,
+    "syscalls": 2,
+    "returned_bytes": 21848,
+    "scan_ns": 1381219,
+    "cells": [
+      [
+        0,
+        223,
+        17683794446962984002,
+        3408689,
+        8,
+        12994315270292472518
+      ],
+      [
+        1,
+        197,
+        10894540191541569230,
+        3408001,
+        8,
+        14690524611238556704
+      ],
+      [
+        2,
+        189,
+        4209578898649733294,
+        3408718,
+        4,
+        15933616364840112045
+      ],
+      [
+        3,
+        206,
+        1201765479945505243,
+        310,
+        0,
+        11272342800059012401
+      ],
+      [
+        4,
+        221,
+        13094821336852804417,
+        3407921,
+        8,
+        15444063129268586395
+      ],
+      [
+        5,
+        201,
+        13845233753096973873,
+        3408455,
+        8,
+        10646410420410131876
+      ],
+      [
+        6,
+        200,
+        14249923416679660312,
+        593,
+        0,
+        14735418525524074413
+      ],
+      [
+        7,
+        204,
+        13157273688112437250,
+        482,
+        12,
+        16888340988696560427
+      ]
+    ]
+  },
+  "kernel_fingerprint": [
+    563,
+    2398622291035739297,
+    11597861369847340684
+  ],
+  "kernel_stats": {
+    "outer_entries": 563,
+    "accepted_entries": 563,
+    "rejected_entries": 0,
+    "name_read_errors": 0,
+    "invalid_name_lengths": 0,
+    "pending_update_failures": 0,
+    "fingerprint_update_failures": 0,
+    "iblt_update_failures": 0,
+    "return_underflows": 0,
+    "name_read_checksum": 75062
+  },
+  "configuration": [
+    81985529216486895,
+    17357386176853808775,
+    8,
+    1
+  ],
+  "kernel_rows": [
+    [
+      231,
+      14082823794456478165,
+      3408685,
+      8,
+      5997348845833768177
+    ],
+    [
+      200,
+      16280289335661388693,
+      933,
+      0,
+      11936699452221193529
+    ],
+    [
+      194,
+      13716951019621935577,
+      97,
+      12,
+      2022832792250711414
+    ],
+    [
+      215,
+      7288059914146487501,
+      3408390,
+      8,
+      11382070081842006047
+    ],
+    [
+      224,
+      289938423614410279,
+      770,
+      0,
+      16447983691373618582
+    ],
+    [
+      207,
+      11407256285555383373,
+      3408475,
+      8,
+      14482011354496934553
+    ],
+    [
+      210,
+      5310570916860622659,
+      587,
+      0,
+      2005684072659042019
+    ],
+    [
+      208,
+      7482304368581326440,
+      496,
+      12,
+      671952502788092271
+    ]
+  ],
+  "fingerprint_equal": false,
+  "decode_success": false,
+  "upstream_only": [],
+  "downstream_only": [],
+  "residual_cells": 8,
+  "wall_ns": 4822963,
+  "wall_with_coverage_ns": 5401408,
+  "coverage": {
+    "available": true,
+    "valid": true,
+    "reasons": [],
+    "missed_scope": "global",
+    "covered_events": [
+      "r_filldir64_bcc_3864"
+    ],
+    "per_event": {
+      "r_filldir64_bcc_3864": {
+        "hits_delta": 589,
+        "missed_delta": 0
+      }
+    },
+    "entry_counter_visibility": "not_exposed_by_original_perf_attachment"
+  },
+  "coverage_before": {
+    "profile": "  r_filldir64_bcc_3864                                      22               0\n",
+    "event": "r_filldir64_bcc_3864",
+    "definition": [
+      "r256:kprobes/r_filldir64_bcc_3864 filldir64"
+    ],
+    "event_id": "1790"
+  },
+  "coverage_after": {
+    "profile": "  r_filldir64_bcc_3864                                     611               0\n",
+    "event": "r_filldir64_bcc_3864",
+    "definition": [
+      "r256:kprobes/r_filldir64_bcc_3864 filldir64"
+    ],
+    "event_id": "1790"
+  },
+  "verdict": "different"
+}

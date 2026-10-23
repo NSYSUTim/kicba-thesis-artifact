@@ -1,0 +1,25 @@
+{
+  "maxactive_1": {
+    "windows": 30,
+    "missed_windows": 30,
+    "missed_total": 2877755,
+    "transactions": 560,
+    "invalid_transactions": 560,
+    "false_valid_when_missed": 0
+  },
+  "maxactive_256": {
+    "windows": 30,
+    "missed_windows": 0,
+    "missed_total": 0,
+    "transactions": 560,
+    "invalid_transactions": 0,
+    "false_valid_when_missed": 0
+  },
+  "normal": {
+    "windows": 30,
+    "equal": 30,
+    "different": 0,
+    "invalid": 0,
+    "decode_failures": 0
+  }
+}

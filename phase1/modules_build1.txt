@@ -1,0 +1,169 @@
+make: Entering directory '/usr/src/linux-headers-6.8.0-138-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  You are using:           gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_common.inc:20,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_common.inc:20,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_common.inc:20,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  MODPOST /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/Module.symvers
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_pass.ko due to unavailability of vmlinux
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_active.ko due to unavailability of vmlinux
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d7_controls_r2/kicba_d7_hiding.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.8.0-138-generic'
+make: Entering directory '/usr/src/linux-headers-6.8.0-138-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  You are using:           gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_common.inc:27,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_common.inc:27,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_common.inc:27,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_common.inc:27,
+                 from /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.c:2:
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/../d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  MODPOST /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/Module.symvers
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_pass.ko due to unavailability of vmlinux
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_active.ko due to unavailability of vmlinux
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_hiding.ko due to unavailability of vmlinux
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d8_getdents_controls/kicba_d8_getdents_policy.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.8.0-138-generic'
+make: Entering directory '/usr/src/linux-headers-6.8.0-138-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  You are using:           gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.o
+In file included from /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.c:20:
+/home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/../d7_controls_r2/ftrace_helper.h:121:5: warning: no previous prototype for ‘fh_install_hook’ [-Wmissing-prototypes]
+  121 | int fh_install_hook(struct ftrace_hook *hook)
+      |     ^~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/../d7_controls_r2/ftrace_helper.h:162:6: warning: no previous prototype for ‘fh_remove_hook’ [-Wmissing-prototypes]
+  162 | void fh_remove_hook(struct ftrace_hook *hook)
+      |      ^~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/../d7_controls_r2/ftrace_helper.h:186:5: warning: no previous prototype for ‘fh_install_hooks’ [-Wmissing-prototypes]
+  186 | int fh_install_hooks(struct ftrace_hook *hooks, size_t count)
+      |     ^~~~~~~~~~~~~~~~
+/home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/../d7_controls_r2/ftrace_helper.h:212:6: warning: no previous prototype for ‘fh_remove_hooks’ [-Wmissing-prototypes]
+  212 | void fh_remove_hooks(struct ftrace_hook *hooks, size_t count)
+      |      ^~~~~~~~~~~~~~~
+  MODPOST /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/Module.symvers
+  CC [M]  /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.mod.o
+  LD [M]  /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.ko
+  BTF [M] /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.ko
+Skipping BTF generation for /home/kicba/research_phase1_20261023/attack_variants/d9_getdents_substitute/kicba_d9_getdents_substitute.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.8.0-138-generic'

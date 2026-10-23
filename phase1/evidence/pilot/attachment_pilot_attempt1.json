@@ -1,0 +1,29 @@
+{
+  "loader_pid": 4778,
+  "maxactive": 256,
+  "events_before": "r256:kprobes/r_filldir64_bcc_4778 filldir64\n",
+  "profile_before": "  r_filldir64_bcc_4778                                       0               0\n",
+  "listing_count": 76,
+  "profile_after": "  r_filldir64_bcc_4778                                      78               0\n",
+  "events_after": "r256:kprobes/r_filldir64_bcc_4778 filldir64\n",
+  "required_events": [
+    "r_filldir64_bcc_4778"
+  ],
+  "coverage": {
+    "available": true,
+    "valid": true,
+    "reasons": [],
+    "missed_scope": "global",
+    "covered_events": [
+      "r_filldir64_bcc_4778"
+    ],
+    "per_event": {
+      "r_filldir64_bcc_4778": {
+        "hits_delta": 78,
+        "missed_delta": 0
+      }
+    }
+  },
+  "entry_profile_present": false,
+  "events_after_cleanup": ""
+}

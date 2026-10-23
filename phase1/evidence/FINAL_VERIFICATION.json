@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-23T11:59:33.714163+00:00",
+  "original_files_sha256_verified_in_each_checkout": 1146,
+  "published_checkout_clean": true,
+  "archive_sha256": {
+    "confirmation_boot_01.tar.gz": "b8404d1f6d9490af43860ae650bdbb9160ed753d2132e6ddc68ec9e8bfea0a78",
+    "confirmation_boot_02.tar.gz": "a204be8631719ff86b3a2b4ad946492c26b600b9bb60be18f76b7f065bb432aa",
+    "confirmation_boot_03.tar.gz": "224866e9704a53e6cc845d684b43cac97277391f096414ed37dd3ac4be8b7b89",
+    "original_gate_reference.tar.gz": "d097bfb030d1f704ac8bc3a4a5c1a4a6969c15e0ab3777053177cd827d7e586d",
+    "phase1_frozen_sources.tar.gz": "8a6cb3d91c06fc684c3c7f24805b949075df2a31a6267f0fd914c70fba93861d",
+    "phase1_pilot_and_faults.tar.gz": "0bbdd5ce0d9d956dd5c4dbc23cd85c983ef81bc8586c8811be0935e9fd328757"
+  },
+  "separate_reference_matches_expanded_records": true,
+  "supplement_environment_verified": true,
+  "host_tests_new": 27,
+  "host_tests_original": 7,
+  "prior_guest_tests_new": 7,
+  "separate_fault_tests": 5,
+  "independent_agent_review_completed": false
+}

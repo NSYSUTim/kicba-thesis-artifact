@@ -1,0 +1,18 @@
+{
+  "purpose": "supplemental unchanged original-function replay, not confirmation data",
+  "boot_id": "2329b821-58b3-41a9-8b0a-9edc8ea83684",
+  "reference_source_sha256": "5bf40b6776b6c87ae136694a4feba029102996e86360920d4b785cc2cbf8860a",
+  "replay_source_sha256": "7aad113b2a1d92c505ae29e47f6e6cf472cf49819768dccdfbd3b10f416606e7",
+  "design": {
+    "maxactive": [
+      1,
+      256
+    ],
+    "workers": [
+      4,
+      8,
+      16
+    ],
+    "scans_per_worker": 2
+  }
+}

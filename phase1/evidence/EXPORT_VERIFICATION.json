@@ -1,0 +1,11 @@
+{
+  "archives_verified": 5,
+  "frozen_source_files_verified": 37,
+  "archive_sha256": {
+    "phase1_frozen_sources.tar.gz": "8a6cb3d91c06fc684c3c7f24805b949075df2a31a6267f0fd914c70fba93861d",
+    "phase1_pilot_and_faults.tar.gz": "0bbdd5ce0d9d956dd5c4dbc23cd85c983ef81bc8586c8811be0935e9fd328757",
+    "confirmation_boot_01.tar.gz": "b8404d1f6d9490af43860ae650bdbb9160ed753d2132e6ddc68ec9e8bfea0a78",
+    "confirmation_boot_02.tar.gz": "a204be8631719ff86b3a2b4ad946492c26b600b9bb60be18f76b7f065bb432aa",
+    "confirmation_boot_03.tar.gz": "224866e9704a53e6cc845d684b43cac97277391f096414ed37dd3ac4be8b7b89"
+  }
+}

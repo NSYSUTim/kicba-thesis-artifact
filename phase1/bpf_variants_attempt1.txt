@@ -1,0 +1,34 @@
+test_additive_modes_keep_accepted_counts_and_full_fingerprint (test_bpf_variants.BPFVariantTests) ... /usr/lib/python3/dist-packages/bcc/__init__.py:307: DeprecationWarning: not a bytes object: '/home/kicba/research_phase1_20261023/phase1/bpf_measurement.c'
+  src_file = _assert_is_bytes(src_file)
+/usr/lib/python3/dist-packages/bcc/__init__.py:663: DeprecationWarning: not a bytes object: 'filldir64'
+  event = _assert_is_bytes(event)
+/usr/lib/python3/dist-packages/bcc/__init__.py:664: DeprecationWarning: not a bytes object: 'd9_filldir64_enter'
+  fn_name = _assert_is_bytes(fn_name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:689: DeprecationWarning: not a bytes object: 'filldir64'
+  event = _assert_is_bytes(event)
+/usr/lib/python3/dist-packages/bcc/__init__.py:690: DeprecationWarning: not a bytes object: 'd9_filldir64_return'
+  fn_name = _assert_is_bytes(fn_name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'collection_enabled'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'hash_seeds'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'iblt_cell_count'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'monitored_pids'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'kernel_fingerprints'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'stats_by_pid'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'depth_by_pid'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'pending_by_pid'
+  name = _assert_is_bytes(name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'kernel_iblt'
+  name = _assert_is_bytes(name)
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 6.060s
+
+OK

@@ -1,0 +1,12 @@
+test_equal_cardinality_substitution_is_detected_and_recovered (test_d9_reconciliation.D9ReconciliationTests.test_equal_cardinality_substitution_is_detected_and_recovered) ... ok
+test_fingerprint_is_order_independent_and_multiplicity_sensitive (test_d9_reconciliation.D9ReconciliationTests.test_fingerprint_is_order_independent_and_multiplicity_sensitive) ... ok
+test_large_directory_with_small_difference_uses_difference_sized_table (test_d9_reconciliation.D9ReconciliationTests.test_large_directory_with_small_difference_uses_difference_sized_table) ... ok
+test_over_capacity_is_an_honest_unresolved_result (test_d9_reconciliation.D9ReconciliationTests.test_over_capacity_is_an_honest_unresolved_result) ... ok
+test_parameter_mismatch_is_rejected (test_d9_reconciliation.D9ReconciliationTests.test_parameter_mismatch_is_rejected) ... ok
+test_recommended_size_is_power_of_two (test_d9_reconciliation.D9ReconciliationTests.test_recommended_size_is_power_of_two) ... ok
+test_zero_difference_decodes_empty (test_d9_reconciliation.D9ReconciliationTests.test_zero_difference_decodes_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.865s
+
+OK

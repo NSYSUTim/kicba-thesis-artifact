@@ -1,0 +1,10 @@
+__pycache__/
+.render_deps/
+.mpl_cache/
+analysis_revisions/
+*.tar
+evidence/**/attempts.jsonl
+evidence/**/actual_*.jsonl
+evidence/**/fixture*/
+evidence/**/d9_boundary_*/
+baseline/formal_results.json

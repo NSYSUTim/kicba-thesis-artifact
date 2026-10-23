@@ -1,0 +1,20 @@
+{
+  "output": "phase1\\baseline\\formal_results.json",
+  "passed": true,
+  "batches": 1296,
+  "integrity_failures": [],
+  "criteria": {
+    "nine_unique_boots": true,
+    "no_integrity_failures": true,
+    "d9_difference_recall_ge_0_95": true,
+    "d9_control_fpr_le_0_05": true,
+    "each_difference_state_recall_ge_0_95": true,
+    "each_control_state_fpr_le_0_05": true,
+    "each_boot_control_fpr_le_0_10": true,
+    "exact_recovery_ge_0_95": true,
+    "zero_incorrect_success": true,
+    "zero_measurement_invalid": true,
+    "substitution_advantage_over_count_ge_0_90": true,
+    "authorized_policy_difference_visible_ge_0_95": true
+  }
+}

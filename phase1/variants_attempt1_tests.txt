@@ -1,0 +1,11 @@
+test_exact_dump_retains_name_bytes_and_identity (test_variants.EnumVariantTests) ... ok
+test_existing_dump_is_never_overwritten (test_variants.EnumVariantTests) ... ok
+test_fingerprint_mode_matches_independent_python_and_has_no_table (test_variants.EnumVariantTests) ... ok
+test_full_mode_table_cancels_against_independent_python (test_variants.EnumVariantTests) ... ok
+test_invalid_mode_or_numeric_arguments_are_rejected (test_variants.EnumVariantTests) ... ok
+test_parse_mode_counts_without_claiming_hashes (test_variants.EnumVariantTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.587s
+
+OK
