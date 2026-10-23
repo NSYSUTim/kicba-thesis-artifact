@@ -1,0 +1,76 @@
+{
+  "native_checks": {
+    "kernel68": {
+      "records": 18,
+      "checks": {
+        "test_16_concurrent_scans_keep_separate_records_result": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_grow": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_inode": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_insert": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_remove": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_reorder": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_shrink": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_type": true,
+        "test_exact_accepted_fingerprint_and_cells_match_independent_python_256": true,
+        "test_exact_accepted_fingerprint_and_cells_match_independent_python_8": true,
+        "test_independent_filter_small_capacity_failure_keeps_alert_result": true,
+        "test_invalid_cell_config_is_not_valid_equal_result": true,
+        "test_missing_state_and_unpaired_state_are_invalid_missing": true,
+        "test_missing_state_and_unpaired_state_are_invalid_unpaired": true,
+        "test_real_return_probe_loss_rejects_whole_window_result": true,
+        "test_seed_mismatch_is_invalid_result": true,
+        "test_small_buffers_keep_rejected_acceptance_attempts_out_result": true,
+        "test_without_probes_transform_still_changes_actual_output_result": true
+      },
+      "real_return_missed_delta": 30747,
+      "test_methods": 10
+    },
+    "kernel65": {
+      "records": 18,
+      "checks": {
+        "test_16_concurrent_scans_keep_separate_records_result": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_grow": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_inode": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_insert": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_remove": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_reorder": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_shrink": true,
+        "test_each_real_action_matches_exact_oracle_and_signed_recovery_type": true,
+        "test_exact_accepted_fingerprint_and_cells_match_independent_python_256": true,
+        "test_exact_accepted_fingerprint_and_cells_match_independent_python_8": true,
+        "test_independent_filter_small_capacity_failure_keeps_alert_result": true,
+        "test_invalid_cell_config_is_not_valid_equal_result": true,
+        "test_missing_state_and_unpaired_state_are_invalid_missing": true,
+        "test_missing_state_and_unpaired_state_are_invalid_unpaired": true,
+        "test_real_return_probe_loss_rejects_whole_window_result": true,
+        "test_seed_mismatch_is_invalid_result": true,
+        "test_small_buffers_keep_rejected_acceptance_attempts_out_result": true,
+        "test_without_probes_transform_still_changes_actual_output_result": true
+      },
+      "real_return_missed_delta": 11189,
+      "test_methods": 10
+    }
+  },
+  "final_environments": {
+    "kernel68": {
+      "kernel_unchanged": true,
+      "packages_unchanged": true,
+      "sources_unchanged": true,
+      "modules_removed": true,
+      "tracefs_probes_removed": true,
+      "original_vm_mac": true,
+      "original_kernel": true,
+      "timers_restored": true,
+      "frozen_sources_unchanged": true,
+      "test_modules_removed": true,
+      "isolated_routes": true
+    },
+    "kernel65": {
+      "kernel_unchanged": true,
+      "packages_unchanged": true,
+      "sources_unchanged": true,
+      "modules_removed": true,
+      "tracefs_probes_removed": true
+    }
+  }
+}

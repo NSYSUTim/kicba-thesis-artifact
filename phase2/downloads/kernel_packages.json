@@ -1,0 +1,30 @@
+{
+  "kernel": "6.5.0-45-generic",
+  "packages": [
+    {
+      "filename": "linux-image-unsigned-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-6.5/linux-image-unsigned-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "sha256": "a26245439090dfd210e41348d52552e7aea4e91eab25387efdd6aab81187a50d",
+      "bytes": 14397632
+    },
+    {
+      "filename": "linux-modules-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-6.5/linux-modules-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "sha256": "9e3b18110039d06f47b38b0b3157a26baea2ca419be857e3ecbe8f7115894ee1",
+      "bytes": 26356364
+    },
+    {
+      "filename": "linux-headers-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-6.5/linux-headers-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb",
+      "sha256": "2ac2d431a8aefa744dca1d36a2895502293a0caf24c27535a28fe5d87b6ca465",
+      "bytes": 3425574
+    },
+    {
+      "filename": "linux-hwe-6.5-headers-6.5.0-45_6.5.0-45.45~22.04.1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-6.5/linux-hwe-6.5-headers-6.5.0-45_6.5.0-45.45~22.04.1_all.deb",
+      "sha256": "d6a9cf9d48838b488a4de4edd307f9dd7978556f26016daade4d1ab386231c6e",
+      "bytes": 13300816
+    }
+  ],
+  "trust": "official HTTPS retrieval; saved SHA-256, not a signed-index validation"
+}

@@ -1,0 +1,22 @@
+﻿{
+    "success":  true,
+    "mode":  "Original",
+    "recorded_at":  "2026-10-23T21:44:07.1368749+08:00",
+    "original":  {
+                     "Name":  "KICBA-Lab",
+                     "Id":  "d265205d-e394-417d-b629-f0c947341d11",
+                     "State":  2,
+                     "MemoryStartup":  8589934592,
+                     "ProcessorCount":  4
+                 },
+    "clone":  {
+                  "Name":  "KICBA-Phase2-Kernel65",
+                  "Id":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                  "State":  3,
+                  "MemoryStartup":  8589934592,
+                  "ProcessorCount":  4
+              },
+    "clone_disks":  {
+                        "Path":  "D:\\KICBA-Lab\\phase2-20261023\\kernel65.vhdx"
+                    }
+}

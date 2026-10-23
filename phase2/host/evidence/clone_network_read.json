@@ -1,0 +1,242 @@
+﻿{
+    "vm":  {
+               "Name":  "KICBA-Phase2-Kernel65",
+               "Id":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+               "State":  2,
+               "Status":  "Operating normally",
+               "Uptime":  {
+                              "Ticks":  2885320000,
+                              "Days":  0,
+                              "Hours":  0,
+                              "Milliseconds":  532,
+                              "Minutes":  4,
+                              "Seconds":  48,
+                              "TotalDays":  0.0033394907407407405,
+                              "TotalHours":  0.080147777777777776,
+                              "TotalMilliseconds":  288532,
+                              "TotalMinutes":  4.8088666666666668,
+                              "TotalSeconds":  288.532
+                          }
+           },
+    "network":  {
+                    "Name":  "Network Adapter",
+                    "MacAddress":  "00155D70AA03",
+                    "IPAddresses":  [
+
+                                    ],
+                    "SwitchName":  "KICBA-Isolated"
+                },
+    "firmware":  {
+                     "SecureBoot":  1,
+                     "PreferredNetworkBootProtocol":  0,
+                     "BootOrder":  [
+                                       {
+                                           "BootType":  3,
+                                           "Description":  "ubuntu",
+                                           "FirmwarePath":  "HD(1,GPT,C21FE5E4-D57B-4791-97F6-AD772C0CE709,0x800,0x219800)/\\EFI\\ubuntu\\shimx64.efi",
+                                           "Device":  null,
+                                           "VMId":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                                           "VMName":  "KICBA-Phase2-Kernel65",
+                                           "VMSnapshotId":  "00000000-0000-0000-0000-000000000000",
+                                           "VMSnapshotName":  "",
+                                           "CimSession":  {
+                                                              "ComputerName":  null,
+                                                              "InstanceId":  "8dd2b237-d931-4fd1-9f08-26bd86c75cf4"
+                                                          },
+                                           "ComputerName":  "江威廷-新電腦",
+                                           "IsDeleted":  false
+                                       },
+                                       {
+                                           "BootType":  1,
+                                           "Description":  "EFI SCSI Device",
+                                           "FirmwarePath":  "AcpiEx(VMBus,0,0)/VenHw(9B17E5A2-0891-42DD-B653-80B5C22809BA,D96361BAA104294DB60572E2FFB1DC7FF5DBFCAEB86CC348B98275E3306C1EE0)/Scsi(0,0)",
+                                           "Device":  {
+                                                          "Path":  "D:\\KICBA-Lab\\phase2-20261023\\kernel65.vhdx",
+                                                          "DiskNumber":  null,
+                                                          "MaximumIOPS":  0,
+                                                          "MinimumIOPS":  0,
+                                                          "QoSPolicyID":  "00000000-0000-0000-0000-000000000000",
+                                                          "SupportPersistentReservations":  false,
+                                                          "WriteHardeningMethod":  0,
+                                                          "ControllerLocation":  0,
+                                                          "ControllerNumber":  0,
+                                                          "ControllerType":  1,
+                                                          "Name":  "Hard Drive on SCSI controller number 0 at location 0",
+                                                          "PoolName":  "Primordial",
+                                                          "Id":  "Microsoft:A19CF796-2B89-43D0-AC23-64597CE5836B\\852AB4D3-2D10-460A-BD74-65BA0C51DBC3\\0\\0\\D",
+                                                          "VMId":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                                                          "VMName":  "KICBA-Phase2-Kernel65",
+                                                          "VMSnapshotId":  "00000000-0000-0000-0000-000000000000",
+                                                          "VMSnapshotName":  "",
+                                                          "CimSession":  {
+                                                                             "ComputerName":  null,
+                                                                             "InstanceId":  "8dd2b237-d931-4fd1-9f08-26bd86c75cf4"
+                                                                         },
+                                                          "ComputerName":  "江威廷-新電腦",
+                                                          "IsDeleted":  false
+                                                      },
+                                           "VMId":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                                           "VMName":  "KICBA-Phase2-Kernel65",
+                                           "VMSnapshotId":  "00000000-0000-0000-0000-000000000000",
+                                           "VMSnapshotName":  "",
+                                           "CimSession":  {
+                                                              "ComputerName":  null,
+                                                              "InstanceId":  "8dd2b237-d931-4fd1-9f08-26bd86c75cf4"
+                                                          },
+                                           "ComputerName":  "江威廷-新電腦",
+                                           "IsDeleted":  false
+                                       },
+                                       {
+                                           "BootType":  2,
+                                           "Description":  "EFI Network",
+                                           "FirmwarePath":  "AcpiEx(VMBus,0,0)/VenHw(9B17E5A2-0891-42DD-B653-80B5C22809BA,635161F83EDFC546913FF2D2F965ED0E237B17FDCBC0694E87F2D4454F944CF4)/MAC(000000000000)/MessagingPath(0000000000000000000000000000000000000000000000)",
+                                           "Device":  {
+                                                          "ClusterMonitored":  true,
+                                                          "MacAddress":  "00155D70AA03",
+                                                          "MediaType":  0,
+                                                          "DynamicMacAddressEnabled":  true,
+                                                          "InterruptModeration":  true,
+                                                          "AllowPacketDirect":  false,
+                                                          "VirtualSystemIdentifiers":  [
+                                                                                           "fd177b23-c0cb-4e69-87f2-d4454f944cf4",
+                                                                                           "7a84ce40-0880-4a50-a586-2dc1ea58e5ff"
+                                                                                       ],
+                                                          "NumaAwarePlacement":  false,
+                                                          "IsLegacy":  false,
+                                                          "IsSynthetic":  true,
+                                                          "IPAddresses":  [
+
+                                                                          ],
+                                                          "DeviceNaming":  1,
+                                                          "IovWeight":  0,
+                                                          "IovQueuePairsRequested":  1,
+                                                          "IovInterruptModeration":  0,
+                                                          "PacketDirectNumProcs":  0,
+                                                          "PacketDirectModerationCount":  64,
+                                                          "PacketDirectModerationInterval":  1000000,
+                                                          "IovQueuePairsAssigned":  0,
+                                                          "IovUsage":  0,
+                                                          "VirtualFunction":  null,
+                                                          "MandatoryFeatureId":  [
+
+                                                                                 ],
+                                                          "MandatoryFeatureName":  [
+
+                                                                                   ],
+                                                          "PoolName":  "",
+                                                          "Connected":  true,
+                                                          "SwitchName":  "KICBA-Isolated",
+                                                          "AdapterId":  "16DEC11F-B10E-40CE-B179-F81CF199A10D",
+                                                          "TestReplicaPoolName":  "",
+                                                          "TestReplicaSwitchName":  "",
+                                                          "StatusDescription":  [
+                                                                                    "OK"
+                                                                                ],
+                                                          "Status":  [
+                                                                         2
+                                                                     ],
+                                                          "IsManagementOs":  false,
+                                                          "IsExternalAdapter":  false,
+                                                          "Id":  "Microsoft:A19CF796-2B89-43D0-AC23-64597CE5836B\\16DEC11F-B10E-40CE-B179-F81CF199A10D",
+                                                          "SwitchId":  "fbd6da2e-3448-4732-ad93-439e08a0156f",
+                                                          "AclList":  [
+
+                                                                      ],
+                                                          "ExtendedAclList":  [
+
+                                                                              ],
+                                                          "IsolationSetting":  {
+                                                                                   "IsolationMode":  0,
+                                                                                   "AllowUntaggedTraffic":  false,
+                                                                                   "DefaultIsolationID":  0,
+                                                                                   "MultiTenantStack":  1,
+                                                                                   "ParentAdapter":  "VMNetworkAdapter (Name = \u0027Network Adapter\u0027, VMName = \u0027KICBA-Phase2-Kernel65\u0027) [VMId = \u0027a19cf796-2b89-43d0-ac23-64597ce5836b\u0027]",
+                                                                                   "IsTemplate":  true,
+                                                                                   "CimSession":  "CimSession: .",
+                                                                                   "ComputerName":  "江威廷-新電腦",
+                                                                                   "IsDeleted":  false
+                                                                               },
+                                                          "RoutingDomainList":  [
+
+                                                                                ],
+                                                          "VlanSetting":  {
+                                                                              "OperationMode":  0,
+                                                                              "AccessVlanId":  0,
+                                                                              "NativeVlanId":  0,
+                                                                              "AllowedVlanIdList":  "",
+                                                                              "AllowedVlanIdListString":  "",
+                                                                              "PrivateVlanMode":  0,
+                                                                              "PrimaryVlanId":  0,
+                                                                              "SecondaryVlanId":  0,
+                                                                              "SecondaryVlanIdList":  null,
+                                                                              "SecondaryVlanIdListString":  null,
+                                                                              "ParentAdapter":  "VMNetworkAdapter (Name = \u0027Network Adapter\u0027, VMName = \u0027KICBA-Phase2-Kernel65\u0027) [VMId = \u0027a19cf796-2b89-43d0-ac23-64597ce5836b\u0027]",
+                                                                              "IsTemplate":  true,
+                                                                              "CimSession":  "CimSession: .",
+                                                                              "ComputerName":  "江威廷-新電腦",
+                                                                              "IsDeleted":  false
+                                                                          },
+                                                          "BandwidthSetting":  null,
+                                                          "CurrentIsolationMode":  3,
+                                                          "MacAddressSpoofing":  1,
+                                                          "DhcpGuard":  1,
+                                                          "RouterGuard":  1,
+                                                          "PortMirroringMode":  0,
+                                                          "IeeePriorityTag":  1,
+                                                          "VirtualSubnetId":  0,
+                                                          "DynamicIPAddressLimit":  0,
+                                                          "StormLimit":  0,
+                                                          "AllowTeaming":  1,
+                                                          "FixSpeed10G":  1,
+                                                          "VMQWeight":  100,
+                                                          "IPsecOffloadMaxSA":  512,
+                                                          "VrssEnabled":  true,
+                                                          "VrssEnabledRequested":  true,
+                                                          "VmmqEnabled":  false,
+                                                          "VmmqEnabledRequested":  true,
+                                                          "VrssMaxQueuePairs":  12,
+                                                          "VrssMaxQueuePairsRequested":  16,
+                                                          "VrssMinQueuePairs":  1,
+                                                          "VrssMinQueuePairsRequested":  1,
+                                                          "VrssQueueSchedulingMode":  0,
+                                                          "VrssQueueSchedulingModeRequested":  0,
+                                                          "VrssExcludePrimaryProcessor":  false,
+                                                          "VrssExcludePrimaryProcessorRequested":  false,
+                                                          "VrssIndependentHostSpreading":  false,
+                                                          "VrssIndependentHostSpreadingRequested":  false,
+                                                          "VrssVmbusChannelAffinityPolicy":  3,
+                                                          "VrssVmbusChannelAffinityPolicyRequested":  3,
+                                                          "RscEnabled":  true,
+                                                          "RscEnabledRequested":  true,
+                                                          "VmqUsage":  0,
+                                                          "IPsecOffloadSAUsage":  0,
+                                                          "VFDataPathActive":  false,
+                                                          "VMQueue":  null,
+                                                          "BandwidthPercentage":  0,
+                                                          "IsTemplate":  false,
+                                                          "Name":  "Network Adapter",
+                                                          "VMId":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                                                          "VMName":  "KICBA-Phase2-Kernel65",
+                                                          "VMSnapshotId":  "00000000-0000-0000-0000-000000000000",
+                                                          "VMSnapshotName":  "",
+                                                          "CimSession":  {
+                                                                             "ComputerName":  null,
+                                                                             "InstanceId":  "8dd2b237-d931-4fd1-9f08-26bd86c75cf4"
+                                                                         },
+                                                          "ComputerName":  "江威廷-新電腦",
+                                                          "IsDeleted":  false
+                                                      },
+                                           "VMId":  "a19cf796-2b89-43d0-ac23-64597ce5836b",
+                                           "VMName":  "KICBA-Phase2-Kernel65",
+                                           "VMSnapshotId":  "00000000-0000-0000-0000-000000000000",
+                                           "VMSnapshotName":  "",
+                                           "CimSession":  {
+                                                              "ComputerName":  null,
+                                                              "InstanceId":  "8dd2b237-d931-4fd1-9f08-26bd86c75cf4"
+                                                          },
+                                           "ComputerName":  "江威廷-新電腦",
+                                           "IsDeleted":  false
+                                       }
+                                   ]
+                 }
+}

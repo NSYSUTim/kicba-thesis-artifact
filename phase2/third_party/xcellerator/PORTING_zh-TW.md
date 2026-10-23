@@ -1,0 +1,1 @@
+來源固定於 PROVENANCE.json 的提交。保留作者的 getdents64／getdents 過濾函式原樣，沒有重寫隱藏判斷。僅將兩個 HOOK 呼叫改為既有 helper 的 HOOK_NOSYS，替換舊 ftrace helper 為原專案已驗證的相容版本，並將模組命名為 phase2_independent。此 helper 與原研究共用，因此只提供另一個作者過濾實作的證據，不是獨立掛接家族。原作者 prefix boogaloo 不變。原始碼、授權、相容差異及原 helper 一併保留。

@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/xcellerator/linux_kernel_hacking",
+  "commit": "15304817e912a526ce57336011a1cc71aea953b2",
+  "files": [
+    {
+      "path": "3_RootkitTechniques/3.4_hiding_directories/Makefile",
+      "sha256": "f7e37ab0e3d9915739d18f58288a6ef506e3abbbfd3a3d33790986db9191d456",
+      "url": "https://raw.githubusercontent.com/xcellerator/linux_kernel_hacking/15304817e912a526ce57336011a1cc71aea953b2/3_RootkitTechniques/3.4_hiding_directories/Makefile"
+    },
+    {
+      "path": "3_RootkitTechniques/3.4_hiding_directories/README.md",
+      "sha256": "70a7861f07146758dacfac315c8be61f6a5d79638f7faf3de2386aa42b69c34c",
+      "url": "https://raw.githubusercontent.com/xcellerator/linux_kernel_hacking/15304817e912a526ce57336011a1cc71aea953b2/3_RootkitTechniques/3.4_hiding_directories/README.md"
+    },
+    {
+      "path": "3_RootkitTechniques/3.4_hiding_directories/ftrace_helper.h",
+      "sha256": "2d85b1aa1a4ca845adbd4aff3769afbad61893ae2f454819dcb6d15f6fad0174",
+      "url": "https://raw.githubusercontent.com/xcellerator/linux_kernel_hacking/15304817e912a526ce57336011a1cc71aea953b2/3_RootkitTechniques/3.4_hiding_directories/ftrace_helper.h"
+    },
+    {
+      "path": "3_RootkitTechniques/3.4_hiding_directories/rootkit.c",
+      "sha256": "968ab535303ccd03784574d2c9f4c731eec4572ed2f8b439dd0fca2aa49d6f79",
+      "url": "https://raw.githubusercontent.com/xcellerator/linux_kernel_hacking/15304817e912a526ce57336011a1cc71aea953b2/3_RootkitTechniques/3.4_hiding_directories/rootkit.c"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "url": "https://raw.githubusercontent.com/xcellerator/linux_kernel_hacking/15304817e912a526ce57336011a1cc71aea953b2/LICENSE"
+    }
+  ]
+}

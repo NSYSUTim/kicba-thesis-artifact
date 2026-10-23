@@ -1,0 +1,57 @@
+Created symlink /run/systemd/system/apt-daily.timer → /dev/null.
+Created symlink /run/systemd/system/apt-daily-upgrade.timer → /dev/null.
+Created symlink /run/systemd/system/apt-daily.service → /dev/null.
+Created symlink /run/systemd/system/apt-daily-upgrade.service → /dev/null.
+Selecting previously unselected package linux-image-unsigned-6.5.0-45-generic.
+(Reading database ... 85987 files and directories currently installed.)
+Preparing to unpack .../linux-image-unsigned-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb ...
+Unpacking linux-image-unsigned-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+Selecting previously unselected package linux-modules-6.5.0-45-generic.
+Preparing to unpack .../linux-modules-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb ...
+Unpacking linux-modules-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+Selecting previously unselected package linux-headers-6.5.0-45-generic.
+Preparing to unpack .../linux-headers-6.5.0-45-generic_6.5.0-45.45~22.04.1_amd64.deb ...
+Unpacking linux-headers-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+Selecting previously unselected package linux-hwe-6.5-headers-6.5.0-45.
+Preparing to unpack .../linux-hwe-6.5-headers-6.5.0-45_6.5.0-45.45~22.04.1_all.deb ...
+Unpacking linux-hwe-6.5-headers-6.5.0-45 (6.5.0-45.45~22.04.1) ...
+Setting up linux-modules-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+Setting up linux-hwe-6.5-headers-6.5.0-45 (6.5.0-45.45~22.04.1) ...
+Setting up linux-image-unsigned-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+I: /boot/vmlinuz is now a symlink to vmlinuz-6.5.0-45-generic
+I: /boot/initrd.img is now a symlink to initrd.img-6.5.0-45-generic
+Setting up linux-headers-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+Processing triggers for linux-image-unsigned-6.5.0-45-generic (6.5.0-45.45~22.04.1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.5.0-45-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-138-generic
+Found initrd image: /boot/initrd.img-6.8.0-138-generic
+Found linux image: /boot/vmlinuz-6.5.0-45-generic
+Found initrd image: /boot/initrd.img-6.5.0-45-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/99-phase2-kernel.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-138-generic
+Found initrd image: /boot/initrd.img-6.8.0-138-generic
+Found linux image: /boot/vmlinuz-6.5.0-45-generic
+Found initrd image: /boot/initrd.img-6.5.0-45-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Removed /run/systemd/system/apt-daily.timer.
+Removed /run/systemd/system/apt-daily-upgrade.timer.
+Removed /run/systemd/system/apt-daily.service.
+Removed /run/systemd/system/apt-daily-upgrade.service.
+CLONE_KERNEL_INSTALLED; reboot explicitly after retaining logs

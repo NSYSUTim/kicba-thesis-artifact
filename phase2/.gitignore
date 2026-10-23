@@ -1,0 +1,16 @@
+__pycache__/
+downloads/*.deb
+downloads/*.tar
+downloads/*.zip
+deployment*.tar
+evidence/**/attempts.jsonl
+evidence/**/actual_*.jsonl
+evidence/**/churn_events_*.json
+evidence/**/fixture*/
+bin/
+module/*.o
+module/*.ko
+module/*.mod*
+module/.*.cmd
+module/Module.symvers
+module/modules.order

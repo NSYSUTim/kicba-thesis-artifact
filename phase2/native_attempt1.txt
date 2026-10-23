@@ -1,0 +1,23 @@
+test_16_concurrent_scans_keep_separate_records (phase2.tests.test_native.NativeTests) ... /usr/lib/python3/dist-packages/bcc/__init__.py:307: DeprecationWarning: not a bytes object: '/home/kicba/research_phase2_20261023/phase2/bpf_packed.c'
+  src_file = _assert_is_bytes(src_file)
+/usr/lib/python3/dist-packages/bcc/__init__.py:663: DeprecationWarning: not a bytes object: 'filldir64'
+  event = _assert_is_bytes(event)
+/usr/lib/python3/dist-packages/bcc/__init__.py:664: DeprecationWarning: not a bytes object: 'packed_enter'
+  fn_name = _assert_is_bytes(fn_name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:689: DeprecationWarning: not a bytes object: 'filldir64'
+  event = _assert_is_bytes(event)
+/usr/lib/python3/dist-packages/bcc/__init__.py:690: DeprecationWarning: not a bytes object: 'packed_return'
+  fn_name = _assert_is_bytes(fn_name)
+/usr/lib/python3/dist-packages/bcc/__init__.py:504: DeprecationWarning: not a bytes object: 'state_by_pid'
+  name = _assert_is_bytes(name)
+ok
+test_exact_accepted_fingerprint_and_cells_match_independent_python (phase2.tests.test_native.NativeTests) ... ok
+test_invalid_cell_config_is_not_valid_equal (phase2.tests.test_native.NativeTests) ... ok
+test_missing_state_and_unpaired_state_are_invalid (phase2.tests.test_native.NativeTests) ... ok
+test_real_return_probe_loss_rejects_whole_window (phase2.tests.test_native.NativeTests) ... ok
+test_small_buffers_keep_rejected_acceptance_attempts_out (phase2.tests.test_native.NativeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 11.645s
+
+OK

@@ -1,0 +1,59 @@
+test_16_concurrent_scans_keep_separate_records (phase2.tests.test_native.NativeTests) ... FAIL
+test_exact_accepted_fingerprint_and_cells_match_independent_python (phase2.tests.test_native.NativeTests) ... FAIL
+test_invalid_cell_config_is_not_valid_equal (phase2.tests.test_native.NativeTests) ... FAIL
+test_missing_state_and_unpaired_state_are_invalid (phase2.tests.test_native.NativeTests) ... FAIL
+test_real_return_probe_loss_rejects_whole_window (phase2.tests.test_native.NativeTests) ... FAIL
+test_small_buffers_keep_rejected_acceptance_attempts_out (phase2.tests.test_native.NativeTests) ... FAIL
+
+======================================================================
+FAIL: test_16_concurrent_scans_keep_separate_records (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+======================================================================
+FAIL: test_exact_accepted_fingerprint_and_cells_match_independent_python (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+======================================================================
+FAIL: test_invalid_cell_config_is_not_valid_equal (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+======================================================================
+FAIL: test_missing_state_and_unpaired_state_are_invalid (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+======================================================================
+FAIL: test_real_return_probe_loss_rejects_whole_window (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+======================================================================
+FAIL: test_small_buffers_keep_rejected_acceptance_attempts_out (phase2.tests.test_native.NativeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kicba/research_phase2_20261023/phase2/tests/test_native.py", line 20, in setUp
+    self.assertIsNotNone(Measurement, 'packed measurement not implemented')
+AssertionError: unexpectedly None : packed measurement not implemented
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+FAILED (failures=6)

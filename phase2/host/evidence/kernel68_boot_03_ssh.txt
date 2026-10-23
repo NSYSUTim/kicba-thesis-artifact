@@ -1,0 +1,1 @@
+{"environment": "kernel68", "boot_index": 3, "boot_id": "a3ebeaca-0573-41f9-9894-d9a31c5db564", "completed": true, "failed_criteria": []}

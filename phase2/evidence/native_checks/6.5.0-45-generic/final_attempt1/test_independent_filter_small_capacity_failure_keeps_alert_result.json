@@ -1,0 +1,199 @@
+{
+  "boot_id": "745104a1-d9c1-4421-9b3f-c0e46cba2955",
+  "test_source_sha256": "ef99bcf626c23ea00abf2940b549a20bf27792de7b7f2052bf14c87556ffeda4",
+  "row": {
+    "pid": 2179,
+    "measurement_valid": true,
+    "readback_ns": 137810,
+    "decode_ns": 254128,
+    "cleanup_ns": 30392,
+    "registration_ns": 2011050,
+    "returncode": 0,
+    "stderr": "",
+    "json_parse_ns": 60649,
+    "userspace": {
+      "schema_version": 1,
+      "mode": 2,
+      "exact_capture": false,
+      "count": 67,
+      "sum1": 12373939768886427472,
+      "sum2": 4643238329716895371,
+      "syscalls": 2,
+      "returned_bytes": 3192,
+      "scan_ns": 219465,
+      "cells": [
+        [
+          0,
+          35,
+          7711254559486100530,
+          131189,
+          4,
+          2749189113338381400
+        ],
+        [
+          1,
+          18,
+          5245682569885353578,
+          59,
+          12,
+          17405902060429503464
+        ],
+        [
+          2,
+          26,
+          6362097135615379064,
+          231,
+          12,
+          5979716008254982712
+        ],
+        [
+          3,
+          20,
+          5766679305965951167,
+          225,
+          0,
+          18033289775396206597
+        ],
+        [
+          4,
+          25,
+          1647199290650954333,
+          131209,
+          4,
+          7306220030926312897
+        ],
+        [
+          5,
+          20,
+          17349560677550504404,
+          22,
+          0,
+          9397640302073360572
+        ],
+        [
+          6,
+          27,
+          3541934801069808296,
+          131216,
+          4,
+          3115029406198085096
+        ],
+        [
+          7,
+          30,
+          1389320574676992180,
+          209,
+          12,
+          12887161354112401666
+        ]
+      ]
+    },
+    "kernel_stats": {
+      "name_read_errors": 0,
+      "invalid_name_lengths": 0,
+      "pending_update_failures": 0,
+      "fingerprint_update_failures": 0,
+      "iblt_update_failures": 0,
+      "return_underflows": 0,
+      "outer_entries": 84,
+      "accepted_entries": 84,
+      "rejected_entries": 0,
+      "name_read_checksum": 10111
+    },
+    "kernel_fingerprint": [
+      84,
+      16528709432688270176,
+      16072116690289900067
+    ],
+    "kernel_rows": [
+      [
+        40,
+        11354068729306788433,
+        254,
+        12,
+        18239513220561562740
+      ],
+      [
+        24,
+        9545771903137932187,
+        47,
+        12,
+        13250182863355886740
+      ],
+      [
+        31,
+        9496624137429049673,
+        131182,
+        4,
+        14005228685853672102
+      ],
+      [
+        25,
+        4607740736279859405,
+        131199,
+        8,
+        16168878761811647562
+      ],
+      [
+        31,
+        9235867920142794041,
+        131209,
+        4,
+        15660151914491221251
+      ],
+      [
+        29,
+        183183981659754642,
+        131225,
+        8,
+        9403997600409663120
+      ],
+      [
+        34,
+        5663016813461837808,
+        9,
+        12,
+        5543396665749342092
+      ],
+      [
+        38,
+        11890564304064019541,
+        214,
+        12,
+        16220244865420202567
+      ]
+    ],
+    "depth": 0,
+    "pending_valid": 0,
+    "configuration": [
+      81985529216486895,
+      17357386176853808775,
+      8,
+      1
+    ],
+    "fingerprint_equal": false,
+    "decode_success": false,
+    "upstream_only": [],
+    "downstream_only": [],
+    "residual_cells": 8,
+    "wall_ns": 3517410,
+    "coverage": {
+      "available": true,
+      "valid": true,
+      "reasons": [],
+      "missed_scope": "global",
+      "covered_events": [
+        "r_filldir64_bcc_2111"
+      ],
+      "per_event": {
+        "r_filldir64_bcc_2111": {
+          "hits_delta": 101,
+          "missed_delta": 0
+        }
+      },
+      "entry_counter_visibility": "not_exposed_by_original_perf_attachment"
+    },
+    "wall_with_coverage_ns": 4584106,
+    "verdict": "different"
+  }
+}

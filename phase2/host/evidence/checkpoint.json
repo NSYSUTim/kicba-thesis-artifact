@@ -1,0 +1,53 @@
+﻿{
+    "success":  true,
+    "action":  "created",
+    "recorded_at":  "2026-10-23T20:40:17.1675042+08:00",
+    "vm_name":  "KICBA-Lab",
+    "vm_id":  "d265205d-e394-417d-b629-f0c947341d11",
+    "vm_state":  "Running",
+    "vm_version":  "12.0",
+    "checkpoint_type_setting":  "Standard",
+    "checkpoint_name":  "Before-Phase2-Applicability-Cost-20261023",
+    "checkpoint_id":  "9d248841-352b-4fdd-b8b6-010df5c2a603",
+    "checkpoint_creation_time":  "2026-10-23T20:40:16.3664050+08:00",
+    "previous_checkpoints":  [
+                                 {
+                                     "Name":  "Clean-Provisioned-20260914-205739",
+                                     "Id":  "d1e7251b-124b-4a0b-acb1-2cbeb6d87879",
+                                     "CreationTime":  "\/Date(1789390660062)\/"
+                                 },
+                                 {
+                                     "Name":  "Clean-Isolated-SecureBootOff-20260914-210533",
+                                     "Id":  "a0935de1-d5fe-4c29-8431-ac31fa47b4ba",
+                                     "CreationTime":  "\/Date(1789391134547)\/"
+                                 },
+                                 {
+                                     "Name":  "Clean-Repaired-Isolated-20260914-212429",
+                                     "Id":  "8f27f338-3c44-44dc-aaf9-67a19c4f5aef",
+                                     "CreationTime":  "\/Date(1789392269851)\/"
+                                 },
+                                 {
+                                     "Name":  "Before-Phase1-Reliability-Cost-20261023",
+                                     "Id":  "88b7a4d5-4d27-49bc-baac-a576ecff5fc0",
+                                     "CreationTime":  "\/Date(1792752484547)\/"
+                                 }
+                             ],
+    "disks":  [
+                  {
+                      "ControllerType":  1,
+                      "ControllerNumber":  0,
+                      "ControllerLocation":  0,
+                      "Path":  "D:\\KICBA-Lab\\vm\\KICBA-Lab_E3CB1F5F-97EC-48D4-97A9-E3681ECF573A.avhdx"
+                  }
+              ],
+    "network":  [
+                    {
+                        "Name":  "Network Adapter",
+                        "SwitchName":  "KICBA-Isolated",
+                        "MacAddress":  "00155D70AA02",
+                        "Status":  [
+                                       2
+                                   ]
+                    }
+                ]
+}

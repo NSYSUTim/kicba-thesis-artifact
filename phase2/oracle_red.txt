@@ -1,0 +1,59 @@
+test_duplicate_identity_is_not_collapsed (phase2.tests.test_oracle.OracleTests.test_duplicate_identity_is_not_collapsed) ... FAIL
+test_inode_and_type_change_only_designated_field (phase2.tests.test_oracle.OracleTests.test_inode_and_type_change_only_designated_field) ... FAIL
+test_insert_and_remove_have_signed_single_difference (phase2.tests.test_oracle.OracleTests.test_insert_and_remove_have_signed_single_difference) ... FAIL
+test_name_length_changes_preserve_count (phase2.tests.test_oracle.OracleTests.test_name_length_changes_preserve_count) ... FAIL
+test_reordering_does_not_change_multiset (phase2.tests.test_oracle.OracleTests.test_reordering_does_not_change_multiset) ... FAIL
+test_unknown_action_and_missing_subject_are_rejected (phase2.tests.test_oracle.OracleTests.test_unknown_action_and_missing_subject_are_rejected) ... FAIL
+
+======================================================================
+FAIL: test_duplicate_identity_is_not_collapsed (phase2.tests.test_oracle.OracleTests.test_duplicate_identity_is_not_collapsed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+======================================================================
+FAIL: test_inode_and_type_change_only_designated_field (phase2.tests.test_oracle.OracleTests.test_inode_and_type_change_only_designated_field)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+======================================================================
+FAIL: test_insert_and_remove_have_signed_single_difference (phase2.tests.test_oracle.OracleTests.test_insert_and_remove_have_signed_single_difference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+======================================================================
+FAIL: test_name_length_changes_preserve_count (phase2.tests.test_oracle.OracleTests.test_name_length_changes_preserve_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+======================================================================
+FAIL: test_reordering_does_not_change_multiset (phase2.tests.test_oracle.OracleTests.test_reordering_does_not_change_multiset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+======================================================================
+FAIL: test_unknown_action_and_missing_subject_are_rejected (phase2.tests.test_oracle.OracleTests.test_unknown_action_and_missing_subject_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_oracle.py", line 14, in setUp
+    self.assertIsNotNone(oracle, 'phase-two oracle is not implemented')
+AssertionError: unexpectedly None : phase-two oracle is not implemented
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+FAILED (failures=6)

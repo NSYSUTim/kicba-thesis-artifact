@@ -1,0 +1,35 @@
+test_invalid_and_unexercised_are_reported_separately (phase2.tests.test_summary.SummaryTests.test_invalid_and_unexercised_are_reported_separately) ... FAIL
+test_warmup_and_invalid_pairs_do_not_enter_speed_ratio (phase2.tests.test_summary.SummaryTests.test_warmup_and_invalid_pairs_do_not_enter_speed_ratio) ... FAIL
+test_wrong_success_not_hidden_by_equal_counts (phase2.tests.test_summary.SummaryTests.test_wrong_success_not_hidden_by_equal_counts) ... FAIL
+
+======================================================================
+FAIL: test_invalid_and_unexercised_are_reported_separately (phase2.tests.test_summary.SummaryTests.test_invalid_and_unexercised_are_reported_separately)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_summary.py", line 9, in setUp
+    def setUp(self): self.assertIsNotNone(quality_summary,'summary module not implemented')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : summary module not implemented
+
+======================================================================
+FAIL: test_warmup_and_invalid_pairs_do_not_enter_speed_ratio (phase2.tests.test_summary.SummaryTests.test_warmup_and_invalid_pairs_do_not_enter_speed_ratio)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_summary.py", line 9, in setUp
+    def setUp(self): self.assertIsNotNone(quality_summary,'summary module not implemented')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : summary module not implemented
+
+======================================================================
+FAIL: test_wrong_success_not_hidden_by_equal_counts (phase2.tests.test_summary.SummaryTests.test_wrong_success_not_hidden_by_equal_counts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\0402t\�ୱ\�M�D\research-phase1-20261023\phase2\tests\test_summary.py", line 9, in setUp
+    def setUp(self): self.assertIsNotNone(quality_summary,'summary module not implemented')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : summary module not implemented
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.006s
+
+FAILED (failures=3)

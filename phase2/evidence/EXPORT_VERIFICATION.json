@@ -1,0 +1,20 @@
+{
+  "archives_verified": 11,
+  "archive_sha256": {
+    "confirmation_kernel65_boot_01.tar.gz": "081cc704b74449f661d4da1e2e34aedb26fb38a604202dd54d59763cb2520c80",
+    "confirmation_kernel65_boot_02.tar.gz": "0c602e4c5aeb58d2c9cdfcce33a91296652f63c955dcc0c4fe5daf68d9d72ab1",
+    "confirmation_kernel65_boot_03.tar.gz": "da785f2290cf1872bd19363bcd5d2c2e18bbb9d969d21cee9b5bb249ad00255e",
+    "confirmation_kernel68_boot_01.tar.gz": "02f51ee628592147400651aadcfc99871b836f48451b2d9b30cb6ef59da14268",
+    "confirmation_kernel68_boot_02.tar.gz": "1b35ba0cc98fab385f7c24a25ba72a080dc6f7500c9319159a03a693712708e3",
+    "confirmation_kernel68_boot_03.tar.gz": "9495313828672807cdf899945c344bb83cbf713aed66ac79a4142cdd5d3a03e0",
+    "development_kernel65.tar.gz": "dee0f8162242147f549194699810e7e67eafb13d5e7f15595c797744a84b6bc8",
+    "development_kernel68.tar.gz": "a9d62af77677dd156e96accd691834f8357a9f9b10fca7ec598944b3fe01964b",
+    "frozen_sources_kernel65.tar.gz": "0e1a6e92c85af2aa3f265f3b1a7dc578093e97a3f2b95bf2ce791c69087a89cb",
+    "frozen_sources_kernel68.tar.gz": "4d1a8c7523ff194a7a81356da1d5b84b78cc9caccfaf3f56c819c56acaeae494",
+    "pilot68_attempt1.tar.gz": "d50f9d8ccf8289605d36282b6c98c85ee984259af43f30c93e1c45734cc4d2dc"
+  },
+  "frozen_sources_verified": {
+    "kernel65": 66,
+    "kernel68": 66
+  }
+}

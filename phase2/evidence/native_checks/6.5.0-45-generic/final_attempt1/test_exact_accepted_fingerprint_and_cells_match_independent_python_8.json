@@ -1,0 +1,222 @@
+{
+  "boot_id": "745104a1-d9c1-4421-9b3f-c0e46cba2955",
+  "test_source_sha256": "57f2fca33157609a19a6f882e0af8dffe2998c79f12a2234a5a7df335187eb86",
+  "row": {
+    "measurement": {
+      "pid": 2128,
+      "measurement_valid": true,
+      "readback_ns": 150064,
+      "decode_ns": 182392,
+      "cleanup_ns": 24479,
+      "registration_ns": 1390700,
+      "returncode": 0,
+      "stderr": "",
+      "json_parse_ns": 48458,
+      "userspace": {
+        "schema_version": 1,
+        "mode": 2,
+        "exact_capture": true,
+        "count": 7,
+        "sum1": 3163522054412310775,
+        "sum2": 11854211597265347140,
+        "syscalls": 2,
+        "returned_bytes": 464,
+        "scan_ns": 47837,
+        "cells": [
+          [
+            0,
+            4,
+            12486971883170240604,
+            3548147,
+            0,
+            10826292900924457177
+          ],
+          [
+            2,
+            4,
+            11091365387113463176,
+            30,
+            12,
+            155313434181817899
+          ],
+          [
+            3,
+            3,
+            13221215370177549351,
+            3416996,
+            8,
+            11407908256645348628
+          ],
+          [
+            5,
+            3,
+            15447174994134882167,
+            131154,
+            4,
+            5815946350590858260
+          ],
+          [
+            6,
+            3,
+            9501998858785059315,
+            131145,
+            4,
+            740974803719564262
+          ],
+          [
+            7,
+            4,
+            2199522963928952066,
+            3548146,
+            0,
+            13506492944782985400
+          ]
+        ]
+      },
+      "kernel_stats": {
+        "name_read_errors": 0,
+        "invalid_name_lengths": 0,
+        "pending_update_failures": 0,
+        "fingerprint_update_failures": 0,
+        "iblt_update_failures": 0,
+        "return_underflows": 0,
+        "outer_entries": 7,
+        "accepted_entries": 7,
+        "rejected_entries": 0,
+        "name_read_checksum": 1072
+      },
+      "kernel_fingerprint": [
+        7,
+        3163522054412310775,
+        11854211597265347140
+      ],
+      "kernel_rows": [
+        [
+          4,
+          12486971883170240604,
+          3548147,
+          0,
+          10826292900924457177
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          11091365387113463176,
+          30,
+          12,
+          155313434181817899
+        ],
+        [
+          3,
+          13221215370177549351,
+          3416996,
+          8,
+          11407908256645348628
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          15447174994134882167,
+          131154,
+          4,
+          5815946350590858260
+        ],
+        [
+          3,
+          9501998858785059315,
+          131145,
+          4,
+          740974803719564262
+        ],
+        [
+          4,
+          2199522963928952066,
+          3548146,
+          0,
+          13506492944782985400
+        ]
+      ],
+      "depth": 0,
+      "pending_valid": 0,
+      "configuration": [
+        81985529216486895,
+        17357386176853808775,
+        8,
+        1
+      ],
+      "fingerprint_equal": true,
+      "decode_success": true,
+      "upstream_only": [],
+      "downstream_only": [],
+      "residual_cells": 0,
+      "wall_ns": 4678395,
+      "coverage": {
+        "available": true,
+        "valid": true,
+        "reasons": [],
+        "missed_scope": "global",
+        "covered_events": [
+          "r_filldir64_bcc_2111"
+        ],
+        "per_event": {
+          "r_filldir64_bcc_2111": {
+            "hits_delta": 24,
+            "missed_delta": 0
+          }
+        },
+        "entry_counter_visibility": "not_exposed_by_original_perf_attachment"
+      },
+      "wall_with_coverage_ns": 5567701,
+      "verdict": "equal"
+    },
+    "actual": [
+      {
+        "inode": 131148,
+        "d_type": 8,
+        "name_hex": "7068617365325f7375626a656374"
+      },
+      {
+        "inode": 131150,
+        "d_type": 8,
+        "name_hex": "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a"
+      },
+      {
+        "inode": 131149,
+        "d_type": 8,
+        "name_hex": "e699aee9809ae6aa94e5908d"
+      },
+      {
+        "inode": 3417019,
+        "d_type": 4,
+        "name_hex": "2e2e"
+      },
+      {
+        "inode": 131147,
+        "d_type": 4,
+        "name_hex": "2e"
+      },
+      {
+        "inode": 131152,
+        "d_type": 4,
+        "name_hex": "6469726563746f7279"
+      },
+      {
+        "inode": 131151,
+        "d_type": 8,
+        "name_hex": "6f74686572"
+      }
+    ]
+  }
+}

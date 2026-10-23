@@ -1,0 +1,1445 @@
+{
+  "environment_tag": "kernel68",
+  "boot_index": 3,
+  "boot_id": "a3ebeaca-0573-41f9-9894-d9a31c5db564",
+  "completed": true,
+  "quality": {
+    "static_measured": 960,
+    "static_controls": 44,
+    "invalid": 0,
+    "not_exercised": 42,
+    "output_mismatch": 0,
+    "wrong_valid_verdict": 0,
+    "incorrect_decode_success": 0,
+    "decode_failed": 0,
+    "dynamic": 80,
+    "dynamic_invalid": 0,
+    "dynamic_difference": 0,
+    "dynamic_not_exercised": 0,
+    "case_failures": 0,
+    "static_groups": {
+      "ext4/normal/256/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/normal/256/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/normal/65536/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/normal/65536/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/reorder/256/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/reorder/256/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/reorder/65536/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/reorder/65536/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "ext4/insert/256/legacy/module_first": {
+        "equal": 10
+      },
+      "ext4/insert/256/packed/module_first": {
+        "equal": 10
+      },
+      "ext4/insert/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/insert/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/grow/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/grow/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/grow/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/grow/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/shrink/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/shrink/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/shrink/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/shrink/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/inode/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/inode/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/inode/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/inode/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/type/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/type/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/type/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/type/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/remove/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/remove/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/remove/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/remove/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/filldir_hiding/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/filldir_hiding/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/filldir_hiding/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/filldir_hiding/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/getdents_substitution/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/getdents_substitution/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/getdents_substitution/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/getdents_substitution/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/256/legacy/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/256/packed/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/65536/legacy/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "ext4/independent/65536/packed/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/normal/256/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/normal/256/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/normal/65536/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/normal/65536/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/reorder/256/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/reorder/256/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/reorder/65536/legacy/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/reorder/65536/packed/module_first": {
+        "equal": 10,
+        "exercised": 10
+      },
+      "tmpfs/insert/256/legacy/module_first": {
+        "equal": 10
+      },
+      "tmpfs/insert/256/packed/module_first": {
+        "equal": 10
+      },
+      "tmpfs/insert/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/insert/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/grow/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/grow/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/grow/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/grow/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/shrink/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/shrink/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/shrink/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/shrink/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/inode/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/inode/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/inode/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/inode/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/type/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/type/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/type/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/type/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/remove/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/remove/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/remove/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/remove/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/filldir_hiding/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/filldir_hiding/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/filldir_hiding/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/filldir_hiding/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/getdents_substitution/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/getdents_substitution/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/getdents_substitution/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/getdents_substitution/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/256/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/256/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/256/legacy/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/256/packed/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/65536/legacy/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/65536/packed/module_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/65536/legacy/probe_first": {
+        "different": 10,
+        "exercised": 10
+      },
+      "tmpfs/independent/65536/packed/probe_first": {
+        "different": 10,
+        "exercised": 10
+      }
+    }
+  },
+  "cost": {
+    "attempts": 216,
+    "warmups": 36,
+    "primary": 180,
+    "invalid_primary": 0,
+    "groups": {
+      "512/baseline/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 7388874.5,
+          "q1": 7031029.25,
+          "q3": 8062433.5,
+          "min": 5372207,
+          "max": 15870261
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 8501500.0,
+          "q1": 8095659.0,
+          "q3": 9072152.25,
+          "min": 6056836,
+          "max": 17068017
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1029981.5,
+          "q1": 954225.5,
+          "q3": 1282318.0,
+          "min": 909031,
+          "max": 3257875
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 450785.0,
+          "q1": 419549.75,
+          "q3": 654602.5,
+          "min": 378145,
+          "max": 726323
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2893274.0,
+          "q1": 2563167.75,
+          "q3": 3053169.0,
+          "min": 1692105,
+          "max": 10928175
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 38993.5,
+          "q1": 35719.0,
+          "q3": 55689.0,
+          "min": 23178,
+          "max": 76495
+        }
+      },
+      "512/baseline/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 2992528.0,
+          "q1": 2841877.75,
+          "q3": 3109435.5,
+          "min": 2499455,
+          "max": 3261948
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 2995154.5,
+          "q1": 2844478.25,
+          "q3": 3111943.25,
+          "min": 2502171,
+          "max": 3265690
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1090416.5,
+          "q1": 1030901.75,
+          "q3": 1226208.0,
+          "min": 873892,
+          "max": 1434309
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "512/baseline/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 14553995.5,
+          "q1": 14076661.75,
+          "q3": 15935376.25,
+          "min": 12194833,
+          "max": 22168116
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 15688397.0,
+          "q1": 15017149.0,
+          "q3": 17142115.0,
+          "min": 13152439,
+          "max": 23220102
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1087933.5,
+          "q1": 1034947.25,
+          "q3": 1192485.0,
+          "min": 894995,
+          "max": 2158049
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 3713507.0,
+          "q1": 3226300.25,
+          "q3": 4376962.75,
+          "min": 2687269,
+          "max": 5640153
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2696500.0,
+          "q1": 2394215.0,
+          "q3": 3252577.5,
+          "min": 1690972,
+          "max": 7548304
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 3364102.0,
+          "q1": 3144760.5,
+          "q3": 4357583.25,
+          "min": 2872948,
+          "max": 6473613
+        }
+      },
+      "512/cpu/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 15016309.0,
+          "q1": 12429753.5,
+          "q3": 16974213.0,
+          "min": 10883872,
+          "max": 29952280
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 15924039.5,
+          "q1": 13335719.5,
+          "q3": 17838691.75,
+          "min": 11683400,
+          "max": 30975254
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1085189.5,
+          "q1": 985130.25,
+          "q3": 1129427.5,
+          "min": 946545,
+          "max": 1967641
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 3813882.5,
+          "q1": 2827607.5,
+          "q3": 4421061.25,
+          "min": 2610878,
+          "max": 5103790
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2368178.0,
+          "q1": 1827609.5,
+          "q3": 2874798.5,
+          "min": 1690936,
+          "max": 4567246
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 3715517.0,
+          "q1": 2857326.75,
+          "q3": 5196143.75,
+          "min": 2802626,
+          "max": 11085318
+        }
+      },
+      "512/cpu/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 8046771.0,
+          "q1": 7775228.25,
+          "q3": 11246764.5,
+          "min": 7018796,
+          "max": 31227581
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 9033543.0,
+          "q1": 8641677.5,
+          "q3": 12416608.0,
+          "min": 7934439,
+          "max": 32217434
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1679257.0,
+          "q1": 1031656.5,
+          "q3": 2707996.25,
+          "min": 890113,
+          "max": 5807149
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 591270.5,
+          "q1": 558922.25,
+          "q3": 677348.0,
+          "min": 379378,
+          "max": 7517899
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 3126801.5,
+          "q1": 2508897.75,
+          "q3": 3838609.0,
+          "min": 1769302,
+          "max": 14820054
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 34335.0,
+          "q1": 30234.0,
+          "q3": 38812.0,
+          "min": 24881,
+          "max": 165959
+        }
+      },
+      "512/cpu/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 2859814.0,
+          "q1": 2723497.0,
+          "q3": 2917207.25,
+          "min": 2380223,
+          "max": 3491600
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 2862553.0,
+          "q1": 2725611.25,
+          "q3": 2919905.25,
+          "min": 2381751,
+          "max": 3493946
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 973292.5,
+          "q1": 924127.25,
+          "q3": 1025943.5,
+          "min": 781176,
+          "max": 2107942
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "8192/baseline/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 15477396.5,
+          "q1": 15161658.5,
+          "q3": 16736589.75,
+          "min": 14837826,
+          "max": 22138719
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 16467569.0,
+          "q1": 16032852.0,
+          "q3": 17577130.0,
+          "min": 15589847,
+          "max": 23165852
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1037444.5,
+          "q1": 1031075.5,
+          "q3": 1090277.5,
+          "min": 1003975,
+          "max": 1251678
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 467635.5,
+          "q1": 448104.0,
+          "q3": 552013.5,
+          "min": 372086,
+          "max": 808108
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 1818522.5,
+          "q1": 1798105.0,
+          "q3": 1880341.5,
+          "min": 1663743,
+          "max": 3075164
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 29333.5,
+          "q1": 25510.5,
+          "q3": 33377.0,
+          "min": 23626,
+          "max": 42349
+        }
+      },
+      "8192/baseline/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 33142044.0,
+          "q1": 31569831.0,
+          "q3": 38652941.75,
+          "min": 31260481,
+          "max": 81774894
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 33994596.0,
+          "q1": 32513828.5,
+          "q3": 39458478.5,
+          "min": 32078083,
+          "max": 82841319
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 996275.5,
+          "q1": 918903.0,
+          "q3": 1102702.75,
+          "min": 892041,
+          "max": 2007224
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 3140753.5,
+          "q1": 2879226.75,
+          "q3": 3854833.5,
+          "min": 2645666,
+          "max": 4155414
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 1898707.5,
+          "q1": 1794110.25,
+          "q3": 2291798.0,
+          "min": 1702121,
+          "max": 3076073
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 3391213.5,
+          "q1": 2951627.0,
+          "q3": 4032593.75,
+          "min": 2793168,
+          "max": 14334449
+        }
+      },
+      "8192/baseline/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 6959992.0,
+          "q1": 6506125.5,
+          "q3": 7180101.75,
+          "min": 5895821,
+          "max": 7560563
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 6962110.0,
+          "q1": 6560911.25,
+          "q3": 7182096.75,
+          "min": 5897461,
+          "max": 7562780
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1075556.0,
+          "q1": 933281.75,
+          "q3": 1141188.0,
+          "min": 885121,
+          "max": 1387575
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "8192/cpu/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 38768249.5,
+          "q1": 37176953.0,
+          "q3": 42470844.0,
+          "min": 35727547,
+          "max": 49888964
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 39696342.5,
+          "q1": 38180788.25,
+          "q3": 43574223.25,
+          "min": 36621038,
+          "max": 50925041
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1058669.5,
+          "q1": 908191.75,
+          "q3": 1285772.75,
+          "min": 755239,
+          "max": 1568414
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 4014312.5,
+          "q1": 3508593.0,
+          "q3": 4301174.25,
+          "min": 2883493,
+          "max": 4579259
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2521621.5,
+          "q1": 2060097.75,
+          "q3": 3249850.25,
+          "min": 1724825,
+          "max": 3488127
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 4506513.0,
+          "q1": 3892065.5,
+          "q3": 5493114.25,
+          "min": 2947627,
+          "max": 6657787
+        }
+      },
+      "8192/cpu/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 8466084.5,
+          "q1": 8361670.0,
+          "q3": 8595939.0,
+          "min": 7105694,
+          "max": 8886312
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 8468505.0,
+          "q1": 8364085.25,
+          "q3": 8598022.75,
+          "min": 7108174,
+          "max": 8888611
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 989358.5,
+          "q1": 940771.5,
+          "q3": 1073175.75,
+          "min": 727096,
+          "max": 1173222
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "8192/cpu/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 19383596.0,
+          "q1": 18723497.75,
+          "q3": 22468803.25,
+          "min": 16626265,
+          "max": 33187580
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 20311603.0,
+          "q1": 19568037.75,
+          "q3": 23409993.0,
+          "min": 17586679,
+          "max": 34221604
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1106999.5,
+          "q1": 1039891.75,
+          "q3": 1279677.25,
+          "min": 949766,
+          "max": 1983730
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 562856.5,
+          "q1": 479094.0,
+          "q3": 682993.75,
+          "min": 384705,
+          "max": 2512002
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2629397.0,
+          "q1": 2110640.75,
+          "q3": 3090487.75,
+          "min": 1720205,
+          "max": 11079503
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 35483.0,
+          "q1": 29997.25,
+          "q3": 49984.5,
+          "min": 26121,
+          "max": 55366
+        }
+      },
+      "65536/baseline/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 95428764.5,
+          "q1": 92079173.75,
+          "q3": 112044511.5,
+          "min": 88323653,
+          "max": 191292963
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 96297542.0,
+          "q1": 92805510.25,
+          "q3": 113317151.75,
+          "min": 89070898,
+          "max": 192645095
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1079566.0,
+          "q1": 1001825.25,
+          "q3": 1207039.5,
+          "min": 831881,
+          "max": 2657958
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 541612.0,
+          "q1": 468969.75,
+          "q3": 596258.5,
+          "min": 425754,
+          "max": 687447
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 1745629.0,
+          "q1": 1718399.0,
+          "q3": 2423052.25,
+          "min": 1655746,
+          "max": 3335053
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 32566.5,
+          "q1": 28202.75,
+          "q3": 42951.0,
+          "min": 23731,
+          "max": 76461
+        }
+      },
+      "65536/baseline/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 169478557.5,
+          "q1": 165400836.0,
+          "q3": 194043000.5,
+          "min": 157917824,
+          "max": 208546309
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 170332261.0,
+          "q1": 166717801.0,
+          "q3": 194903283.0,
+          "min": 158663755,
+          "max": 209427722
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1030694.5,
+          "q1": 972417.25,
+          "q3": 1096844.5,
+          "min": 862994,
+          "max": 2801472
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 2699962.0,
+          "q1": 2660041.0,
+          "q3": 2797721.5,
+          "min": 2627326,
+          "max": 3517836
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 1815406.0,
+          "q1": 1776643.0,
+          "q3": 2050535.5,
+          "min": 1745390,
+          "max": 7940488
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 3214711.0,
+          "q1": 2972450.0,
+          "q3": 3542063.75,
+          "min": 2926684,
+          "max": 7895396
+        }
+      },
+      "65536/baseline/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 38647796.5,
+          "q1": 37060542.75,
+          "q3": 47154255.5,
+          "min": 35160556,
+          "max": 56757772
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 38650272.0,
+          "q1": 37063006.0,
+          "q3": 47156180.0,
+          "min": 35163444,
+          "max": 56760694
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1122813.5,
+          "q1": 1016452.0,
+          "q3": 1301091.0,
+          "min": 953627,
+          "max": 1335547
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "65536/cpu/parse": {
+        "wall_ns": {
+          "n": 10,
+          "median": 47218627.5,
+          "q1": 45518824.25,
+          "q3": 51992887.5,
+          "min": 41526014,
+          "max": 56631980
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 47221069.5,
+          "q1": 45580732.5,
+          "q3": 51995404.0,
+          "min": 41528296,
+          "max": 56634532
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1061098.0,
+          "q1": 994437.25,
+          "q3": 1191340.75,
+          "min": 868987,
+          "max": 2101734
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "65536/cpu/packed": {
+        "wall_ns": {
+          "n": 10,
+          "median": 125377029.5,
+          "q1": 122592875.5,
+          "q3": 128429541.25,
+          "min": 117705785,
+          "max": 147006098
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 126330373.0,
+          "q1": 123394661.25,
+          "q3": 129525815.25,
+          "min": 118565382,
+          "max": 148031533
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1113422.5,
+          "q1": 1028520.0,
+          "q3": 1236332.25,
+          "min": 990583,
+          "max": 1770933
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 605993.5,
+          "q1": 573505.0,
+          "q3": 630866.25,
+          "min": 473048,
+          "max": 697049
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2908915.5,
+          "q1": 2223669.5,
+          "q3": 3175680.25,
+          "min": 1749537,
+          "max": 8296263
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 40169.5,
+          "q1": 35778.5,
+          "q3": 56410.0,
+          "min": 26701,
+          "max": 134750
+        }
+      },
+      "65536/cpu/legacy": {
+        "wall_ns": {
+          "n": 10,
+          "median": 218000641.5,
+          "q1": 209972586.75,
+          "q3": 233013727.0,
+          "min": 197622452,
+          "max": 250592886
+        },
+        "wall_with_coverage_ns": {
+          "n": 10,
+          "median": 219090526.0,
+          "q1": 210824622.5,
+          "q3": 233963618.0,
+          "min": 198890901,
+          "max": 251606842
+        },
+        "registration_ns": {
+          "n": 10,
+          "median": 1088150.5,
+          "q1": 1000535.5,
+          "q3": 1270994.0,
+          "min": 910589,
+          "max": 2193997
+        },
+        "readback_ns": {
+          "n": 10,
+          "median": 3710247.0,
+          "q1": 2811764.75,
+          "q3": 4571740.5,
+          "min": 2674523,
+          "max": 4911747
+        },
+        "decode_ns": {
+          "n": 10,
+          "median": 2833358.0,
+          "q1": 2424200.5,
+          "q3": 3064127.75,
+          "min": 1781105,
+          "max": 9163354
+        },
+        "cleanup_ns": {
+          "n": 10,
+          "median": 4255483.5,
+          "q1": 3764512.5,
+          "q3": 4690471.75,
+          "min": 2926000,
+          "max": 5755540
+        }
+      }
+    },
+    "paired": {
+      "512/baseline": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.5471112147421544,
+          "q1": 0.4936448706693155,
+          "q3": 0.5790075402117953,
+          "min": 0.252166698295814,
+          "max": 0.8142034282929258
+        },
+        "incomplete_or_invalid_blocks": 0
+      },
+      "512/cpu": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.621082973358562,
+          "q1": 0.4945929051656701,
+          "q3": 0.7874560877419183,
+          "min": 0.2705356653984271,
+          "max": 1.6489861382025017
+        },
+        "incomplete_or_invalid_blocks": 0
+      },
+      "8192/baseline": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.48024868646966773,
+          "q1": 0.4484107984359509,
+          "q3": 0.5298004088287667,
+          "min": 0.18823936353864304,
+          "max": 0.553823224907617
+        },
+        "incomplete_or_invalid_blocks": 0
+      },
+      "8192/cpu": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.5083125330026959,
+          "q1": 0.4737601724172791,
+          "q3": 0.5773614501907097,
+          "min": 0.33326538911491527,
+          "max": 0.9289073218488804
+        },
+        "incomplete_or_invalid_blocks": 0
+      },
+      "65536/baseline": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.5485267895154906,
+          "q1": 0.5263853694338134,
+          "q3": 0.5718997870508165,
+          "min": 0.46188897337609985,
+          "max": 1.178278020743852
+        },
+        "incomplete_or_invalid_blocks": 0
+      },
+      "65536/cpu": {
+        "paired_blocks": 10,
+        "candidate_over_legacy": {
+          "n": 10,
+          "median": 0.5493782531448537,
+          "q1": 0.5307676744251109,
+          "q3": 0.604883214922485,
+          "min": 0.514202965043469,
+          "max": 0.7438734643369368
+        },
+        "incomplete_or_invalid_blocks": 0
+      }
+    }
+  },
+  "criteria": {
+    "static_measured": true,
+    "static_controls": true,
+    "dynamic": true,
+    "invalid": true,
+    "output_mismatch": true,
+    "wrong_valid_verdict": true,
+    "incorrect_decode_success": true,
+    "decode_failed": true,
+    "dynamic_invalid": true,
+    "dynamic_difference": true,
+    "dynamic_not_exercised": true,
+    "case_failures": true,
+    "cost_counts": true,
+    "paired_costs": true,
+    "no_transform_errors": true,
+    "positive/ext4/legacy/insert": true,
+    "positive/ext4/legacy/grow": true,
+    "positive/ext4/legacy/shrink": true,
+    "positive/ext4/legacy/inode": true,
+    "positive/ext4/legacy/type": true,
+    "positive/ext4/legacy/remove": true,
+    "positive/ext4/legacy/filldir_hiding": true,
+    "positive/ext4/legacy/getdents_substitution": true,
+    "positive/ext4/legacy/independent": true,
+    "positive/ext4/packed/insert": true,
+    "positive/ext4/packed/grow": true,
+    "positive/ext4/packed/shrink": true,
+    "positive/ext4/packed/inode": true,
+    "positive/ext4/packed/type": true,
+    "positive/ext4/packed/remove": true,
+    "positive/ext4/packed/filldir_hiding": true,
+    "positive/ext4/packed/getdents_substitution": true,
+    "positive/ext4/packed/independent": true,
+    "positive/tmpfs/legacy/insert": true,
+    "positive/tmpfs/legacy/grow": true,
+    "positive/tmpfs/legacy/shrink": true,
+    "positive/tmpfs/legacy/inode": true,
+    "positive/tmpfs/legacy/type": true,
+    "positive/tmpfs/legacy/remove": true,
+    "positive/tmpfs/legacy/filldir_hiding": true,
+    "positive/tmpfs/legacy/getdents_substitution": true,
+    "positive/tmpfs/legacy/independent": true,
+    "positive/tmpfs/packed/insert": true,
+    "positive/tmpfs/packed/grow": true,
+    "positive/tmpfs/packed/shrink": true,
+    "positive/tmpfs/packed/inode": true,
+    "positive/tmpfs/packed/type": true,
+    "positive/tmpfs/packed/remove": true,
+    "positive/tmpfs/packed/filldir_hiding": true,
+    "positive/tmpfs/packed/getdents_substitution": true,
+    "positive/tmpfs/packed/independent": true,
+    "environment_and_timers": true
+  },
+  "campaign_completion": {
+    "completed": true,
+    "elapsed_seconds": 100.61520948000002,
+    "environment_unchanged": true,
+    "timers_restored": true
+  }
+}

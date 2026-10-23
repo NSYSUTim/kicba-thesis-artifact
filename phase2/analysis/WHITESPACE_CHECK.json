@@ -1,0 +1,12 @@
+{
+  "authored_files_clean": true,
+  "retained_byte_exact_exceptions": [
+    "phase2/name_hash.h",
+    "phase2/third_party/xcellerator/compatibility.patch",
+    "phase2/third_party/xcellerator/ported/rootkit.c",
+    "phase2/third_party/xcellerator/upstream/ftrace_helper.h",
+    "phase2/third_party/xcellerator/upstream/rootkit.c"
+  ],
+  "full_check_returncode": 2,
+  "reason": "Whitespace in pinned upstream/filter source, its compatibility patch, and the unchanged copied name-hash header is retained to preserve the confirmed source bytes; these files were not normalized after confirmation."
+}
