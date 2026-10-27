@@ -1,0 +1,1258 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-27",
+  "paper": {
+    "path": "paper/cross_layer_directory_entry_consistency_revised33_zhTW.docx",
+    "original_filename": "paper_final_submission_v3_revised33_clean.docx",
+    "sha256": "47169ad7e18b432ce8f66e26d6f2bfaad559d46302f43dd22b56b2711b61bca8",
+    "copied_without_editing": true
+  },
+  "implementation_sha256": "c0aa7f06550ced14b81a379e614ac8b5c14dfea148a30df8c28ccc6c5a112cd0",
+  "new_vm_experiments": false,
+  "experiment_denominators_unchanged": true,
+  "offline_iblt": {
+    "scope": "offline data-structure counterexamples; no VM or rootkit trial",
+    "names": [
+      "entry_00074.txt",
+      "entry_00934.txt"
+    ],
+    "inode": 101,
+    "d_type": 8,
+    "seeds_hex": [
+      "0x123456789abcdef",
+      "0xf0e1d2c3b4a59687"
+    ],
+    "cases": [
+      {
+        "case": "two_X_vs_empty",
+        "cells": 8,
+        "x_positions": [
+          3,
+          4,
+          7
+        ],
+        "y_positions": [
+          3,
+          4,
+          7
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          0,
+          0,
+          0
+        ],
+        "fingerprints_equal": false,
+        "decode_success": false,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 3,
+        "nonzero_cells": [
+          {
+            "position": 3,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 4,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 7,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "two_X_vs_two_Y",
+        "cells": 8,
+        "x_positions": [
+          3,
+          4,
+          7
+        ],
+        "y_positions": [
+          3,
+          4,
+          7
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          2,
+          6059681509744499242,
+          18062496694312274152
+        ],
+        "fingerprints_equal": false,
+        "decode_success": true,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 0,
+        "nonzero_cells": []
+      },
+      {
+        "case": "two_X_vs_empty",
+        "cells": 256,
+        "x_positions": [
+          20,
+          247,
+          251
+        ],
+        "y_positions": [
+          20,
+          247,
+          251
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          0,
+          0,
+          0
+        ],
+        "fingerprints_equal": false,
+        "decode_success": false,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 3,
+        "nonzero_cells": [
+          {
+            "position": 20,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 247,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 251,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "two_X_vs_two_Y",
+        "cells": 256,
+        "x_positions": [
+          20,
+          247,
+          251
+        ],
+        "y_positions": [
+          20,
+          247,
+          251
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          2,
+          6059681509744499242,
+          18062496694312274152
+        ],
+        "fingerprints_equal": false,
+        "decode_success": true,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 0,
+        "nonzero_cells": []
+      },
+      {
+        "case": "two_X_vs_empty",
+        "cells": 4096,
+        "x_positions": [
+          503,
+          2555,
+          3860
+        ],
+        "y_positions": [
+          2068,
+          2555,
+          3319
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          0,
+          0,
+          0
+        ],
+        "fingerprints_equal": false,
+        "decode_success": false,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 3,
+        "nonzero_cells": [
+          {
+            "position": 503,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 2555,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 3860,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "two_X_vs_two_Y",
+        "cells": 4096,
+        "x_positions": [
+          503,
+          2555,
+          3860
+        ],
+        "y_positions": [
+          2068,
+          2555,
+          3319
+        ],
+        "upstream_fingerprint": [
+          2,
+          11385244716018756648,
+          7307187184005706078
+        ],
+        "downstream_fingerprint": [
+          2,
+          6059681509744499242,
+          18062496694312274152
+        ],
+        "fingerprints_equal": false,
+        "decode_success": false,
+        "decoded_upstream_count": 0,
+        "decoded_downstream_count": 0,
+        "residual_cells": 4,
+        "nonzero_cells": [
+          {
+            "position": 503,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 2068,
+            "count": -2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 3319,
+            "count": -2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "position": 3860,
+            "count": 2,
+            "xor_fields": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "costs": {
+    "scope": "65536 entries; no additional load; six saved confirmation boots",
+    "primary_metric": "wall_ns excludes return-probe statistics and event-identity queries",
+    "additional_metric": "wall_with_coverage_ns includes those queries and window evaluation",
+    "both_metrics_exclude": "BPF compilation and attachment",
+    "aggregation": "packed/legacy within each block, then median within each boot",
+    "prespecified_adoption_metric": "wall_ns, plus no loss of measurement quality",
+    "inclusive_analysis_status": "post hoc additional check; not a new adoption criterion",
+    "boots": [
+      {
+        "environment": "kernel68",
+        "boot_index": 1,
+        "archive": "confirmation_kernel68_boot_01.tar.gz",
+        "sha256": "02f51ee628592147400651aadcfc99871b836f48451b2d9b30cb6ef59da14268",
+        "member": "phase2/evidence/kernel68/confirmation_boot_01/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 163164038,
+              "packed": 109666270,
+              "ratio": 0.6721227995105147
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 163917575,
+              "packed": 110879365,
+              "ratio": 0.6764336588068729
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 178354602,
+              "packed": 103011757,
+              "ratio": 0.5775671378527143
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 179126439,
+              "packed": 103880217,
+              "ratio": 0.5799267689344285
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 163645594,
+              "packed": 95335028,
+              "ratio": 0.5825700874048586
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 164513504,
+              "packed": 96168380,
+              "ratio": 0.5845622253599315
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 180768840,
+              "packed": 126578922,
+              "ratio": 0.7002253375083891
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 181722581,
+              "packed": 127418501,
+              "ratio": 0.7011704340695007
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 167360058,
+              "packed": 93907483,
+              "ratio": 0.561110483123757
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168381337,
+              "packed": 94745603,
+              "ratio": 0.5626847053720686
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 168145102,
+              "packed": 133007524,
+              "ratio": 0.7910282394071758
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 169034020,
+              "packed": 133889928,
+              "ratio": 0.7920886458240773
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 169760269,
+              "packed": 106292893,
+              "ratio": 0.6261352766824374
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 170532828,
+              "packed": 106999529,
+              "ratio": 0.6274424124368594
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 190156083,
+              "packed": 99287197,
+              "ratio": 0.5221352661118919
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 191146261,
+              "packed": 100185084,
+              "ratio": 0.5241278771338352
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 166472777,
+              "packed": 95097929,
+              "ratio": 0.5712521333142655
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168040704,
+              "packed": 96072716,
+              "ratio": 0.5717228844744664
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 193300181,
+              "packed": 141613718,
+              "ratio": 0.7326103745345174
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 194305573,
+              "packed": 142790789,
+              "ratio": 0.7348774756964896
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.604352682043648,
+        "ratio_with_queries_median": 0.6060023188983954,
+        "with_queries_median_ms": {
+          "legacy": 169.783424,
+          "packed": 105.439873
+        }
+      },
+      {
+        "environment": "kernel68",
+        "boot_index": 2,
+        "archive": "confirmation_kernel68_boot_02.tar.gz",
+        "sha256": "1b35ba0cc98fab385f7c24a25ba72a080dc6f7500c9319159a03a693712708e3",
+        "member": "phase2/evidence/kernel68/confirmation_boot_02/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 172649650,
+              "packed": 103725036,
+              "ratio": 0.6007833551935958
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 176085196,
+              "packed": 104482380,
+              "ratio": 0.5933626583804353
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 177950058,
+              "packed": 121436582,
+              "ratio": 0.68241945726143
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 179120810,
+              "packed": 122257855,
+              "ratio": 0.6825441164541406
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 172946160,
+              "packed": 130034262,
+              "ratio": 0.7518771275407329
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 173913665,
+              "packed": 130888750,
+              "ratio": 0.7526076228685078
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 177892709,
+              "packed": 125554037,
+              "ratio": 0.7057851763896631
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 178960345,
+              "packed": 126718953,
+              "ratio": 0.7080839780455274
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 170806788,
+              "packed": 103891157,
+              "ratio": 0.6082378704996197
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 171720259,
+              "packed": 104820000,
+              "ratio": 0.6104113784268168
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 178280673,
+              "packed": 98746494,
+              "ratio": 0.5538822147031047
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 179258684,
+              "packed": 99585463,
+              "ratio": 0.5555405226560739
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 174289214,
+              "packed": 90187960,
+              "ratio": 0.517461510842547
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 175026527,
+              "packed": 91333147,
+              "ratio": 0.5218245974794438
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 168965843,
+              "packed": 90809332,
+              "ratio": 0.5374419491399809
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 169743183,
+              "packed": 91598679,
+              "ratio": 0.5396309729858194
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 192976610,
+              "packed": 95212686,
+              "ratio": 0.4933897740249453
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 193967977,
+              "packed": 96099083,
+              "ratio": 0.49543787838752373
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 180306946,
+              "packed": 92330690,
+              "ratio": 0.5120750589386612
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 181334278,
+              "packed": 93222210,
+              "ratio": 0.5140903916688052
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.5773327849483503,
+        "ratio_with_queries_median": 0.5744515905182546,
+        "with_queries_median_ms": {
+          "legacy": 177.5227705,
+          "packed": 102.0339215
+        }
+      },
+      {
+        "environment": "kernel68",
+        "boot_index": 3,
+        "archive": "confirmation_kernel68_boot_03.tar.gz",
+        "sha256": "9495313828672807cdf899945c344bb83cbf713aed66ac79a4142cdd5d3a03e0",
+        "member": "phase2/evidence/kernel68/confirmation_boot_03/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 208546309,
+              "packed": 109880628,
+              "ratio": 0.5268883852554782
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 209427722,
+              "packed": 110841209,
+              "ratio": 0.529257578421256
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 169296217,
+              "packed": 96867155,
+              "ratio": 0.572175543650807
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 170283673,
+              "packed": 97803481,
+              "ratio": 0.5743561862210947
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 199974229,
+              "packed": 112765806,
+              "ratio": 0.563901691552465
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 200880915,
+              "packed": 122483744,
+              "ratio": 0.609733104809882
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 176249315,
+              "packed": 91710128,
+              "ratio": 0.5203431740997121
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 176970387,
+              "packed": 92432437,
+              "ratio": 0.5223045423978193
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 157917824,
+              "packed": 113232411,
+              "ratio": 0.7170337592797631
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 158663755,
+              "packed": 114142466,
+              "ratio": 0.7193984914828216
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 167846223,
+              "packed": 88323653,
+              "ratio": 0.5262176974932584
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168655039,
+              "packed": 89070898,
+              "ratio": 0.5281247363145788
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 164585707,
+              "packed": 93990374,
+              "ratio": 0.5710725172508448
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 166072055,
+              "packed": 94791603,
+              "ratio": 0.5707859940674547
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 169660898,
+              "packed": 90455028,
+              "ratio": 0.5331518874785162
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 170380849,
+              "packed": 91215233,
+              "ratio": 0.5353608315450993
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 162349598,
+              "packed": 191292963,
+              "ratio": 1.178278020743852
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 163354164,
+              "packed": 192645095,
+              "ratio": 1.1793093624475957
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 201750456,
+              "packed": 93186311,
+              "ratio": 0.46188897337609985
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 202569258,
+              "packed": 93924730,
+              "ratio": 0.46366724609318555
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.5485267895154906,
+        "ratio_with_queries_median": 0.553073412806277,
+        "with_queries_median_ms": {
+          "legacy": 170.332261,
+          "packed": 96.297542
+        }
+      },
+      {
+        "environment": "kernel65",
+        "boot_index": 1,
+        "archive": "confirmation_kernel65_boot_01.tar.gz",
+        "sha256": "081cc704b74449f661d4da1e2e34aedb26fb38a604202dd54d59763cb2520c80",
+        "member": "phase2/evidence/kernel65/confirmation_boot_01/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 170456940,
+              "packed": 96690233,
+              "ratio": 0.5672413983261696
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 171426730,
+              "packed": 97489854,
+              "ratio": 0.5686969237527894
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 182867623,
+              "packed": 92926267,
+              "ratio": 0.5081613982591112
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 183957391,
+              "packed": 93694466,
+              "ratio": 0.5093269995332778
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 165954256,
+              "packed": 90515629,
+              "ratio": 0.5454251742721199
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 166812554,
+              "packed": 91258716,
+              "ratio": 0.5470734294973986
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 178537971,
+              "packed": 90806140,
+              "ratio": 0.5086096783299952
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 179603319,
+              "packed": 91618262,
+              "ratio": 0.5101145263356742
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 162014657,
+              "packed": 92120642,
+              "ratio": 0.5685944945092221
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 162769646,
+              "packed": 92892686,
+              "ratio": 0.5707003012097231
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 208011187,
+              "packed": 88440228,
+              "ratio": 0.42517053662118665
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 208832021,
+              "packed": 89371195,
+              "ratio": 0.4279573341867912
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 160266492,
+              "packed": 103380864,
+              "ratio": 0.645056010834754
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 160987942,
+              "packed": 104187729,
+              "ratio": 0.6471772215089252
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 181272498,
+              "packed": 88249801,
+              "ratio": 0.486835024472383
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 182037037,
+              "packed": 89042071,
+              "ratio": 0.48914260783095476
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 172259481,
+              "packed": 102500391,
+              "ratio": 0.5950348300422431
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 173210325,
+              "packed": 103416456,
+              "ratio": 0.5970571096151457
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 160198983,
+              "packed": 93738966,
+              "ratio": 0.5851408307629519
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 161100578,
+              "packed": 94657923,
+              "ratio": 0.5875703499958889
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.5563332862991448,
+        "ratio_with_queries_median": 0.557885176625094,
+        "with_queries_median_ms": {
+          "legacy": 172.3185275,
+          "packed": 93.293576
+        }
+      },
+      {
+        "environment": "kernel65",
+        "boot_index": 2,
+        "archive": "confirmation_kernel65_boot_02.tar.gz",
+        "sha256": "0c602e4c5aeb58d2c9cdfcce33a91296652f63c955dcc0c4fe5daf68d9d72ab1",
+        "member": "phase2/evidence/kernel65/confirmation_boot_02/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 168518696,
+              "packed": 95415319,
+              "ratio": 0.5662001977513522
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 169342987,
+              "packed": 96365274,
+              "ratio": 0.5690538221107438
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 160901839,
+              "packed": 109498690,
+              "ratio": 0.6805310037506781
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 161839332,
+              "packed": 110714765,
+              "ratio": 0.6841029534155517
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 167925988,
+              "packed": 97070119,
+              "ratio": 0.5780529872481679
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168824789,
+              "packed": 97921726,
+              "ratio": 0.5800198334617791
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 167336801,
+              "packed": 92200916,
+              "ratio": 0.5509900718133126
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168144111,
+              "packed": 93084572,
+              "ratio": 0.553599953316236
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 167130148,
+              "packed": 109131757,
+              "ratio": 0.6529746925132861
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168223429,
+              "packed": 110171320,
+              "ratio": 0.6549106783455234
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 174737516,
+              "packed": 93782558,
+              "ratio": 0.5367053403689223
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 175669864,
+              "packed": 94610268,
+              "ratio": 0.5385685731503725
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 189012706,
+              "packed": 97217487,
+              "ratio": 0.5143436600500286
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 189845042,
+              "packed": 97951261,
+              "ratio": 0.5159537482153471
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 167244055,
+              "packed": 92420744,
+              "ratio": 0.5526100404585382
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 168210203,
+              "packed": 94119046,
+              "ratio": 0.5595323251586588
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 169421897,
+              "packed": 94506850,
+              "ratio": 0.5578195715752138
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 170181910,
+              "packed": 95284971,
+              "ratio": 0.559900702724514
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 222834029,
+              "packed": 91947357,
+              "ratio": 0.4126270902726441
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 223746106,
+              "packed": 92857275,
+              "ratio": 0.4150118036020703
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.555214806016876,
+        "ratio_with_queries_median": 0.5597165139415864,
+        "with_queries_median_ms": {
+          "legacy": 169.083888,
+          "packed": 95.8251225
+        }
+      },
+      {
+        "environment": "kernel65",
+        "boot_index": 3,
+        "archive": "confirmation_kernel65_boot_03.tar.gz",
+        "sha256": "da785f2290cf1872bd19363bcd5d2c2e18bbb9d969d21cee9b5bb249ad00255e",
+        "member": "phase2/evidence/kernel65/confirmation_boot_03/campaign/attempts.jsonl",
+        "pairs": [
+          {
+            "block": 0,
+            "wall_ns": {
+              "legacy": 164141660,
+              "packed": 120061340,
+              "ratio": 0.7314495296319046
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 165063803,
+              "packed": 120964385,
+              "ratio": 0.7328341090020809
+            }
+          },
+          {
+            "block": 1,
+            "wall_ns": {
+              "legacy": 204172105,
+              "packed": 102785433,
+              "ratio": 0.5034254459001635
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 205193588,
+              "packed": 103870762,
+              "ratio": 0.5062086150567239
+            }
+          },
+          {
+            "block": 2,
+            "wall_ns": {
+              "legacy": 178502432,
+              "packed": 96188324,
+              "ratio": 0.5388628206477322
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 179460838,
+              "packed": 97165994,
+              "ratio": 0.5414328556740607
+            }
+          },
+          {
+            "block": 3,
+            "wall_ns": {
+              "legacy": 171959152,
+              "packed": 96250162,
+              "ratio": 0.5597268937450913
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 173021907,
+              "packed": 97082827,
+              "ratio": 0.5611013581072135
+            }
+          },
+          {
+            "block": 4,
+            "wall_ns": {
+              "legacy": 156798792,
+              "packed": 117557748,
+              "ratio": 0.7497363117440343
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 158871451,
+              "packed": 118600413,
+              "ratio": 0.7465180953121653
+            }
+          },
+          {
+            "block": 5,
+            "wall_ns": {
+              "legacy": 162754572,
+              "packed": 96078944,
+              "ratio": 0.5903302304773349
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 163734008,
+              "packed": 97033020,
+              "ratio": 0.5926259375511043
+            }
+          },
+          {
+            "block": 6,
+            "wall_ns": {
+              "legacy": 156442716,
+              "packed": 95788682,
+              "ratio": 0.6122923741620543
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 157297870,
+              "packed": 96829490,
+              "ratio": 0.6155804271221219
+            }
+          },
+          {
+            "block": 7,
+            "wall_ns": {
+              "legacy": 170326671,
+              "packed": 87837661,
+              "ratio": 0.5157011552230714
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 171190684,
+              "packed": 88726235,
+              "ratio": 0.5182889216097764
+            }
+          },
+          {
+            "block": 8,
+            "wall_ns": {
+              "legacy": 175382226,
+              "packed": 100458754,
+              "ratio": 0.572798944860011
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 176603849,
+              "packed": 101195255,
+              "ratio": 0.5730070752874701
+            }
+          },
+          {
+            "block": 9,
+            "wall_ns": {
+              "legacy": 162676850,
+              "packed": 93450126,
+              "ratio": 0.5744525173680213
+            },
+            "wall_with_coverage_ns": {
+              "legacy": 163779939,
+              "packed": 94204511,
+              "ratio": 0.5751895596932662
+            }
+          }
+        ],
+        "valid_pairs": 10,
+        "ratio_without_queries_median": 0.5736257311140162,
+        "ratio_with_queries_median": 0.5740983174903682,
+        "with_queries_median_ms": {
+          "legacy": 168.1272435,
+          "packed": 97.1244105
+        }
+      }
+    ],
+    "without_queries": {
+      "per_boot_ratio_median_range": [
+        0.5485267895154906,
+        0.604352682043648
+      ],
+      "reduction_percent_range": [
+        39.5647317956352,
+        45.14732104845094
+      ]
+    },
+    "with_queries": {
+      "per_boot_ratio_median_range": [
+        0.553073412806277,
+        0.6060023188983954
+      ],
+      "reduction_percent_range": [
+        39.39976811016046,
+        44.692658719372304
+      ]
+    },
+    "legacy_inclusive_median_ms_range": [
+      168.1272435,
+      177.5227705
+    ],
+    "packed_inclusive_median_ms_range": [
+      93.293576,
+      105.439873
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-10-27",
+  "publication_base_commit": "1e7be5a68d10522a2661144d631881248e5a7d87",
+  "paper": {
+    "path": "paper/cross_layer_directory_entry_consistency_revised33_zhTW.docx",
+    "original_filename": "paper_final_submission_v3_revised33_clean.docx",
+    "sha256": "47169ad7e18b432ce8f66e26d6f2bfaad559d46302f43dd22b56b2711b61bca8",
+    "copied_without_editing": true
+  },
+  "paper_layout": {
+    "reviewed_word_pages": 24,
+    "source_bytes_match_previously_reviewed_document": true,
+    "document_edited_for_publication": false
+  },
+  "new_vm_experiments": false,
+  "reconciliation_implementation_unchanged": true,
+  "historical_snapshots_verified": {
+    "b6fd4af9d581d0af24e70915fdaeb65d8aa1e416": 1146,
+    "cb0a27a": 1305
+  },
+  "verified_archive_count": 17,
+  "verified_frozen_source_sets": {
+    "phase1/CONFIRMATION_LOCK.json": 37,
+    "phase2/locks/kernel65.json": 66,
+    "phase2/locks/kernel68.json": 66
+  },
+  "recomputed_supplement_boots": {
+    "phase1": 3,
+    "phase2": 6
+  },
+  "paper_review_checks": {
+    "offline_cases": 6,
+    "cost_boots": 6,
+    "cost_pairs": 60,
+    "source": "docs/PAPER_REVIEW_FACTS_20261027.json"
+  },
+  "unit_tests": {
+    "passed": 14,
+    "failed": 0,
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v"
+  },
+  "reproduction_commands": [
+    "python scripts/verify_research_updates.py --recompute --output reproduced/research_updates.json",
+    "python scripts/verify_paper_review_checks.py --check docs/PAPER_REVIEW_FACTS_20261027.json"
+  ],
+  "passed": true,
+  "local_document_links": {
+    "checked": 47,
+    "missing": 0
+  },
+  "file_manifest": {
+    "path": "FILE_SHA256.csv",
+    "entries": 1549,
+    "self_excluded": true
+  }
+}

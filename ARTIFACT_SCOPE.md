@@ -1,10 +1,11 @@
 # 跨層目錄項一致性檢查研究成品收錄範圍
 
-本儲存庫保存原論文的程式、既有結果與兩輪後續補充證據，更新至 2026-10-24。方法與進度見 [README](README.md) 及[目前方法與後續工作](docs/METHOD_AND_NEXT_STEPS_zh-TW.md)；作者 revised26 的逐章調整見[書面更新對照](docs/PAPER_UPDATE_GUIDE_20261024_zh-TW.md)。原始程式、協定與資料檔名保留，以維持雜湊及重現關係。
+本儲存庫保存論文的程式、既有結果、兩輪後續補充證據與目前書面，更新至 2026-10-27。方法與進度見 [README](README.md) 及[目前方法與後續工作](docs/METHOD_AND_NEXT_STEPS_zh-TW.md)；書面版本與來源見 [paper/README](paper/README.md)，最新限制與計時核對見[定稿後核對](docs/PAPER_REVIEW_UPDATES_20261027_zh-TW.md)。原始程式、協定與資料檔名保留，以維持雜湊及重現關係。
 
 ## 已收錄
 
-- 使用者於 2026-10-20 提供的 `eBPF_最終繳交.docx`，以 `paper/cross_layer_directory_entry_consistency_zhTW.docx` 原樣保存。它是較早書面存檔，不是本輪已完成改寫的 Word。
+- 作者提供的 revised33 乾淨版，以 `paper/cross_layer_directory_entry_consistency_revised33_zhTW.docx` 原樣保存，SHA-256 與已核對來源相同。
+- 使用者於 2026-10-20 提供的 `eBPF_最終繳交.docx`，以 `paper/cross_layer_directory_entry_consistency_zhTW.docx` 原樣保留為歷史存檔。
 - 多重集合指紋與 IBLT 實作、單元測試、eBPF 收集器及完整目錄列舉程式。
 - 正式矩陣使用的三組自製控制模組：filldir 控制、getdents 控制與等量替換。
 - 九次開機主實驗的壓縮資料、分析鎖、時序校準模型與正式分析輸出。
@@ -15,7 +16,8 @@
 - `phase2/` 的指定兩核心／ext4／tmpfs／正常動態、更多身分改寫、另一作者過濾及合併核心狀態候選；六次確認與原生控制，十一份封存。
 - 兩輪各自的實際凍結來源封存，含指定 VM 使用的二進位與核心模組。它們是可追溯證據，不是一般部署套件。
 - xcellerator 固定來源中的目錄過濾範例、LICENSE、相容性移植與差異；不是完整上游專案，且與本研究共用 ftrace helper。
-- revised26 的來源檔名／SHA-256、逐章修訂依據及 Claude 指令。這次未另外上傳或改寫作者提供的 revised26 Word。
+- 2026-10-24 以 revised26 為底的逐章修訂依據與來源 SHA-256，保留為修訂歷程；該版 Word 未收錄。
+- revised33 定稿時的 IBLT 重複差異反例、計時範圍、含查詢成本追加分析，以及可直接重算的程式與結果。反例屬離線資料結構輸入，沒有冒充 VM 攻擊試驗或併入正式分母。
 
 ## 未收錄
 
@@ -31,4 +33,6 @@
 
 兩輪補充用 `python scripts/verify_research_updates.py --recompute --output reproduced/research_updates.json` 核對及重算，需要包含歷史的 Git clone。該入口保留歷史報告，將發布後閱讀文件更新與實驗時的基準分開核對，拒絕覆寫不同原始資料。
 
-目前新版正文待作者與 Claude 修訂。原書面、主實驗、補充原始資料、校準模型、凍結來源及實驗鎖不因閱讀文件更新而改動。合併候選只新增於研究目錄，沒有替換原正式收集器入口。
+定稿離線核對用 `python scripts/verify_paper_review_checks.py --check docs/PAPER_REVIEW_FACTS_20261027.json`，直接讀取現有程式與六份已驗證的成本原始封存，不需執行 VM 或解壓。
+
+目前書面與舊書面分開保存。主實驗、補充原始資料、校準模型、凍結來源及實驗鎖不因閱讀文件更新而改動，IBLT 解碼器也未改寫。合併候選只位於研究目錄，沒有替換原正式收集器入口。
